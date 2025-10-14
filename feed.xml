@@ -3,14 +3,14 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-10-14T12:59:02Z</updated>
+    <updated>2025-10-14T13:00:38Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
                 notes
                 
             </title>
-            <updated>2025-10-14T12:58:53Z</updated>
+            <updated>2025-10-14T13:00:18Z</updated>
             <id>https://idthetarget.hithub.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;purpose-for-the-journey&quot; tabindex=&quot;-1&quot;&gt;Purpose for the Journey&lt;/h2&gt;
@@ -54,7 +54,7 @@
                 Moon_Pro
                 
             </title>
-            <updated>2025-10-14T12:58:53Z</updated>
+            <updated>2025-10-14T13:00:18Z</updated>
             <id>https://idthetarget.hithub.io/reading-ebooks/moon-pro/</id>
             <content type="html">
                 &lt;p&gt;I like to read. I have purchased several hundred ePub books.&lt;/p&gt;
@@ -67,7 +67,7 @@
                 Obsidian
                 
             </title>
-            <updated>2025-10-14T12:58:53Z</updated>
+            <updated>2025-10-14T13:00:18Z</updated>
             <id>https://idthetarget.hithub.io/notes/obsidian/</id>
             <content type="html">
                 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
@@ -84,7 +84,7 @@
                 Joplin
                 
             </title>
-            <updated>2025-10-14T12:58:53Z</updated>
+            <updated>2025-10-14T13:00:18Z</updated>
             <id>https://idthetarget.hithub.io/notes/joplin/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -117,7 +117,7 @@
                 Fossify Calendar
                 
             </title>
-            <updated>2025-10-14T12:58:53Z</updated>
+            <updated>2025-10-14T13:00:18Z</updated>
             <id>https://idthetarget.hithub.io/calendar/fossify-calendar/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -128,5 +128,55 @@
 
             </content>
             <link href="https://idthetarget.hithub.io/calendar/fossify-calendar/" >
+        </entry>
+        <entry>
+            <title>
+                Hosting this site
+                
+            </title>
+            <updated>2025-10-14T13:00:18Z</updated>
+            <id>https://idthetarget.hithub.io/blog/hosting-this-site/</id>
+            <content type="html">
+                &lt;h1 id=&quot;hosting-this-site&quot; tabindex=&quot;-1&quot;&gt;Hosting this site&lt;/h1&gt;
+&lt;h2 id=&quot;tldr&quot; tabindex=&quot;-1&quot;&gt;TLDR&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-site/#success&quot;&gt;Hosting this site#Success&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/barkstone2/vault-to-blog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/barkstone2/vault-to-blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/oleeskild/Obsidian-Digital-Garden?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/oleeskild/Obsidian-Digital-Garden?tab=readme-ov-file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/foxblock/digitalgarden_gh-pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/foxblock/digitalgarden_gh-pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;As I&#39;ve been figuring out how to migrate from my Samsung Android phone running &lt;a href=&quot;https://en.wikipedia.org/wiki/One_UI&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;One UI&lt;/a&gt; to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Pixel_9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pixel 9 Pro XL&lt;/a&gt; I bought and on which I&#39;ve installed &lt;a href=&quot;https://grapheneos.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GrapheneOS&lt;/a&gt;, I&#39;ve wished for more guides on how to accomplish certain tasks. The &lt;a href=&quot;https://discuss.grapheneos.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GrapheneOS Discussion Board&lt;/a&gt; has been very helpful, but I don&#39;t always know what I don&#39;t know. So when I realized that this was an achievable goal I decided to try to document my journey in a way that I could publish online for other folks.&lt;/p&gt;
+&lt;p&gt;I&#39;m not really a blogger, so I didn&#39;t want to pay a monthly fee for this one website. I eventually found &lt;a href=&quot;https://docs.github.com/en/pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub Pages&lt;/a&gt;, which looked like just what I wanted. I then started looking at methods to &lt;em&gt;&lt;strong&gt;easily&lt;/strong&gt;&lt;/em&gt; publish my notes there. I wanted to be able to adjust the &amp;quot;how-to&amp;quot; notes I normally take so that they&#39;d make sense to somebody other than me, then easily just export those notes to GitHub Pages.&lt;/p&gt;
+&lt;p&gt;At first I&#39;d settled on &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/notes/joplin/&quot;&gt;Joplin&lt;/a&gt;, as I liked it&#39;s simplicity and full &lt;a href=&quot;https://en.wikipedia.org/wiki/Free_and_open-source_software&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FOSS&lt;/a&gt; nature. I still like Joplin as a note-taking app. I tried three different &amp;quot;publish to GitHub Pages&amp;quot; plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://joplin-utils.rxliuli.com/en-US/joplin-publisher/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Joplin Publisher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ylc395/joplin-plugin-pages-publisher&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pages Publisher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;And one I can&#39;t remember the name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All three worked, but they were intended to publish blog posts, not a website like this one. So I ended up having to switch to &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/notes/obsidian/&quot;&gt;Obsidian&lt;/a&gt;. I &lt;em&gt;&lt;strong&gt;like&lt;/strong&gt;&lt;/em&gt; &lt;a href=&quot;http://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian.md&lt;/a&gt;, but it&#39;s not really FOSS. However, I need to be able to focus on updating the pages&#39; content and not on the process of publishing, and Obsidian was able to offer that to me. Though it took a LOT of trouble to figure out how to get it to work.&lt;/p&gt;
+&lt;h2 id=&quot;first-failure&quot; tabindex=&quot;-1&quot;&gt;First Failure&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;This&lt;/a&gt; process looked relatively easy. Once I figured out the missing step the author had omitted it worked very well. For one day. Then I started getting an unformatted XML page whose contents looked like they were the Table of Contents tab to the left of the site. Despite deleting the repository and starting the entire process over again, I was unable to get the site to come back up. So I tried a different route.&lt;/p&gt;
+&lt;h2 id=&quot;second-try&quot; tabindex=&quot;-1&quot;&gt;Second Try&lt;/h2&gt;
+&lt;p&gt;Next I tried &lt;a href=&quot;https://github.com/barkstone2/vault-to-blog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;vault-to-blog&lt;/a&gt;. I installed it from the community plugins, but when I tried to save the URL for the local repository on my Windows PC, I got the following error: &amp;quot;Failed to remove remote. Error: Git.cwd: cannot change to non-directory &lt;code&gt;&amp;quot;C:&#92;Users|&amp;lt;redacted&amp;gt;&#92;Documents&#92;Obsidian&#92;DeGoogle/.obsidian/plugins/vault-to-blog/react-app/0.0.6/react-app&amp;quot;.&lt;/code&gt; Sure enough, I couldn&#39;t find &#39;react-app&#39; int the &#39;plugins&#39; directory, and Googling for a solution was fruitless. (Yes, I am fully aware of the irony in using Google to search for tools to get rid of Google.)&lt;/p&gt;
+&lt;p&gt;Then I found this page: &lt;a href=&quot;https://github.com/barkstone2/vault-to-blog/issues/160&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/barkstone2/vault-to-blog/issues/160&lt;/a&gt;, and I realized that I&#39;d tried to create my GitHub page as a non-main repository. When I deleted everything and started over, I was able to get it working. Unfortunately I wasn&#39;t able to figure out how to set up a homepage. I tried a page at the base of the directory named &amp;quot;README&amp;quot;, and another named &amp;quot;index&amp;quot;, and neither would show up by default when I brought up the website. So I continued looking. The process worked, but didn&#39;t look the way I wanted and I didn&#39;t want to spend the time figuring out how to modify the site.&lt;/p&gt;
+&lt;h2 id=&quot;third-try&quot; tabindex=&quot;-1&quot;&gt;Third Try&lt;/h2&gt;
+&lt;p&gt;I next tried &lt;a href=&quot;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Fork My Brain&#39;s solution&lt;/a&gt;. I&#39;d seen it earlier, but I&#39;d been attempting to avoid installing yet more dependencies on my Windows computer (in this case JodeJS and NPM). Also, NPM has had some &lt;a href=&quot;https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;security nightmares&lt;/a&gt; lately, but I &lt;em&gt;&lt;strong&gt;really&lt;/strong&gt;&lt;/em&gt; wanted to stop spending so much time on this publication route.&lt;/p&gt;
+&lt;p&gt;As with everything I&#39;d tried so far (with the exception of vault-to-blog), I was able to get it to work one time and then it stopped updating. By this time I was so frustrated that I didn&#39;t even try to figure out how to get it to update.&lt;/p&gt;
+&lt;h2 id=&quot;fourth-try&quot; tabindex=&quot;-1&quot;&gt;Fourth Try&lt;/h2&gt;
+&lt;p&gt;I finally found the &lt;a href=&quot;https://obsidian.md/plugins?search=digital%20garden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Digital Garden&lt;/a&gt; plugin which I  got working. However, I didn&#39;t like that while I was pushing the notes to Github, the &lt;a href=&quot;https://github.com/oleeskild/digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Digital Garden repository&lt;/a&gt; was then publishing to Vercel with a weird URL.&lt;/p&gt;
+&lt;h2 id=&quot;success&quot; tabindex=&quot;-1&quot;&gt;Success&lt;/h2&gt;
+&lt;p&gt;I finally found a fork of the &lt;a href=&quot;https://github.com/oleeskild/digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Digital Garden&lt;/a&gt; github repository called &lt;a href=&quot;https://github.com/foxblock/digitalgarden_gh-pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digitalgarden_gh-pages&lt;/a&gt; by foxblock. It works with the &lt;a href=&quot;https://obsidian.md/plugins?search=digital%20garden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Digital Garden&lt;/a&gt; plugin but publishes to my GitHub Pages. I won&#39;t go through the installation process, the one on the &lt;a href=&quot;https://github.com/foxblock/digitalgarden_gh-pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digitalgarden_gh-pages&lt;/a&gt; site are very clear. However, I will note one thing because it took me awhile to find it.&lt;/p&gt;
+&lt;p&gt;I wanted the file tree on the left of the site so people could find individual pages easily. It&#39;s not there by default. To get it to display, go into the plugin settings and click on &amp;quot;manage note settings&amp;quot;. Then turn on the &amp;quot;show filetree sidebar&amp;quot; toggle.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note]+ I&#39;m sure many of you are asking &amp;quot;why, if you were having so much trouble, didn&#39;t you just use &lt;a href=&quot;https://obsidian.md/publish&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Publish&lt;/a&gt;?&amp;quot; I seriously considered it.  But as much as I&#39;d like to support the Obsidian project, $96/year for a website I&#39;m only using to share my self-hosting setup is a bit much. If I was a blogger or if I had more to share on a regular basis, I&#39;d definitely have gone with OP.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/blog/hosting-this-site/" >
         </entry>
 </feed>
