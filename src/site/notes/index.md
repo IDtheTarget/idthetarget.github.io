@@ -22,4 +22,7 @@ Below are direct links to the pages for my current solution for each service/use
 
 - Self-Hosting
 	- [[Self-Hosting/Raspberry Pi\|Raspberry Pi]]
-- 
+- File Storage
+	- [[Self-Hosting/Raspberry Pi\|Raspberry Pi]]
+	- [[File Storage/Nextcloud\|Nextcloud]]
+	- 

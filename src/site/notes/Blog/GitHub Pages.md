@@ -8,6 +8,7 @@
 - https://github.com/barkstone2/vault-to-blog
 - https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages
 - https://github.com/foxblock/digitalgarden_gh-pages
+- 
 
 ## Discussion
 As I've been figuring out how to migrate from my Samsung Android phone running [One UI](https://en.wikipedia.org/wiki/One_UI) to the [Pixel 9 Pro XL](https://en.wikipedia.org/wiki/Pixel_9) I bought and on which I've installed [GrapheneOS](https://grapheneos.org/), I've wished for more guides on how to accomplish certain tasks. The [GrapheneOS Discussion Board](https://discuss.grapheneos.org/) has been very helpful, but I don't always know what I don't know. So when I realized that this was an achievable goal I decided to try to document my journey in a way that I could publish online for other folks. 
