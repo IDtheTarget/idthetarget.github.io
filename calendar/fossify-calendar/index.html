@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>notes</title>
+<title>Fossify Calendar</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -86,7 +86,7 @@ CTRL + K
 <span class="foldername">Calendar</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/calendar/fossify-calendar/">Fossify Calendar </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/calendar/fossify-calendar/">Fossify Calendar </a>
 </div>
 </div>
 </div>
@@ -122,7 +122,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">index </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">index </a>
 </div>
 </div>
 </div>
@@ -154,38 +154,11 @@ CTRL + K
 <div class="header-meta">
 </div>
 </header>
-<h2 id="purpose-for-the-journey" tabindex="-1">Purpose for the Journey</h2>
-<p>I'm very concerned about <a href="https://en.wikipedia.org/wiki/Identity_theft" target="_blank" class="external-link">identity theft</a>. It's such a prolific issue that even government agencies, such as the <a href="https://www.irs.gov/identity-theft-fraud-scams/identity-theft-guide-for-individuals" target="_blank" class="external-link">IRS</a>, <a href="https://www.ssa.gov/pubs/EN-05-10064.pdf" target="_blank" class="external-link">Social Security Administration</a>, and the <a href="https://www.ftc.gov/news-events/topics/identity-theft" target="_blank" class="external-link">FTC</a> have sites and guides on how to prevent or cope with the problem. While identity theft is impossible to completely prevent, it <em><strong>is</strong></em> possible to mitigate the risks. My primary risk-mitigation strategy is to reduce the amount of my personal data that is stored &quot;<a href="https://en.wikipedia.org/wiki/Cloud_storage" target="_blank" class="external-link">in the cloud</a>&quot; to whatever extent is workable.</p>
-<p>As of this writing (October 2025), my risk mitigation strategy breaks down into four primary goals:</p>
-<h2 id="primary-goals" tabindex="-1">Primary Goals</h2>
-<ol>
-<li>Where possible, move from proprietary cloud-based systems to self-hosted systems.</li>
-<li>When I can't self-host, move from cloud-based vendors that provide &quot;<a href="https://www.reddit.com/r/explainlikeimfive/comments/2m3f05/eli5_if_something_is_free_you_are_the_product/" target="_blank" class="external-link">free services</a>&quot; to privacy-friendly services.</li>
-<li>Where possible, use <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank" class="external-link">FOSS</a> software instead of proprietary.</li>
-<li>Change from a standard Android phone to a secure and privacy-friendly phone operating system. I've chosen <a href="https://grapheneos.org/" target="_blank" class="external-link">GrapheneOS</a>.</li>
-</ol>
-<h3 id="additional-design-criteria" tabindex="-1">Additional Design Criteria</h3>
-<ol>
-<li>I use both an Android phone and a Windows PC for my various flows and processes. With Microsoft once again <a href="https://www.windowscentral.com/microsoft/windows-11/microsoft-triples-down-and-blocks-even-more-microsoft-account-bypasses-on-windows-11-an-online-account-is-non-negotiable" target="_blank" class="external-link">requiring Microsoft accounts</a> to use Windows, I'm going to try to move to a Linux laptop. This all means that any system or service I migrate to needs to have multi-platform capabilities, Windows (during the transition), Android and Linux.</li>
-<li>My wife and I collaborate using a few services, most notably we share our calendars with each other and Google Keep (which we use to share shopping lists). Replacement services need to be very easy to use without a lot of fiddling, as my wife is not a geek like me and has no patience when things don't &quot;just work&quot;.</li>
-</ol>
-<h2 id="purpose-for-this-page" tabindex="-1">Purpose for this Page</h2>
-<p>Basically, I want to provide a starting-point for others who, like me, are just beginning their journey to take back their data and their privacy. I'm hoping to spare them some of the pain and frustration I've felt trying to get all of this to work.</p>
-<h2 id="solutions" tabindex="-1">Solutions</h2>
-<p>Below are direct links to the pages for my current solution for each service/use-case. I'm keeping pages for my previous solutions as well, in case they're of benefit to other pilgrims on the journey to de-Googlification. For instance, my current note-taking app is <a class="internal-link" target="" data-note-icon="" href="/notes/obsidian/">Obsidian</a>, but you'll find a page on <a class="internal-link" target="" data-note-icon="" href="/notes/joplin/">Joplin</a> as well. I liked Joplin just fine, but I wanted to share my notes on this journey and I couldn't find a way to get Joplin to create my github pages into a website instead of a blog site. So I had to switch to Obsidian.</p>
+<h1 id="references" tabindex="-1">References</h1>
 <ul>
-<li>Self-Hosting
-<ul>
-<li><a class="internal-link is-unresolved" href="/404" target="">Raspberry Pi</a></li>
+<li><a href="https://github.com/FossifyOrg/Calendar" target="_blank" class="external-link">https://github.com/FossifyOrg/Calendar</a></li>
 </ul>
-</li>
-<li>File Storage
-<ul>
-<li><a class="internal-link is-unresolved" href="/404" target="">Raspberry Pi</a></li>
-<li><a class="internal-link is-unresolved" href="/404" target="">Nextcloud</a></li>
-</ul>
-</li>
-</ul>
+<p>I've installed the app and it looks nice, but I haven't had a chance to integrate it with my <a class="internal-link is-unresolved" href="/404" target="">Nextcloud</a> server yet. More to follow.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -199,17 +172,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#purpose-for-the-journey">Purpose for the Journey</a>
-</li>
-<li><a href="#primary-goals">Primary Goals</a>
-<ol>
-<li><a href="#additional-design-criteria">Additional Design Criteria</a>
-</li>
-</ol>
-</li>
-<li><a href="#purpose-for-this-page">Purpose for this Page</a>
-</li>
-<li><a href="#solutions">Solutions</a>
+<li><a href="#references">References</a>
 </li>
 </ol>
 </nav>
@@ -218,6 +181,9 @@ On this page
 </div>
 </div>
 </aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>

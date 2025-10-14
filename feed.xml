@@ -3,14 +3,14 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-10-14T12:57:28Z</updated>
+    <updated>2025-10-14T12:57:53Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
                 notes
                 
             </title>
-            <updated>2025-10-14T12:57:17Z</updated>
+            <updated>2025-10-14T12:57:37Z</updated>
             <id>https://idthetarget.hithub.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;purpose-for-the-journey&quot; tabindex=&quot;-1&quot;&gt;Purpose for the Journey&lt;/h2&gt;
@@ -54,7 +54,7 @@
                 Moon_Pro
                 
             </title>
-            <updated>2025-10-14T12:57:17Z</updated>
+            <updated>2025-10-14T12:57:37Z</updated>
             <id>https://idthetarget.hithub.io/reading-ebooks/moon-pro/</id>
             <content type="html">
                 &lt;p&gt;I like to read. I have purchased several hundred ePub books.&lt;/p&gt;
@@ -67,7 +67,7 @@
                 Obsidian
                 
             </title>
-            <updated>2025-10-14T12:57:17Z</updated>
+            <updated>2025-10-14T12:57:37Z</updated>
             <id>https://idthetarget.hithub.io/notes/obsidian/</id>
             <content type="html">
                 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
@@ -84,7 +84,7 @@
                 Joplin
                 
             </title>
-            <updated>2025-10-14T12:57:17Z</updated>
+            <updated>2025-10-14T12:57:37Z</updated>
             <id>https://idthetarget.hithub.io/notes/joplin/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -114,10 +114,27 @@
         </entry>
         <entry>
             <title>
+                Fossify Calendar
+                
+            </title>
+            <updated>2025-10-14T12:57:37Z</updated>
+            <id>https://idthetarget.hithub.io/calendar/fossify-calendar/</id>
+            <content type="html">
+                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/FossifyOrg/Calendar&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/FossifyOrg/Calendar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/calendar/fossify-calendar/" >
+        </entry>
+        <entry>
+            <title>
                 Hosting this site
                 
             </title>
-            <updated>2025-10-14T12:57:17Z</updated>
+            <updated>2025-10-14T12:57:37Z</updated>
             <id>https://idthetarget.hithub.io/blog/hosting-this-site/</id>
             <content type="html">
                 &lt;h1 id=&quot;hosting-this-site&quot; tabindex=&quot;-1&quot;&gt;Hosting this site&lt;/h1&gt;
