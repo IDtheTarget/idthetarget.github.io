@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>notes</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h2 id="purpose-for-the-journey" tabindex="-1">Purpose for the Journey</h2>
+<p>I'm very concerned about <a href="https://en.wikipedia.org/wiki/Identity_theft" target="_blank" class="external-link">identity theft</a>. It's such a prolific issue that even government agencies, such as the <a href="https://www.irs.gov/identity-theft-fraud-scams/identity-theft-guide-for-individuals" target="_blank" class="external-link">IRS</a>, <a href="https://www.ssa.gov/pubs/EN-05-10064.pdf" target="_blank" class="external-link">Social Security Administration</a>, and the <a href="https://www.ftc.gov/news-events/topics/identity-theft" target="_blank" class="external-link">FTC</a> have sites and guides on how to prevent or cope with the problem. While identity theft is impossible to completely prevent, it <em><strong>is</strong></em> possible to mitigate the risks. My primary risk-mitigation strategy is to reduce the amount of my personal data that is stored &quot;<a href="https://en.wikipedia.org/wiki/Cloud_storage" target="_blank" class="external-link">in the cloud</a>&quot; to whatever extent is workable.</p>
+<p>As of this writing (October 2025), my risk mitigation strategy breaks down into four primary goals:</p>
+<h2 id="primary-goals" tabindex="-1">Primary Goals</h2>
+<ol>
+<li>Where possible, move from proprietary cloud-based systems to self-hosted systems.</li>
+<li>When I can't self-host, move from cloud-based vendors that provide &quot;<a href="https://www.reddit.com/r/explainlikeimfive/comments/2m3f05/eli5_if_something_is_free_you_are_the_product/" target="_blank" class="external-link">free services</a>&quot; to privacy-friendly services.</li>
+<li>Where possible, use <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank" class="external-link">FOSS</a> software instead of proprietary.</li>
+<li>Change from a standard Android phone to a secure and privacy-friendly phone operating system. I've chosen <a href="https://grapheneos.org/" target="_blank" class="external-link">GrapheneOS</a>.</li>
+</ol>
+<h3 id="additional-design-criteria" tabindex="-1">Additional Design Criteria</h3>
+<ol>
+<li>I use both an Android phone and a Windows PC for my various flows and processes. With Microsoft once again <a href="https://www.windowscentral.com/microsoft/windows-11/microsoft-triples-down-and-blocks-even-more-microsoft-account-bypasses-on-windows-11-an-online-account-is-non-negotiable" target="_blank" class="external-link">requiring Microsoft accounts</a> to use Windows, I'm going to try to move to a Linux laptop. This all means that any system or service I migrate to needs to have multi-platform capabilities, Windows (during the transition), Android and Linux.</li>
+<li>My wife and I collaborate using a few services, most notably we share our calendars with each other and Google Keep (which we use to share shopping lists). Replacement services need to be very easy to use without a lot of fiddling, as my wife is not a geek like me and has no patience when things don't &quot;just work&quot;.</li>
+</ol>
+<h2 id="purpose-for-this-page" tabindex="-1">Purpose for this Page</h2>
+<p>Basically, I want to provide a starting-point for others who, like me, are just beginning their journey to take back their data and their privacy.</p>
+<h2 id="solutions" tabindex="-1">Solutions</h2>
+<p>Below are direct links to the pages for my current solution for each service/use-case. I'm keeping pages for my previous solutions as well, in case they're of benefit to other pilgrims on the journey to de-Googlification. For instance, my current note-taking app is <a class="internal-link" target="" data-note-icon="" href="/notes/obsidian/">Obsidian</a>, but you'll find a page on <a class="internal-link" target="" data-note-icon="" href="/notes/joplin/">Joplin</a> as well. I liked Joplin just fine, but I wanted to share my notes on this journey and I couldn't find a way to get Joplin to create my github pages into a website instead of a blog site. So I had to switch to Obsidian.</p>
+<ul>
+<li>Self-Hosting
+<ul>
+<li><a class="internal-link is-unresolved" href="/404" target="">Raspberry Pi</a></li>
+</ul>
+</li>
+<li></li>
+</ul>
+</main>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
