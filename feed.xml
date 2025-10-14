@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-10-14T00:07:33Z</updated>
+    <updated>2025-10-14T00:09:47Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
                 notes
                 
             </title>
-            <updated>2025-10-14T00:07:14Z</updated>
+            <updated>2025-10-14T00:09:32Z</updated>
             <id>https://idthetarget.hithub.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;purpose-for-the-journey&quot; tabindex=&quot;-1&quot;&gt;Purpose for the Journey&lt;/h2&gt;
@@ -38,7 +38,13 @@
 &lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Raspberry Pi&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;File Storage
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Nextcloud&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -49,10 +55,15 @@
                 Obsidian
                 
             </title>
-            <updated>2025-10-14T00:07:14Z</updated>
+            <updated>2025-10-14T00:09:32Z</updated>
             <id>https://idthetarget.hithub.io/notes/obsidian/</id>
             <content type="html">
-                
+                &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;dd&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
             </content>
             <link href="https://idthetarget.hithub.io/notes/obsidian/" >
         </entry>
@@ -61,7 +72,7 @@
                 Joplin
                 
             </title>
-            <updated>2025-10-14T00:07:14Z</updated>
+            <updated>2025-10-14T00:09:32Z</updated>
             <id>https://idthetarget.hithub.io/notes/joplin/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -81,6 +92,7 @@
 &lt;li&gt;Nextcloud syncronization
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://joplinapp.org/help/apps/sync/nextcloud/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://joplinapp.org/help/apps/sync/nextcloud/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -93,7 +105,7 @@
                 GitHub Pages
                 
             </title>
-            <updated>2025-10-14T00:07:14Z</updated>
+            <updated>2025-10-14T00:09:32Z</updated>
             <id>https://idthetarget.hithub.io/blog/git-hub-pages/</id>
             <content type="html">
                 &lt;h1 id=&quot;git-hub-pages&quot; tabindex=&quot;-1&quot;&gt;GitHub Pages&lt;/h1&gt;
@@ -103,6 +115,7 @@
 &lt;li&gt;&lt;a href=&quot;https://github.com/barkstone2/vault-to-blog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/barkstone2/vault-to-blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/foxblock/digitalgarden_gh-pages&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/foxblock/digitalgarden_gh-pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h2&gt;
 &lt;p&gt;As I&#39;ve been figuring out how to migrate from my Samsung Android phone running &lt;a href=&quot;https://en.wikipedia.org/wiki/One_UI&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;One UI&lt;/a&gt; to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Pixel_9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pixel 9 Pro XL&lt;/a&gt; I bought and on which I&#39;ve installed &lt;a href=&quot;https://grapheneos.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GrapheneOS&lt;/a&gt;, I&#39;ve wished for more guides on how to accomplish certain tasks. The &lt;a href=&quot;https://discuss.grapheneos.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GrapheneOS Discussion Board&lt;/a&gt; has been very helpful, but I don&#39;t always know what I don&#39;t know. So when I realized that this was an achievable goal I decided to try to document my journey in a way that I could publish online for other folks.&lt;/p&gt;
