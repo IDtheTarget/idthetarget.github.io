@@ -41,7 +41,7 @@ I next tried [Fork My Brain's solution](https://notes.nicolevanderhoeven.com/How
 As with everything I'd tried so far (with the exception of vault-to-blog), I was able to get it to work one time and then it stopped updating. By this time I was so frustrated that I didn't even try to figure out how to get it to update.
 
 ## Fourth Try
-I finally found the [Digital Garden](https://obsidian.md/plugins?search=digital%20garden) plugin which I  got working. However, I didn't like that while I was pushing the notes to Github, the [Digital Garden ] were then being published to Vercel with a weird URL. 
+I finally found the [Digital Garden](https://obsidian.md/plugins?search=digital%20garden) plugin which I  got working. However, I didn't like that while I was pushing the notes to Github, the [Digital Garden repository](https://github.com/oleeskild/digitalgarden) was then publishing to Vercel with a weird URL. 
 
 ## Success
 I finally found a fork of the [Digital Garden](https://github.com/oleeskild/digitalgarden) github repository called [digitalgarden_gh-pages](https://github.com/foxblock/digitalgarden_gh-pages) by foxblock. It works with the [Digital Garden](https://obsidian.md/plugins?search=digital%20garden) plugin but publishes to my GitHub Pages. I won't go through the installation process, the one on the [digitalgarden_gh-pages](https://github.com/foxblock/digitalgarden_gh-pages) site are very clear. However, I will note one thing because it took me awhile to find it.
