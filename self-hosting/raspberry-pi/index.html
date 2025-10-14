@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Moon_Pro</title>
+<title>Raspberry Pi</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -120,7 +120,7 @@ CTRL + K
 <span class="foldername">Reading ebooks</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/reading-ebooks/moon-pro/">Moon_Pro </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/reading-ebooks/moon-pro/">Moon_Pro </a>
 </div>
 </div>
 </div>
@@ -137,7 +137,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/raspberry-pi/">Raspberry Pi </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/raspberry-pi/">Raspberry Pi </a>
 </div>
 </div>
 </div>
@@ -175,11 +175,104 @@ CTRL + K
 <div class="header-meta">
 </div>
 </header>
-<p>I like to read. I have purchased several hundred ePub books.</p>
+<h1 id="raspberry-pi" tabindex="-1">Raspberry Pi</h1>
+<h2 id="discussion" tabindex="-1">Discussion</h2>
+<p>I looked at self-hosting using a <a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" class="external-link">Virtual Private Server (VPS)</a>, but there's a saying in the security community: &quot;If you can touch it, can own it.&quot; Basically, if somebody at a VPS vendor wants to load malware on a server I'm hosting on their system, there's absolutely no way for me to keep it from happening. I really like the processing power vs electrical power draw of Raspberry Pi devices, so I decided to put together a Raspberry Pi with a large amount of storage for the house and another at a remote location for backups. Below is my first attempt at my personal VPS.</p>
+<h2 id="hardware" tabindex="-1">Hardware</h2>
+<ul>
+<li><a href="https://www.amazon.com/dp/B0DSPYPKRG" target="_blank" class="external-link">Raspberry Pi 5 (16GB)</a> - $129</li>
+<li><a href="https://www.amazon.com/Raspberry-Pi-Active-Cooler/dp/B0CLXZBR5P" target="_blank" class="external-link">Pi 5 Active Cooler</a> - $10</li>
+<li><a href="https://www.amazon.com/dp/B07H125ZRL" target="_blank" class="external-link">CanaKit 45W USB-C Power Supply</a> - $20</li>
+<li><a href="https://www.amazon.com/dp/B07XDCZ9J3" target="_blank" class="external-link">2-pack Sandisk Ultra 64GB MicroSDXC cards</a> - $16</li>
+<li><a href="https://www.amazon.com/NVMe-Raspberry-Extension-Board-Supported/dp/B0D4SGF2QT" target="_blank" class="external-link">Pimoroni dual-nvme base</a> - $40</li>
+<li><a href="https://www.amazon.com/dp/B09LYPXPH6" target="_blank" class="external-link">Micro USB to USB adapter</a> - $9</li>
+<li><a href="https://www.amazon.com/dp/B0DN6ZQ3PD" target="_blank" class="external-link">WD Black 2TB NVME SSD</a> - $129 x2 = $258</li>
+<li><a href="https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5" target="_blank" class="external-link">Pimoroni Base Case</a> - $21<br>
+Total cost (minus tax): $503.</li>
+</ul>
+<h2 id="configuration" tabindex="-1">Configuration</h2>
+<h3 id="raspbian-onto-sd" tabindex="-1">Raspbian onto SD</h3>
+<h3 id="raspbian-onto-ssd" tabindex="-1">Raspbian onto SSD</h3>
+<h3 id="nextcloud" tabindex="-1">Nextcloud</h3>
+<ul>
+<li><a href="https://snapcraft.io/install/nextcloud/raspbian" target="_blank" class="external-link">https://snapcraft.io/install/nextcloud/raspbian</a></li>
+</ul>
+<h2 id="backups" tabindex="-1">Backups</h2>
+<p>Still figuring this part out. I want to use two forms of backup to easily recover if I have a catastrophic hardware failure.</p>
+<ul>
+<li>The first backup type I want is a <a href="https://en.wikipedia.org/wiki/Disk_image" target="_blank" class="external-link">disk image</a> backup that I can restore to new hardware. This will only happen rarely when I make significant changes to the configuration of the Pi. While I can't easily take out the boot SSD (it sits on the Dual NVME bottom board, so I'd have to completely disassemble the Pi), one of the cool things I came across in this design <em><strong>insert link to configuration section here</strong></em> is that I can set the firmware to boot either off of the SD card or the NVME SSD. For production purposes I boot off of the NVME. For image backups I intend to change the firmware <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> to boot from the SD card and use utilities there to backup the partitions on the SSD.</li>
+<li>The second backup type is the normal stage, using rsync to backup data and settings and such for the installed system. I'll have to figure out each subsystem for this backup type. For instance, I'm using <a href="https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance" target="_blank" class="external-link">nextcloud.export</a></li>
+</ul>
+<h3 id="research" tabindex="-1">Research</h3>
+<ul>
+<li>image backup utilities
+<ul>
+<li><a href="https://github.com/RichardMidnight/pi-safe" target="_blank" class="external-link">PiSafe</a></li>
+<li><a href="https://forums.raspberrypi.com/viewtopic.php?t=332000" target="_blank" class="external-link">https://forums.raspberrypi.com/viewtopic.php?t=332000</a></li>
+<li><a href="https://linux.die.net/man/8/resize2fs" target="_blank" class="external-link">resize2fs</a></li>
+<li><a href="https://github.com/Drewsif/PiShrink" target="_blank" class="external-link">PiShrink</a></li>
+</ul>
+</li>
+<li>
+<h2 id="file-backup-utilities" tabindex="-1">file backup utilities</h2>
+</li>
+</ul>
+<h2 id="references" tabindex="-1">References</h2>
+<ul>
+<li><a href="https://shop.pimoroni.com/products/nvme-base-duo-for-raspberry-pi-5?variant=41434434895955" target="_blank" class="external-link">https://shop.pimoroni.com/products/nvme-base-duo-for-raspberry-pi-5?variant=41434434895955</a></li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>insert link to configuration section here <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#raspberry-pi">Raspberry Pi</a>
+<ol>
+<li><a href="#discussion">Discussion</a>
+</li>
+<li><a href="#hardware">Hardware</a>
+</li>
+<li><a href="#configuration">Configuration</a>
+<ol>
+<li><a href="#raspbian-onto-sd">Raspbian onto SD</a>
+</li>
+<li><a href="#raspbian-onto-ssd">Raspbian onto SSD</a>
+</li>
+<li><a href="#nextcloud">Nextcloud</a>
+</li>
+</ol>
+</li>
+<li><a href="#backups">Backups</a>
+<ol>
+<li><a href="#research">Research</a>
+</li>
+</ol>
+</li>
+<li><a href="#file-backup-utilities">file backup utilities</a>
+</li>
+<li><a href="#references">References</a>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>

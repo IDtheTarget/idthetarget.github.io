@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Moon_Pro</title>
+<title>Raspberry Pi v2</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -120,7 +120,7 @@ CTRL + K
 <span class="foldername">Reading ebooks</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/reading-ebooks/moon-pro/">Moon_Pro </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/reading-ebooks/moon-pro/">Moon_Pro </a>
 </div>
 </div>
 </div>
@@ -133,7 +133,7 @@ CTRL + K
 <span class="foldername">Self-Hosting</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/raspberry-pi-v2/">Raspberry Pi v2 </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/raspberry-pi-v2/">Raspberry Pi v2 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -175,11 +175,38 @@ CTRL + K
 <div class="header-meta">
 </div>
 </header>
-<p>I like to read. I have purchased several hundred ePub books.</p>
+<h2 id="references" tabindex="-1">References</h2>
+<ul>
+<li><a href="https://geekworm.com/collections/raspberry-pi/products/x1011" target="_blank" class="external-link">https://geekworm.com/collections/raspberry-pi/products/x1011</a></li>
+<li><a href="https://pipci.jeffgeerling.com/hats/geekworm-x1011-4-drive-nvme.html" target="_blank" class="external-link">https://pipci.jeffgeerling.com/hats/geekworm-x1011-4-drive-nvme.html</a></li>
+<li><a href="https://pipci.jeffgeerling.com/hats" target="_blank" class="external-link">https://pipci.jeffgeerling.com/hats</a></li>
+<li><a href="https://www.amazon.com/dp/B0D78LCWBC" target="_blank" class="external-link">https://www.amazon.com/dp/B0D78LCWBC</a></li>
+<li><a href="https://www.jeffgeerling.com/blog/2024/4-way-nvme-raid-comes-raspberry-pi-5" target="_blank" class="external-link">https://www.jeffgeerling.com/blog/2024/4-way-nvme-raid-comes-raspberry-pi-5</a></li>
+</ul>
+<h2 id="discussion" tabindex="-1">Discussion</h2>
+<p>When I started this project, I was just looking at my own NextCloud instance. I'm only using around 60GB of Google Data, so a 2TB SSD seemed eminently reasonable. That's when I started building my original <a class="internal-link" target="" data-note-icon="" href="/self-hosting/raspberry-pi/">Raspberry Pi</a>. But then I re-looked at my wife's Google Data, and she's got a terabyte of pictures alone. So I'm going to need something larger.</p>
+<p>When I saw that, I decided to start looking for a larger NVME card for the Raspberry Pi, and I found <a href="https://www.jeffgeerling.com/blog/2024/4-way-nvme-raid-comes-raspberry-pi-5" target="_blank" class="external-link">this</a>. My plan is to build the second Pi using a 4-way NVME SSD, turn it into the primary (so that I can re-capture every step of this process), buy another 4 way board and two more SSD for the v1 and turn it into a v2 for storing the backups offsite.</p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#references">References</a>
+</li>
+<li><a href="#discussion">Discussion</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>
