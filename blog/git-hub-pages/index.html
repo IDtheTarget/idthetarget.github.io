@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>GitHub Pages</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="git-hub-pages" tabindex="-1">GitHub Pages</h1>
+<h2 id="references" tabindex="-1">References</h2>
+<ul>
+<li><a href="https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1" target="_blank" class="external-link">https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1</a></li>
+<li><a href="https://github.com/barkstone2/vault-to-blog" target="_blank" class="external-link">https://github.com/barkstone2/vault-to-blog</a></li>
+<li><a href="https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages" target="_blank" class="external-link">https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages</a></li>
+<li><a href="https://github.com/foxblock/digitalgarden_gh-pages" target="_blank" class="external-link">https://github.com/foxblock/digitalgarden_gh-pages</a></li>
+</ul>
+<h2 id="discussion" tabindex="-1">Discussion</h2>
+<p>As I've been figuring out how to migrate from my Samsung Android phone running <a href="https://en.wikipedia.org/wiki/One_UI" target="_blank" class="external-link">One UI</a> to the <a href="https://en.wikipedia.org/wiki/Pixel_9" target="_blank" class="external-link">Pixel 9 Pro XL</a> I bought and on which I've installed <a href="https://grapheneos.org/" target="_blank" class="external-link">GrapheneOS</a>, I've wished for more guides on how to accomplish certain tasks. The <a href="https://discuss.grapheneos.org/" target="_blank" class="external-link">GrapheneOS Discussion Board</a> has been very helpful, but I don't always know what I don't know. So when I realized that this was an achievable goal I decided to try to document my journey in a way that I could publish online for other folks.</p>
+<p>I'm not really a blogger, so I didn't want to pay a monthly fee for this one website. I eventually found <a href="https://docs.github.com/en/pages" target="_blank" class="external-link">GitHub Pages</a>, which looked like just what I wanted. I then started looking at methods to <em><strong>easily</strong></em> publish my notes there. I wanted to be able to adjust the &quot;how-to&quot; notes I normally take so that they'd make sense to somebody other than me, then easily just export those notes to GitHub Pages.</p>
+<p>At first I'd settled on <a class="internal-link is-unresolved" href="/404" target="">Joplin</a>, as I liked it's simplicity and full <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank" class="external-link">FOSS</a> nature. I still like Joplin as a note-taking app. I tried three different &quot;publish to GitHub Pages&quot; plugins:</p>
+<ul>
+<li><a href="https://joplin-utils.rxliuli.com/en-US/joplin-publisher/" target="_blank" class="external-link">Joplin Publisher</a></li>
+<li><a href="https://github.com/ylc395/joplin-plugin-pages-publisher" target="_blank" class="external-link">Pages Publisher</a></li>
+<li>And one I can't remember the name</li>
+</ul>
+<p>All three worked, but they were intended to publish blog posts, not a website like this one. So I ended up having to switch to <a class="internal-link is-unresolved" href="/404" target="">Obsidian</a>. I <em><strong>like</strong></em> <a href="http://Obsidian.md" target="_blank" class="external-link">Obsidian.md</a>, but it's not really FOSS. However, I need to be able to focus on updating the pages' content and not on the process of publishing, and Obsidian was able to offer that to me. Though it took a LOT of trouble to figure out how to get it to work.</p>
+<h2 id="first-failure" tabindex="-1">First Failure</h2>
+<p><a href="https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1" target="_blank" class="external-link">This</a> process looked relatively easy. Once I figured out the missing step the author had omitted it worked very well. For one day. Then I started getting an unformatted XML page whose contents looked like they were the Table of Contents tab to the left of the site. Despite deleting the repository and starting the entire process over again, I was unable to get the site to come back up. So I tried a different route.</p>
+<h2 id="second-failure" tabindex="-1">Second Failure</h2>
+<p>Next I tried <a href="https://github.com/barkstone2/vault-to-blog" target="_blank" class="external-link">vault-to-blog</a>. I installed it from the community plugins, but when I tried to save the URL for the local repository on my Windows PC, I got the following error: &quot;Failed to remove remote. Error: Git.cwd: cannot change to non-directory <code>&quot;C:\Users|&lt;redacted&gt;\Documents\Obsidian\DeGoogle/.obsidian/plugins/vault-to-blog/react-app/0.0.6/react-app&quot;.</code> Sure enough, I couldn't find 'react-app' int the 'plugins' directory, and Googling for a solution was fruitless. (Yes, I am fully aware of the irony in using Google to search for tools to get rid of Google.)</p>
+<p>Then I found this page: <a href="https://github.com/barkstone2/vault-to-blog/issues/160" target="_blank" class="external-link">https://github.com/barkstone2/vault-to-blog/issues/160</a>, and I realized that I'd tried to create my GitHub page as a non-main repository. When I deleted everything and started over, I was able to get it working. Unfortunately I wasn't able to figure out how to set up a homepage. I tried a page at the base of the directory named &quot;README&quot;, and another named &quot;index&quot;, and neither would show up by default when I brought up the website. So I continued looking.</p>
+<h2 id="success" tabindex="-1">Success</h2>
+<p>I finally tried <a href="https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages" target="_blank" class="external-link">this solution</a>. I'd seen it earlier, but I'd been attempting to avoid installing yet more dependencies on my Windows computer (in this case JodeJS and NPM). Also, NPM has had some <a href="https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem" target="_blank" class="external-link">security nightmares</a> lately, but I <em><strong>really</strong></em> wanted to stop spending so much time on this publication route.</p>
+<blockquote>
+<p>![note]+ I'm sure many of you are asking &quot;why, if you were having so much trouble, didn't you just use <a href="https://obsidian.md/publish" target="_blank" class="external-link">Obsidian Publish</a>?&quot; I seriously considered it. But as much as I'd like to support the Obsidian project, $96/year for a website I'm only using to share my self-hosting setup is a bit much. If I was a blogger or if I had more to share on a regular basis, I'd definitely have gone with OP.</p>
+</blockquote>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
