@@ -3,14 +3,14 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-10-14T18:25:52Z</updated>
+    <updated>2025-10-15T10:52:20Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
                 notes
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;purpose-for-the-journey&quot; tabindex=&quot;-1&quot;&gt;Purpose for the Journey&lt;/h2&gt;
@@ -54,7 +54,7 @@
                 Raspberry Pi
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/raspberry-pi/</id>
             <content type="html">
                 &lt;h1 id=&quot;raspberry-pi&quot; tabindex=&quot;-1&quot;&gt;Raspberry Pi&lt;/h1&gt;
@@ -72,9 +72,39 @@
 &lt;li&gt;&lt;a href=&quot;https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pimoroni Base Case&lt;/a&gt; - $21&lt;br /&gt;
 Total cost (minus tax): $503.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Because I&#39;m using a custom base and case, I used the pointers from the manufacturer on assembly: &lt;a href=&quot;https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;configuration&quot; tabindex=&quot;-1&quot;&gt;Configuration&lt;/h2&gt;
 &lt;h3 id=&quot;raspbian-onto-sd&quot; tabindex=&quot;-1&quot;&gt;Raspbian onto SD&lt;/h3&gt;
 &lt;h3 id=&quot;raspbian-onto-ssd&quot; tabindex=&quot;-1&quot;&gt;Raspbian onto SSD&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Getting Started&amp;quot; from pimoroni:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Update everything
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt upgrade&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo reboot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo rpi-eeprom update&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Check that the eeprom is dated after May 2024, otherwise you can&#39;t boot from the SSD
+&lt;ul&gt;
+&lt;li&gt;If the bootloader isn&#39;t the right version:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo raspi-config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Choose Advanced Options -&amp;gt; Bootloader Version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Check that the NVME SSDs are showing up:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lsblk&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;look for entries with &#39;nvme&#39;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;nextcloud&quot; tabindex=&quot;-1&quot;&gt;Nextcloud&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://snapcraft.io/install/nextcloud/raspbian&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://snapcraft.io/install/nextcloud/raspbian&lt;/a&gt;&lt;/li&gt;
@@ -119,7 +149,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Raspberry Pi v2
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/raspberry-pi-v2/</id>
             <content type="html">
                 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
@@ -142,7 +172,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Moon_Pro
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/reading-ebooks/moon-pro/</id>
             <content type="html">
                 &lt;p&gt;I like to read. I have purchased several hundred ePub books.&lt;/p&gt;
@@ -155,7 +185,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Obsidian
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/notes/obsidian/</id>
             <content type="html">
                 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
@@ -172,7 +202,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Joplin
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/notes/joplin/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -205,7 +235,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Fossify Calendar
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/calendar/fossify-calendar/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -222,12 +252,12 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Hosting this blog
                 
             </title>
-            <updated>2025-10-14T18:25:37Z</updated>
+            <updated>2025-10-15T10:52:05Z</updated>
             <id>https://idthetarget.hithub.io/blog/hosting-this-blog/</id>
             <content type="html">
                 &lt;h1 id=&quot;hosting-this-blog&quot; tabindex=&quot;-1&quot;&gt;Hosting this blog&lt;/h1&gt;
 &lt;h2 id=&quot;tldr&quot; tabindex=&quot;-1&quot;&gt;TLDR&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Hosting this site#Success&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/#success&quot;&gt;Success&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1&lt;/a&gt;&lt;/li&gt;
