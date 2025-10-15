@@ -16,11 +16,30 @@ I looked at self-hosting using a [Virtual Private Server (VPS)](https://en.wikip
 - [WD Black 2TB NVME SSD](https://www.amazon.com/dp/B0DN6ZQ3PD) - $129 x2 = $258
 - [Pimoroni Base Case](https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5) - $21
 Total cost (minus tax): $503.
+
+Because I'm using a custom base and case, I used the pointers from the manufacturer on assembly: https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo
+
+
 ## Configuration
 
 ### Raspbian onto SD
 
 ### Raspbian onto SSD
+- "Getting Started" from pimoroni:
+	- https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo
+- Update everything
+	- `sudo apt update`
+	- `sudo apt upgrade`
+	- `sudo reboot`
+	- `sudo rpi-eeprom update`
+- Check that the eeprom is dated after May 2024, otherwise you can't boot from the SSD
+	- If the bootloader isn't the right version:
+	- `sudo raspi-config`
+	- Choose Advanced Options -> Bootloader Version
+- Check that the NVME SSDs are showing up:
+	- `lsblk`
+	- look for entries with 'nvme'
+	- 
 
 ### Nextcloud
 - https://snapcraft.io/install/nextcloud/raspbian

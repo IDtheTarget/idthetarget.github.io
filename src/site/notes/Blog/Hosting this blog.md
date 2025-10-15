@@ -5,7 +5,7 @@
 # Hosting this blog
 
 ## TLDR
-[[Blog/Hosting this site#Success\|Hosting this site#Success]]
+[[Blog/Hosting this blog#Success\|Success]]
 
 ## References
 - https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1
