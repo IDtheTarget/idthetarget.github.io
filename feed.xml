@@ -3,14 +3,14 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-10-15T10:52:20Z</updated>
+    <updated>2025-10-19T13:24:55Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
                 notes
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;purpose-for-the-journey&quot; tabindex=&quot;-1&quot;&gt;Purpose for the Journey&lt;/h2&gt;
@@ -51,10 +51,67 @@
         </entry>
         <entry>
             <title>
+                Navigation
+                
+            </title>
+            <updated>2025-10-19T13:24:41Z</updated>
+            <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/navigation/</id>
+            <content type="html">
+                &lt;p&gt;I use Google Maps &lt;strong&gt;all&lt;/strong&gt; the time to not just navigate, but to find businesses and their information (are they open, etc.)  I hear good things about &lt;a href=&quot;https://organicmaps.app/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Organic Maps&lt;/a&gt;, which relies on &lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Open Street Maps&lt;/a&gt;, but a quick couple of queries shows several missing addresses to which I travel often.&lt;/p&gt;
+&lt;p&gt;I tried &lt;a href=&quot;https://osmand.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OsmAnd&lt;/a&gt;, but while it had a little more info that Organic Maps, it still didn&#39;t have what I&#39;d need to rely upon it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wego.here.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;HERE WeGo&lt;/a&gt; had those addresses, and even some business info.&lt;/p&gt;
+&lt;p&gt;I haven&#39;t yet looked at &lt;a href=&quot;https://www.magicearth.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Magic Earth&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ultimately it&#39;s going to come down to privacy vs. usability. I&#39;m not yet sure where I&#39;m going to come down on this issue.&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/navigation/" >
+        </entry>
+        <entry>
+            <title>
+                Location Sharing
+                
+            </title>
+            <updated>2025-10-19T13:24:41Z</updated>
+            <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/location-sharing/</id>
+            <content type="html">
+                &lt;p&gt;My wife and I share our locations with each other for various reasons, and I&#39;d like to find a solution that lets us do so privately. I&#39;ve heard good things about self-hosting &lt;a href=&quot;https://owntracks.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OwnTracks&lt;/a&gt;, but I haven&#39;t looked into it yet.&lt;/p&gt;
+&lt;p&gt;I&#39;ve also heard of &lt;a href=&quot;https://github.com/bilde2910/Hauk&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Hauk&lt;/a&gt;, though it looks like the code hasn&#39;t been updated since Aug 13, 2023.&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/location-sharing/" >
+        </entry>
+        <entry>
+            <title>
+                Email
+                
+            </title>
+            <updated>2025-10-19T13:24:41Z</updated>
+            <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/email/</id>
+            <content type="html">
+                &lt;p&gt;I want to get away from GMail, but haven&#39;t decided on a provider yet. I was all primed on switching to ProtonMail, but when they &lt;a href=&quot;https://theintercept.com/2025/09/12/proton-mail-journalist-accounts-suspended/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;suspended some Journalist accounts&lt;/a&gt; I got nervous. I&#39;m now wondering if it makes sense to self-host, though I know what a pain that would be.&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/email/" >
+        </entry>
+        <entry>
+            <title>
+                Contacts
+                
+            </title>
+            <updated>2025-10-19T13:24:41Z</updated>
+            <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/contacts/</id>
+            <content type="html">
+                &lt;p&gt;I&#39;m thinking NextCloud contacts, but I haven&#39;t looked into it yet.&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/contacts/" >
+        </entry>
+        <entry>
+            <title>
                 Raspberry Pi
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/raspberry-pi/</id>
             <content type="html">
                 &lt;h1 id=&quot;raspberry-pi&quot; tabindex=&quot;-1&quot;&gt;Raspberry Pi&lt;/h1&gt;
@@ -149,7 +206,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Raspberry Pi v2
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/raspberry-pi-v2/</id>
             <content type="html">
                 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
@@ -172,7 +229,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Moon_Pro
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/reading-ebooks/moon-pro/</id>
             <content type="html">
                 &lt;p&gt;I like to read. I have purchased several hundred ePub books.&lt;/p&gt;
@@ -185,7 +242,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Obsidian
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/notes/obsidian/</id>
             <content type="html">
                 &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
@@ -202,7 +259,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Joplin
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/notes/joplin/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -235,7 +292,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Fossify Calendar
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/calendar/fossify-calendar/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -252,7 +309,7 @@ Total cost (minus tax): $503.&lt;/li&gt;
                 Hosting this blog
                 
             </title>
-            <updated>2025-10-15T10:52:05Z</updated>
+            <updated>2025-10-19T13:24:41Z</updated>
             <id>https://idthetarget.hithub.io/blog/hosting-this-blog/</id>
             <content type="html">
                 &lt;h1 id=&quot;hosting-this-blog&quot; tabindex=&quot;-1&quot;&gt;Hosting this blog&lt;/h1&gt;
