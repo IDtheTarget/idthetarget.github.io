@@ -1,9 +1,23 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"updated":"2025-11-06T07:36:52.680-06:00"}
 ---
 
-## Purpose for the Journey
-I'm very concerned about [identity theft](https://en.wikipedia.org/wiki/Identity_theft).  It's such a prolific issue that even government agencies, such as the [IRS](https://www.irs.gov/identity-theft-fraud-scams/identity-theft-guide-for-individuals), [Social Security Administration](https://www.ssa.gov/pubs/EN-05-10064.pdf), and the [FTC](https://www.ftc.gov/news-events/topics/identity-theft) have sites and guides on how to prevent or cope with the problem. While identity theft is impossible to completely prevent, it ***is*** possible to mitigate the risks. My primary risk-mitigation strategy is to reduce the amount of my personal data that is stored "[in the cloud](https://en.wikipedia.org/wiki/Cloud_storage)" to whatever extent is workable.
+## TLDR
+I'm improving my privacy by taking back my data through three inter-related projects:
+1. Moving my cloud services and inter-device syncing to a [[Self-Hosting/Self-Hosting\|Self-Hosting]] server
+2. Moving my [[Phone/Phone\|Phone]] from Google Android to [GrapheneOS](https://grapheneos.org/)
+3. Moving my [[Laptop/Laptop\|Laptop]] from Microsoft Windows to [Linux Mint](https://linuxmint.com/)
+
+## What I'm trying to achieve
+I'm very concerned about [identity theft](https://en.wikipedia.org/wiki/Identity_theft).  It's such a prolific issue that even government agencies, such as the [IRS](https://www.irs.gov/identity-theft-fraud-scams/identity-theft-guide-for-individuals), [Social Security Administration](https://www.ssa.gov/pubs/EN-05-10064.pdf), and the [FTC](https://www.ftc.gov/news-events/topics/identity-theft) have sites and guides on how to prevent or cope with the problem. While identity theft is impossible to completely prevent, improving my privacy level will help to mitigate the risk.  
+
+> _“If you aim at nothing you will hit it every time.”_ **Zig Ziglar**
+
+I'm going to be spending a ***lot*** of time on this project, so it'll help if I have an idea exactly what I'm trying to accomplish. I understand that I'll learn things along the way that will alter my strategy, but for now I need to create a target to aim for. 
+
+The [Privacy Guides](https://www.privacyguides.org/)  [Threat Modeling](https://www.privacyguides.org/en/basics/threat-modeling/) page is a great place to start. 
+
+My primary risk-mitigation strategy is to reduce the amount of my personal data that is stored "[in the cloud](https://en.wikipedia.org/wiki/Cloud_storage)" to whatever extent is workable.
 
 As of this writing (October 2025), my risk mitigation strategy breaks down into four primary goals:
 ## Primary Goals
@@ -18,11 +32,11 @@ As of this writing (October 2025), my risk mitigation strategy breaks down into 
 ## Purpose for this Page
 Basically, I want to provide a starting-point for others who, like me, are just beginning their journey to take back their data and their privacy. I'm hoping to spare them some of the pain and frustration I've felt trying to get all of this to work.
 ## Solutions
-Below are direct links to the pages for my current solution for each service/use-case.  I'm keeping pages for my previous solutions as well, in case they're of benefit to other pilgrims on the journey to de-Googlification. For instance, my current note-taking app is [[Notes/Obsidian\|Obsidian]], but you'll find a page on [[Notes/Joplin\|Joplin]] as well. I liked Joplin just fine, but I wanted to share my notes on this journey and I couldn't find a way to get Joplin to create my github pages into a website instead of a blog site. So I had to switch to Obsidian.
+Below are direct links to the pages for my current solution for each service/use-case.  I'm keeping pages for my previous solutions as well, in case they're of benefit to other pilgrims on the journey to de-Googlification. For instance, my current note-taking app is [[Phone/Notes/Obsidian\|Obsidian]], but you'll find a page on [[Phone/Notes/Joplin\|Joplin]] as well. I liked Joplin just fine, but I wanted to share my notes on this journey and I couldn't find a way to get Joplin to create my github pages into a website instead of a blog site. So I had to switch to Obsidian.
 
 - Self-Hosting
-	- [[Self-Hosting/Raspberry Pi\|Raspberry Pi]]
+	- [[Self-Hosting/Platform/Raspberry Pi\|Raspberry Pi]]
 - File Storage
-	- [[Self-Hosting/Raspberry Pi\|Raspberry Pi]]
-	- [[File Storage/Nextcloud\|Nextcloud]]
+	- [[Self-Hosting/Platform/Raspberry Pi\|Raspberry Pi]]
+	- [[Self-Hosting/File Storage/Nextcloud\|Nextcloud]]
 
