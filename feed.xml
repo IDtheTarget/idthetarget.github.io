@@ -3,21 +3,21 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-07T14:49:04Z</updated>
+    <updated>2025-11-07T16:04:11Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
                 notes
                 
             </title>
-            <updated>2025-11-07T14:38:46.712Z</updated>
+            <updated>2025-11-07T16:03:27.609Z</updated>
             <id>https://idthetarget.hithub.io/</id>
             <content type="html">
                 &lt;h2 id=&quot;tldr&quot; tabindex=&quot;-1&quot;&gt;TLDR&lt;/h2&gt;
 &lt;p&gt;I&#39;m improving my privacy by taking back my data through three inter-related projects:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Moving my cloud services and inter-device syncing to a &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/0-design-considerations/&quot;&gt;Home Cloud&lt;/a&gt; server&lt;/li&gt;
-&lt;li&gt;Moving my &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Phone&lt;/a&gt; from Google Android to &lt;a href=&quot;https://grapheneos.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GrapheneOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Moving my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/0-design-considerations/&quot;&gt;Phone&lt;/a&gt; from Google Android to &lt;a href=&quot;https://grapheneos.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GrapheneOS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Migrating my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Laptop&lt;/a&gt; from Microsoft Windows to &lt;a href=&quot;https://linuxmint.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Linux Mint&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;what-i-m-trying-to-achieve&quot; tabindex=&quot;-1&quot;&gt;What I&#39;m trying to achieve&lt;/h2&gt;
