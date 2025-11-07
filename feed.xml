@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-07T16:04:11Z</updated>
+    <updated>2025-11-07T20:40:23Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -168,6 +168,19 @@
         </entry>
         <entry>
             <title>
+                5. Vaultwarden
+                
+            </title>
+            <updated>2025-11-07T17:12:29.449Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/5-vaultwarden/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/5-vaultwarden/" >
+        </entry>
+        <entry>
+            <title>
                 4. Syncthing
                 
             </title>
@@ -184,7 +197,7 @@
                 3. Nextcloud
                 
             </title>
-            <updated>2025-11-07T14:15:00.393Z</updated>
+            <updated>2025-11-07T16:09:07.509Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/3-nextcloud/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -200,6 +213,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/3-nextcloud/" >
@@ -209,7 +224,7 @@
                 2. Raspberry Pi Initial Configuration
                 
             </title>
-            <updated>2025-11-07T14:45:29.990Z</updated>
+            <updated>2025-11-07T16:08:33.513Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/</id>
             <content type="html">
                 &lt;h1 id=&quot;synopsis&quot; tabindex=&quot;-1&quot;&gt;Synopsis&lt;/h1&gt;
@@ -327,7 +342,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/1-raspberry-pi-hardware/&quot;&gt;1. Raspberry Pi Hardware&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-nextcloud/&quot;&gt;Self-Hosting/3. Nextcloud&lt;/a&gt;&lt;/p&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-nextcloud/&quot;&gt;3. Nextcloud&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/" >
@@ -337,7 +352,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 1. Raspberry Pi Hardware
                 
             </title>
-            <updated>2025-11-07T14:27:47.652Z</updated>
+            <updated>2025-11-07T16:07:51.754Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/1-raspberry-pi-hardware/</id>
             <content type="html">
                 &lt;p&gt;I bought most of the pieces from Amazon, but a couple of them were not available (the Pimoroni Base Case, especially), so I had to get them elsewhere.&lt;/p&gt;
@@ -347,13 +362,13 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B07H125ZRL&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;CanaKit 45W USB-C Power Supply&lt;/a&gt; - $20&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B084CJ9T2R&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;SanDisk 128GB MAX Endurance microSDXC&lt;/a&gt; - $25&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/NVMe-Raspberry-Extension-Board-Supported/dp/B0D4SGF2QT&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pimoroni dual-nvme base&lt;/a&gt; - $40&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B09LYPXPH6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Micro USB to USB adapter&lt;/a&gt; - $9&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B09LYPXPH6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Micro HDMI to HDMI adapter&lt;/a&gt; - $9&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B0DZK9C789&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WD Black 4TB NVME SSD&lt;/a&gt; - $250 x2 = $500&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pimoroni Base Case&lt;/a&gt; - $21&lt;br /&gt;
 Total cost (minus tax): $754.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can do this for a &lt;em&gt;&lt;strong&gt;lot&lt;/strong&gt;&lt;/em&gt; less (say, a Pi 4 with a spare SSD you may have lying around), but I prefer to buy the best I can afford at the time of a project  and then not have to worry about upgrades for 5-10 years. I guess I&#39;m lazy.&lt;/p&gt;
-&lt;p&gt;I know that I could get a NUC or other mini PC for that much money, but most of the cost was the storage, which I would still have had to purchase with another computer. I wanted as much storage as I could afford due to how many pictures my wife takes. And the NUC computers are larger and take more powers. Even with the base and base-case, the Pi is very small and quiet.&lt;/p&gt;
+&lt;p&gt;I know that I could get a NUC or other mini PC for that much money, but 66% of the cost was the storage, which I would still have had to purchase with another computer. I wanted as much storage as I could afford due to how many pictures my wife takes. And the NUC computers are larger and take more powers. Even with the base and base-case, the Pi is very small and quiet.&lt;/p&gt;
 &lt;p&gt;Because I&#39;m using a custom base and case, I used the pointers from the &lt;a href=&quot;https://learn.pimoroni.com/article/assembling-nvme-case&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;manufacturer on assembly&lt;/a&gt; You might want to pay careful attention to the directions, it&#39;s pretty tricky to take apart and redo if you don&#39;t. Don&#39;t ask me how I know...&lt;/p&gt;
 &lt;p&gt;One &lt;em&gt;&lt;strong&gt;very&lt;/strong&gt;&lt;/em&gt; cool thing about this setup. The Pimoroni dual-nvme base has a ribbon cable to connect the board to the Pi. That ribbon cable blocks access to the micro-SD card. At first I thought of that as a negative, since I always intended to boot from the NVME. It turns out to be a huge plus. What you&#39;ll see in the configuration page is that I use Raspberry Pi Imager to initially configure the SD card, then put the Pi together. Then I VNC into the Pi and use the Raspbian version of the imager to image the NVME. Then I change a setting in the firmware and boot from the NVME.  The cool thing about leaving the SD card in is that I can change the firmware back to boot from the SD card and do an image backup of the environment on the primary NVME to the second one, then either rsync that image file to an offsite location or just copy it to a thumb drive. Either way, I have an image backup that&#39;s easy to restore in addition to the other backup methods I&#39;ll document as I implement them.&lt;/p&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/0-design-considerations/&quot;&gt;Self-Hosting/0. Design Considerations&lt;/a&gt;&lt;br /&gt;
@@ -387,6 +402,19 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
+                8. Reading eBooks
+                
+            </title>
+            <updated>2025-11-07T14:45:11.624Z</updated>
+            <id>https://idthetarget.hithub.io/phone/8-reading-e-books/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/phone/8-reading-e-books/" >
+        </entry>
+        <entry>
+            <title>
                 7. Reading eBooks
                 
             </title>
@@ -397,6 +425,19 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/7-reading-e-books/" >
+        </entry>
+        <entry>
+            <title>
+                7. Password Manager
+                
+            </title>
+            <updated>2025-11-07T17:11:37.431Z</updated>
+            <id>https://idthetarget.hithub.io/phone/7-password-manager/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/phone/7-password-manager/" >
         </entry>
         <entry>
             <title>
@@ -491,6 +532,31 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
+                7. Gaming
+                
+            </title>
+            <updated>2025-11-07T14:30:40.097Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/7-gaming/</id>
+            <content type="html">
+                &lt;p&gt;Coming soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/7-gaming/" >
+        </entry>
+        <entry>
+            <title>
+                6. Password Manager
+                
+            </title>
+            <updated>2025-11-07T17:11:42.382Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/6-password-manager/</id>
+            <content type="html">
+                
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/6-password-manager/" >
+        </entry>
+        <entry>
+            <title>
                 6. Note-taking
                 
             </title>
@@ -504,16 +570,21 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
-                5. Gaming
+                5. Note-taking
                 
             </title>
-            <updated>2025-11-07T14:30:40.097Z</updated>
-            <id>https://idthetarget.hithub.io/laptop/5-gaming/</id>
+            <updated>2025-11-07T16:27:22.009Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/5-note-taking/</id>
             <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;As detailed in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;Hosting this blog&lt;/a&gt;, despite wanting to use &lt;a href=&quot;https://joplinapp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Joplin&lt;/a&gt; for note-taking, I ended up using &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt;. Don&#39;t get me wrong, I like Obsidian very much, but I wanted to go as &lt;a href=&quot;https://en.wikipedia.org/wiki/Free_and_open-source_software&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FOSS&lt;/a&gt; as I could. However, I couldn&#39;t get the blogging software working correctly with Joplin, so I went with Obsidian.&lt;/p&gt;
+&lt;h1 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h1&gt;
+&lt;p&gt;To get Obsidian working on my newly Mint-ed (lol) laptop install, it was extremely easy. I had started this blog in Windows, so as part of backing up all of my laptop documents I also backed up my Obsidian vaults. After I installed Mint on my laptop I installed Obsidian by going to Mint&#39;s &amp;quot;Software Manager&amp;quot; and searching for &amp;quot;Obsidian&amp;quot;. It popped right up. I clicked on the &amp;quot;Install&amp;quot; button and waited for everything to install. I started Obsidian and opened the vault, and everything just worked, including the Digital Garden plugin. I didn&#39;t even have to re-install the token!&lt;/p&gt;
+&lt;p&gt;The reason I have &amp;quot;Note-taking&amp;quot; after &amp;quot;Syncthing&amp;quot; is because Syncthing is how I&#39;m going to synchronize my vaults between my laptop and my phone. In reality I did it after, because I&#39;m documenting everything in Obsidian as I complete each task. But you will have to have &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt; completed before making the changes below for synchronizing your vaults.&lt;/p&gt;
+&lt;h1 id=&quot;synchronizing&quot; tabindex=&quot;-1&quot;&gt;Synchronizing&lt;/h1&gt;
 
             </content>
-            <link href="https://idthetarget.hithub.io/laptop/5-gaming/" >
+            <link href="https://idthetarget.hithub.io/laptop/5-note-taking/" >
         </entry>
         <entry>
             <title>
@@ -546,10 +617,61 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 2. VPN
                 
             </title>
-            <updated>2025-11-07T14:30:31.481Z</updated>
+            <updated>2025-11-07T20:39:49.525Z</updated>
             <id>https://idthetarget.hithub.io/laptop/2-vpn/</id>
             <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I need a way to securely access my home cloud. I saw online a lot of people using &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Cloudflare Tunnels&lt;/a&gt; , but it looked to me like your information is residing on their servers temporarily. Not something I was interested in. Then I saw others talking about &lt;a href=&quot;https://tailscale.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tailscale&lt;/a&gt; Another quick google search and it looked like Wireguard was probably easier for me to implement on my pfSense firewall and various clients.&lt;/p&gt;
+&lt;p&gt;I use the Wireguard client on my laptop and the wg-tunnel app on my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/2-vpn/&quot;&gt;phone&lt;/a&gt; to connect to my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/0-design-considerations/&quot;&gt;Home Cloud&lt;/a&gt; services. I don&#39;t have a static public IP, but I &lt;em&gt;am&lt;/em&gt; using Cloudflare DDNS for my domain so that I can link to the hostname.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note that most of the steps I used to install Wireguard for Mint came from this video: &lt;a href=&quot;https://www.youtube.com/watch?v=knIV9TzcRjo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.youtube.com/watch?v=knIV9TzcRjo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you prefer to read instead of watching, he has a &lt;a href=&quot;https://zonatsolutions.com/how-to-setup-wireguard-vpn-on-linux-mint/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;step-by-step guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ruan.dev/blog/2020/01/11/setup-a-wireguard-vpn-server-on-linux&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;This site&lt;/a&gt; was also very helpful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&quot;pf-sense-firewall&quot; tabindex=&quot;-1&quot;&gt;pfSense firewall&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First create a tunnel on your pfSense firewall if you haven&#39;t already done so (assuming that pfSense is your firewall/wireguard gateway)&lt;/li&gt;
+&lt;li&gt;Add the Mint laptop as a new peer.
+&lt;ul&gt;
+&lt;li&gt;Note: it won&#39;t let you save the peer without the public key. What I did here was copy the pfSense public key into the Mint public key as a temporary place-holder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;linux-mint-laptop&quot; tabindex=&quot;-1&quot;&gt;Linux Mint laptop&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open a terminal window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt install wireguard wireguard-tools&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;umask 077 &amp;amp;&amp;amp; wg genkey &amp;gt; privatekey&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;umask 077 &amp;amp;&amp;amp; wg pubkey &amp;lt; privatekey &amp;gt; publickey&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sudo nano /etc/wireguard/wg0.conf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;[Interface]
+PrivateKey = &amp;lt;redacted&amp;gt;
+Address = &amp;lt;redacted&amp;gt;
+
+[Peer]
+PublicKey = &amp;lt;redacted&amp;gt;
+PresharedKey = &amp;lt;redacted&amp;gt;
+Endpoint = &amp;lt;redacted&amp;gt;
+AllowedIPs = &amp;lt;redacted&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;pf-sense-firewall-1&quot; tabindex=&quot;-1&quot;&gt;pfSense Firewall&lt;/h2&gt;
+&lt;p&gt;Now you have to go back into the pfSense firewall and edit the peer you created for the laptop. Specifically you need to replace the placeholder public key for the laptop peer with the one you generated on the laptop. Save, and you&#39;re ready to start the Wireguard VPN on the laptop.&lt;/p&gt;
+&lt;h2 id=&quot;linux-mint-laptop-1&quot; tabindex=&quot;-1&quot;&gt;Linux Mint laptop&lt;/h2&gt;
+&lt;p&gt;Then I wanted a GUI &amp;quot;applet&amp;quot; that would allow me to control the tunnel and to see its state. I went to &amp;quot;Preferences&amp;quot; then &amp;quot;Applets&amp;quot;, then clicked on the &amp;quot;Download&amp;quot; tab at the top. I then typed &amp;quot;Wireguard&amp;quot; in the search bar and clicked the download button to the right of the applet.&lt;/p&gt;
+&lt;p&gt;Before I could enable the applet, I had to type the following in a command prompt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo setfacl -m u:$USER:rx /etc/wireguard&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now go back into the &amp;quot;Applets&amp;quot; control panel, find the &amp;quot;Wireguard&amp;quot; applet in the &amp;quot;Manage&amp;quot; tab and click the plus-sign button below it. You&#39;ll now have a gray icon at the bottom of your task bar that kind of looks like a figure 8. You can start and stop the VPN with this applet, but you have to type in your password each time.&lt;/p&gt;
+&lt;h2 id=&quot;don-t-forget&quot; tabindex=&quot;-1&quot;&gt;Don&#39;t forget!&lt;/h2&gt;
+&lt;p&gt;You have created sensitive keys in your home directory, and that&#39;s a bad place to keep them. I moved them to a sub-folder of the wireguard directory for safekeeping:&lt;br /&gt;
+&lt;code&gt;sudo mkdir /etc/wireguard/keys&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;sudo mv privatekey /etc/wireguard/keys/&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;sudo mv publickey /etc/wireguard/keys/&lt;/code&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/2-vpn/" >
