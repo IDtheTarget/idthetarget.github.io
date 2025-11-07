@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/blog/hosting-this-blog/","updated":"2025-10-14T16:31:32.937-05:00"}
+{"dg-publish":true,"permalink":"/blog/hosting-this-blog/","updated":"2025-11-07T08:41:34.953-06:00"}
 ---
 
 # Hosting this blog
@@ -20,12 +20,12 @@ As I've been figuring out how to migrate from my Samsung Android phone running [
 
 I'm not really a blogger, so I didn't want to pay a monthly fee for this one website. I eventually found [GitHub Pages](https://docs.github.com/en/pages), which looked like just what I wanted. I then started looking at methods to ***easily*** publish my notes there. I wanted to be able to adjust the "how-to" notes I normally take so that they'd make sense to somebody other than me, then easily just export those notes to GitHub Pages.
 
-At first I'd settled on [[Phone/Notes/Joplin\|Joplin]], as I liked it's simplicity and full [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) nature. I still like Joplin as a note-taking app. I tried three different "publish to GitHub Pages" plugins:
+At first I'd settled on [Joplin](https://joplinapp.org/), as I liked it's simplicity and full [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) nature. I still like Joplin as a note-taking app. I tried three different "publish to GitHub Pages" plugins:
 - [Joplin Publisher](https://joplin-utils.rxliuli.com/en-US/joplin-publisher/)
 - [Pages Publisher](https://github.com/ylc395/joplin-plugin-pages-publisher)
 - And one I can't remember the name
 
-All three worked, but they were intended to publish blog posts, not a website like this one. So I ended up having to switch to [[Phone/Notes/Obsidian\|Obsidian]]. I ***like*** Obsidian.md, but it's not really FOSS. However, I need to be able to focus on updating the pages' content and not on the process of publishing, and Obsidian was able to offer that to me. Though it took a LOT of trouble to figure out how to get it to work.
+All three worked, but they were intended to publish blog posts, not a website like this one. So I ended up having to switch to [Obsidian](https://obsidian.md/). I ***like*** Obsidian, but it's not really FOSS. However, I need to be able to focus on updating the pages' content and not on the process of publishing, and Obsidian was able to offer that to me. Though it took a LOT of trouble to figure out how to get it to work.
 
 ## First Failure
 [This](https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1) process looked relatively easy. Once I figured out the missing step the author had omitted it worked very well. For one day. Then I started getting an unformatted XML page whose contents looked like they were the Table of Contents tab to the left of the site. Despite deleting the repository and starting the entire process over again, I was unable to get the site to come back up. So I tried a different route.
