@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"updated":"2025-11-07T08:38:46.712-06:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"updated":"2025-11-07T10:03:27.609-06:00"}
 ---
 
 ## TLDR
 I'm improving my privacy by taking back my data through three inter-related projects:
 1. Moving my cloud services and inter-device syncing to a [[Self-Hosting/0. Design Considerations\|Home Cloud]] server
-2. Moving my [[Phone\|Phone]] from Google Android to [GrapheneOS](https://grapheneos.org/)
+2. Moving my [[Phone/0. Design Considerations\|Phone]] from Google Android to [GrapheneOS](https://grapheneos.org/)
 3. Migrating my [[Laptop/0. Design Considerations\|Laptop]] from Microsoft Windows to [Linux Mint](https://linuxmint.com/)
 
 ## What I'm trying to achieve
