@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Email</title>
+<title>1. Raspberry Pi Hardware</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -219,7 +219,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/1-raspberry-pi-hardware/">1. Raspberry Pi Hardware </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/1-raspberry-pi-hardware/">1. Raspberry Pi Hardware </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -273,7 +273,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/services-yet-to-be-implemented/email/">Email </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/services-yet-to-be-implemented/email/">Email </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -317,9 +317,26 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-10-19T08:19:17.808-05:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:27:47.652-06:00"></span></div></div></div>
 </header>
-<p>I want to get away from GMail, but haven't decided on a provider yet. I was all primed on switching to ProtonMail, but when they <a href="https://theintercept.com/2025/09/12/proton-mail-journalist-accounts-suspended/" target="_blank" class="external-link">suspended some Journalist accounts</a> I got nervous. I'm now wondering if it makes sense to self-host, though I know what a pain that would be.</p>
+<p>I bought most of the pieces from Amazon, but a couple of them were not available (the Pimoroni Base Case, especially), so I had to get them elsewhere.</p>
+<ul>
+<li><a href="https://www.amazon.com/dp/B0DSPYPKRG" target="_blank" class="external-link">Raspberry Pi 5 (16GB)</a> - $129</li>
+<li><a href="https://www.amazon.com/Raspberry-Pi-Active-Cooler/dp/B0CLXZBR5P" target="_blank" class="external-link">Pi 5 Active Cooler</a> - $10</li>
+<li><a href="https://www.amazon.com/dp/B07H125ZRL" target="_blank" class="external-link">CanaKit 45W USB-C Power Supply</a> - $20</li>
+<li><a href="https://www.amazon.com/dp/B084CJ9T2R" target="_blank" class="external-link">SanDisk 128GB MAX Endurance microSDXC</a> - $25</li>
+<li><a href="https://www.amazon.com/NVMe-Raspberry-Extension-Board-Supported/dp/B0D4SGF2QT" target="_blank" class="external-link">Pimoroni dual-nvme base</a> - $40</li>
+<li><a href="https://www.amazon.com/dp/B09LYPXPH6" target="_blank" class="external-link">Micro USB to USB adapter</a> - $9</li>
+<li><a href="https://www.amazon.com/dp/B0DZK9C789" target="_blank" class="external-link">WD Black 4TB NVME SSD</a> - $250 x2 = $500</li>
+<li><a href="https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5" target="_blank" class="external-link">Pimoroni Base Case</a> - $21<br>
+Total cost (minus tax): $754.</li>
+</ul>
+<p>You can do this for a <em><strong>lot</strong></em> less (say, a Pi 4 with a spare SSD you may have lying around), but I prefer to buy the best I can afford at the time of a project and then not have to worry about upgrades for 5-10 years. I guess I'm lazy.</p>
+<p>I know that I could get a NUC or other mini PC for that much money, but most of the cost was the storage, which I would still have had to purchase with another computer. I wanted as much storage as I could afford due to how many pictures my wife takes. And the NUC computers are larger and take more powers. Even with the base and base-case, the Pi is very small and quiet.</p>
+<p>Because I'm using a custom base and case, I used the pointers from the <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">manufacturer on assembly</a> You might want to pay careful attention to the directions, it's pretty tricky to take apart and redo if you don't. Don't ask me how I know...</p>
+<p>One <em><strong>very</strong></em> cool thing about this setup. The Pimoroni dual-nvme base has a ribbon cable to connect the board to the Pi. That ribbon cable blocks access to the micro-SD card. At first I thought of that as a negative, since I always intended to boot from the NVME. It turns out to be a huge plus. What you'll see in the configuration page is that I use Raspberry Pi Imager to initially configure the SD card, then put the Pi together. Then I VNC into the Pi and use the Raspbian version of the imager to image the NVME. Then I change a setting in the firmware and boot from the NVME. The cool thing about leaving the SD card in is that I can change the firmware back to boot from the SD card and do an image backup of the environment on the primary NVME to the second one, then either rsync that image file to an offsite location or just copy it to a thumb drive. Either way, I have an image backup that's easy to restore in addition to the other backup methods I'll document as I implement them.</p>
+<p>Previous: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/0-design-considerations/">Self-Hosting/0. Design Considerations</a><br>
+Next: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/2-raspberry-pi-initial-configuration/">2. Raspberry Pi Initial Configuration</a></p>
 </main>
 <aside>
 <div class="sidebar">

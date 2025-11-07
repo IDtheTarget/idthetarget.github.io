@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Email</title>
+<title>2. Raspberry Pi Initial Configuration</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -223,7 +223,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/2-raspberry-pi-initial-configuration/">2. Raspberry Pi Initial Configuration </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/2-raspberry-pi-initial-configuration/">2. Raspberry Pi Initial Configuration </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -273,7 +273,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/services-yet-to-be-implemented/email/">Email </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/services-yet-to-be-implemented/email/">Email </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -317,13 +317,151 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-10-19T08:19:17.808-05:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:45:29.990-06:00"></span></div></div></div>
 </header>
-<p>I want to get away from GMail, but haven't decided on a provider yet. I was all primed on switching to ProtonMail, but when they <a href="https://theintercept.com/2025/09/12/proton-mail-journalist-accounts-suspended/" target="_blank" class="external-link">suspended some Journalist accounts</a> I got nervous. I'm now wondering if it makes sense to self-host, though I know what a pain that would be.</p>
+<h1 id="synopsis" tabindex="-1">Synopsis</h1>
+<p>Basically, we're going to use Raspberry Pi Imager to burn a bootable image of Raspberry Pi OS (64-bit) to a Micro-SD Card, insert it into the Pi, <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">assemble the Pi</a>, boot the Pi and then use the image on the SD card to image the SSD. It's possible to directly image the SSD if you have the right equipment, but this has the added bonus of having a bootable SD card in the Pi both for recovery purposes and to make an image-backup of the SSD environment.</p>
+<h1 id="burn-the-raspberry-pi-os-onto-the-micro-sd-card" tabindex="-1">Burn the Raspberry Pi OS onto the Micro-SD card</h1>
+<ul>
+<li>Download <a href="https://www.raspberrypi.com/software/" target="_blank" class="external-link">Raspbery Pi Imager</a>. My <a class="internal-link is-unresolved" href="/404" target="">Laptop</a> was still running Windows at the time, so I used the Windows version.</li>
+<li>Run the app
+<ul>
+<li>Choose Device: Raspberry Pi 5</li>
+<li>Choose OS: Raspberry Pi OS (64-bit)</li>
+<li>Choose Storage: SDXC Card - 127.9 GB</li>
+<li>Click the &quot;Next&quot; button</li>
+<li>Click the &quot;Edit Settings&quot;</li>
+<li>Enter everything under &quot;General&quot; (I'm redacting my personal choices for security reasons)</li>
+<li>Under &quot;Services&quot;, enable SSH. If you have the knowledge, use the public-key authentication, it's more secure.</li>
+<li>Click the &quot;Save&quot; button</li>
+<li>Click the &quot;Yes&quot; button</li>
+<li>Double-check that you've selected the SD card, then click the &quot;Yes&quot; button</li>
+<li>When done, put the SD card into the Pi now. If you wait until you start the <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">assembly process</a>, you may forget. It's not easy taking it apart again, trust me.</li>
+</ul>
+</li>
+</ul>
+<h1 id="assemble-the-parts-and-put-into-the-case" tabindex="-1">Assemble the parts and put into the case</h1>
+<ul>
+<li>Assembly process <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">here</a></li>
+</ul>
+<h1 id="log-into-the-pi-and-update" tabindex="-1">Log into the Pi and update</h1>
+<p><strong>NOTE:</strong> Everything in this section is updating the Micro-SD card. This is important for three reasons:</p>
+<ol>
+<li>You're going to use the SD card to install Raspberry Pi OS on the NVME SSD, and you don't want problems with that process</li>
+<li>The SSD is your &quot;Recovery&quot; system. If you end up with problems with the boot process on the NVME SSD, you can always revert to the Micro-SD for troubleshooting.</li>
+<li>In order to do an image backup of the SSD environment, we're going to be booting back into the Micro-SD card. So we want it up-to-date.</li>
+</ol>
+<ul>
+<li>If you enabled 'ssh' in the Raspberry Pi Imager step above, then all you need is the IP address of your Pi. You can then use <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_blank" class="external-link">PuTTY</a> to log in.</li>
+<li>I set up a DHCP reservation on my firewall/router. You can check for DHCP leases or use some other method, that process is really beyond the scope of this document</li>
+<li>Update everything
+<ul>
+<li><code>sudo apt update</code></li>
+<li><code>sudo apt upgrade -y</code></li>
+<li><code>sudo reboot</code></li>
+<li><code>sudo rpi-eeprom-update</code>
+<ul>
+<li>If the version shown isn't at least May 2024, then type <code>sudo raspi-config</code> and select &quot;Advanced Options -&gt; Bootloader Version&quot; to update the eeprom.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Enable VNC
+<ul>
+<li><code>sudo raspi-config</code>
+<ul>
+<li>Down-arrow twice to <code>Interface Options</code> and press the &quot;Enter&quot; key</li>
+<li>Down-arrow twice more to &quot;VNC&quot; and press the &quot;Enter&quot; key again</li>
+<li>Left-arrow to highlight &quot;Yes&quot;, then press the &quot;Enter&quot; key again</li>
+<li>Press the &quot;Enter&quot; key again to select &quot;OK&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Update the Bootloader
+<ul>
+<li>While in <code>raspi-config</code>
+<ul>
+<li>Down-arrow to &quot;Advanced Options&quot; and press the &quot;Enter&quot; key</li>
+<li>Down-arrow to &quot;Bootloader Version&quot; and press the &quot;Enter&quot; key</li>
+<li>Select &quot;Latest&quot; and press the &quot;Enter&quot; key</li>
+<li>Press the &quot;ESC&quot; key to go back to the command line</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="burn-the-raspberry-pi-os-onto-the-nvme-ssd" tabindex="-1">Burn the Raspberry Pi OS onto the NVME SSD</h1>
+<ul>
+<li>&quot;Getting Started&quot; from pimoroni:
+<ul>
+<li><a href="https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo" target="_blank" class="external-link">https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo</a></li>
+</ul>
+</li>
+<li>Check that the dual-NVME card is installed correctly:
+<ul>
+<li><code>lsblk</code></li>
+<li>look for entries with 'nvme'. Mine show up as:
+<ul>
+<li>nvme0n1</li>
+<li>nvme1n1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Log onto the Raspberry Pi using VNC
+<ul>
+<li>On my windows laptop I use the <a href="https://www.realvnc.com/en/connect/download/viewer/" target="_blank" class="external-link">RealVNC Viewer</a></li>
+<li>Just so that I know which environment I'm using, I change the desktop background for the two different installations. I use a red background for the MicroSD environment and a green background for the SSD environment. That way I know where I am.</li>
+</ul>
+</li>
+<li>Click on the Raspberry at the top left</li>
+<li>Click on &quot;Accessories&quot; and then &quot;Raspberry Pi Imager&quot;
+<ul>
+<li>Raspberry Pi Device: Raspberry Pi 5</li>
+<li>Operating System: Raspberry Pi OS (64-BIT)</li>
+<li>Choose Storage: (it's hard to know which is 0 and which is 1, so I just pick the top one)</li>
+<li>Edit your settings, then choose &quot;yes&quot; to burn to the SSD</li>
+</ul>
+</li>
+<li>Set the Pi to boot from SSD
+<ul>
+<li>Down-arrow three times to &quot;Boot Order&quot;</li>
+<li>Down-arrow once to &quot;NVMe/USB Boot&quot; and press the &quot;Enter&quot; key</li>
+<li>Press the &quot;ESC&quot; key to get back to the command line</li>
+<li><code>sudo reboot</code></li>
+</ul>
+</li>
+</ul>
+<p>Previous: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/1-raspberry-pi-hardware/">1. Raspberry Pi Hardware</a><br>
+Next: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/3-nextcloud/">Self-Hosting/3. Nextcloud</a></p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#synopsis">Synopsis</a>
+</li>
+<li><a href="#burn-the-raspberry-pi-os-onto-the-micro-sd-card">Burn the Raspberry Pi OS onto the Micro-SD card</a>
+</li>
+<li><a href="#assemble-the-parts-and-put-into-the-case">Assemble the parts and put into the case</a>
+</li>
+<li><a href="#log-into-the-pi-and-update">Log into the Pi and update</a>
+</li>
+<li><a href="#burn-the-raspberry-pi-os-onto-the-nvme-ssd">Burn the Raspberry Pi OS onto the NVME SSD</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>
