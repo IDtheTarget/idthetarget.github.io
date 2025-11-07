@@ -225,59 +225,144 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-11-06T13:38:50.325Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-11-06T13:38:50.325Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-11-06T13:38:50.325Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-11-07T00:13:14.236Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-11-07T00:13:14.236Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-11-07T00:13:14.236Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-10-15T05:50:33.209-05:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-06T18:08:37.382-06:00"></span></div></div></div>
 </header>
 <h1 id="raspberry-pi" tabindex="-1">Raspberry Pi</h1>
 <h2 id="discussion" tabindex="-1">Discussion</h2>
-<p>I looked at self-hosting using a <a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" class="external-link">Virtual Private Server (VPS)</a>, but there's a saying in the security community: &quot;If you can touch it, can own it.&quot; Basically, if somebody at a VPS vendor wants to load malware on a server I'm hosting on their system, there's absolutely no way for me to keep it from happening. I really like the processing power vs electrical power draw of Raspberry Pi devices, so I decided to put together a Raspberry Pi with a large amount of storage for the house and another at a remote location for backups. Below is my first attempt at my personal VPS.</p>
+<p>I looked at self-hosting using a <a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" class="external-link">Virtual Private Server (VPS)</a>, but there's a saying in the security community: &quot;If you can touch it, you own it.&quot; Basically, if somebody at a VPS vendor wants to load malware on a server I'm hosting on their system, there's absolutely no way for me to keep it from happening. I really like the processing power vs electrical power draw of Raspberry Pi devices, so I decided to put together a Raspberry Pi with a large amount of storage for the house and another at a remote location for backups. Below is my first attempt at my personal VPS.</p>
 <h2 id="hardware" tabindex="-1">Hardware</h2>
 <ul>
 <li><a href="https://www.amazon.com/dp/B0DSPYPKRG" target="_blank" class="external-link">Raspberry Pi 5 (16GB)</a> - $129</li>
 <li><a href="https://www.amazon.com/Raspberry-Pi-Active-Cooler/dp/B0CLXZBR5P" target="_blank" class="external-link">Pi 5 Active Cooler</a> - $10</li>
 <li><a href="https://www.amazon.com/dp/B07H125ZRL" target="_blank" class="external-link">CanaKit 45W USB-C Power Supply</a> - $20</li>
-<li><a href="https://www.amazon.com/dp/B07XDCZ9J3" target="_blank" class="external-link">2-pack Sandisk Ultra 64GB MicroSDXC cards</a> - $16</li>
+<li><a href="https://www.amazon.com/dp/B084CJ9T2R" target="_blank" class="external-link"># SanDisk 128GB MAX Endurance microSDXC</a> - $25</li>
 <li><a href="https://www.amazon.com/NVMe-Raspberry-Extension-Board-Supported/dp/B0D4SGF2QT" target="_blank" class="external-link">Pimoroni dual-nvme base</a> - $40</li>
 <li><a href="https://www.amazon.com/dp/B09LYPXPH6" target="_blank" class="external-link">Micro USB to USB adapter</a> - $9</li>
-<li><a href="https://www.amazon.com/dp/B0DN6ZQ3PD" target="_blank" class="external-link">WD Black 2TB NVME SSD</a> - $129 x2 = $258</li>
+<li><a href="https://www.amazon.com/dp/B0DZK9C789" target="_blank" class="external-link">WD Black 4TB NVME SSD</a> - $250 x2 = $500</li>
 <li><a href="https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5" target="_blank" class="external-link">Pimoroni Base Case</a> - $21<br>
-Total cost (minus tax): $503.</li>
+Total cost (minus tax): $754.</li>
 </ul>
-<p>Because I'm using a custom base and case, I used the pointers from the manufacturer on assembly: <a href="https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo" target="_blank" class="external-link">https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo</a></p>
+<p>You can do this for a <em><strong>lot</strong></em> less (say, a Pi 4 with a spare SSD you may have lying around), but I prefer to buy the best I can afford at the time of a project and then not have to worry about upgrades for 5-10 years. I guess I'm lazy.</p>
+<p>I know that I could get a NUC for that much, but most of the cost was the storage, which I would still have had to purchase with another computer. I wanted as much storage as I could afford due to how many pictures my wife takes.</p>
+<p>Because I'm using a custom base and case, I used the pointers from the <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">manufacturer on assembly</a>.</p>
+<p>One <em><strong>very</strong></em> cool thing about this setup. The Pimoroni dual-nvme base has a ribbon cable to connect the board to the Pi. That ribbon cable blocks access to the micro-SD card. At first I thought of that as a negative, since I always intended to boot from the NVME. It turns out to be a huge plus. What you'll see below is that I use Raspberry Pi Imager to initially configure the SD card, then put the Pi together. Then I VNC into the Pi and use the Raspbian version of the imager to image the NVME. Then I change a setting in the firmware and boot from the NVME. The cool thing about leaving the SD card in is that I can change the firmware back to boot from the SD card and do an image backup of the environment on the primary NVME to the second one, then either rsync that image file to an offsite location or just copy it to a thumb drive. Either way, I have an image backup that's easy to restore in addition to the other backup methods I'll document as I implement them.</p>
 <h2 id="configuration" tabindex="-1">Configuration</h2>
-<h3 id="raspbian-onto-sd" tabindex="-1">Raspbian onto SD</h3>
-<h3 id="raspbian-onto-ssd" tabindex="-1">Raspbian onto SSD</h3>
+<h3 id="burn-the-raspberry-pi-os-onto-the-micro-sd-card" tabindex="-1">Burn the Raspberry Pi OS onto the Micro-SD card</h3>
+<ul>
+<li>Download <a href="https://www.raspberrypi.com/software/" target="_blank" class="external-link">Raspbery Pi Imager</a>. My <a class="internal-link" target="" data-note-icon="" href="/laptop/laptop/">Laptop</a> was still running Windows at the time, so I used the Windows version.</li>
+<li>Run the app
+<ul>
+<li>Choose Device: Raspberry Pi 5</li>
+<li>Choose OS: Raspberry Pi OS (64-bit)</li>
+<li>Choose Storage: SDXC Card - 127.9 GB</li>
+<li>Click the &quot;Next&quot; button</li>
+<li>Click the &quot;Edit Settings&quot;</li>
+<li>Enter everything under &quot;General&quot; (I'm redacting my personal choices for security reasons)</li>
+<li>Under &quot;Services&quot;, enable SSH. If you have the knowledge, use the public-key authentication, it's more secure.</li>
+<li>Click the &quot;Save&quot; button</li>
+<li>Click the &quot;Yes&quot; button</li>
+<li>Double-check that you've selected the SD card, then click the &quot;Yes&quot; button</li>
+<li>When done, put the SD card into the Pi now. If you wait until you start the <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">assembly process</a>, you may forget. It's not easy taking it apart again, trust me.</li>
+</ul>
+</li>
+</ul>
+<h3 id="assemble-the-parts-and-put-into-the-case" tabindex="-1">Assemble the parts and put into the case</h3>
+<ul>
+<li>Assembly process <a href="https://learn.pimoroni.com/article/assembling-nvme-case" target="_blank" class="external-link">here</a></li>
+</ul>
+<h3 id="log-into-the-pi-and-update" tabindex="-1">Log into the Pi and update</h3>
+<p><strong>NOTE:</strong> Everything in this section is updating the Micro-SD card. This is important for three reasons:</p>
+<ol>
+<li>You're going to use the SD card to install Raspberry Pi OS on the NVME SSD, and you don't want problems with that process</li>
+<li>The SSD is your &quot;Recovery&quot; system. If you end up with problems with the boot process on the NVME SSD, you can always revert to the Micro-SD for troubleshooting.</li>
+<li>In order to do an image backup of the SSD environment, we're going to be booting back into the Micro-SD card. So we want it up-to-date.</li>
+</ol>
+<ul>
+<li>If you enabled 'ssh' in the Raspberry Pi Imager step above, then all you need is the IP address of your Pi. You can then use <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_blank" class="external-link">PuTTY</a> to log in.</li>
+<li>I set up a DHCP reservation on my firewall/router. You can check for DHCP leases or use some other method, that process is really beyond the scope of this document</li>
+<li>Update everything
+<ul>
+<li><code>sudo apt update</code></li>
+<li><code>sudo apt upgrade -y</code></li>
+<li><code>sudo reboot</code></li>
+<li><code>sudo rpi-eeprom-update</code>
+<ul>
+<li>If the version shown isn't at least May 2024, then type <code>sudo raspi-config</code> and select &quot;Advanced Options -&gt; Bootloader Version&quot; to update the eeprom.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Enable VNC
+<ul>
+<li><code>sudo raspi-config</code>
+<ul>
+<li>Down-arrow twice to <code>Interface Options</code> and press the &quot;Enter&quot; key</li>
+<li>Down-arrow twice more to &quot;VNC&quot; and press the &quot;Enter&quot; key again</li>
+<li>Left-arrow to highlight &quot;Yes&quot;, then press the &quot;Enter&quot; key again</li>
+<li>Press the &quot;Enter&quot; key again to select &quot;OK&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Update the Bootloader
+<ul>
+<li>While in <code>raspi-config</code>
+<ul>
+<li>Down-arrow to &quot;Advanced Options&quot; and press the &quot;Enter&quot; key</li>
+<li>Down-arrow to &quot;Bootloader Version&quot; and press the &quot;Enter&quot; key</li>
+<li>Select &quot;Latest&quot; and press the &quot;Enter&quot; key</li>
+<li>Press the &quot;ESC&quot; key to go back to the command line</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="burn-the-raspberry-pi-os-onto-the-nvme-ssd" tabindex="-1">Burn the Raspberry Pi OS onto the NVME SSD</h3>
 <ul>
 <li>&quot;Getting Started&quot; from pimoroni:
 <ul>
 <li><a href="https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo" target="_blank" class="external-link">https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo</a></li>
 </ul>
 </li>
-<li>Update everything
-<ul>
-<li><code>sudo apt update</code></li>
-<li><code>sudo apt upgrade</code></li>
-<li><code>sudo reboot</code></li>
-<li><code>sudo rpi-eeprom update</code></li>
-</ul>
-</li>
-<li>Check that the eeprom is dated after May 2024, otherwise you can't boot from the SSD
-<ul>
-<li>If the bootloader isn't the right version:</li>
-<li><code>sudo raspi-config</code></li>
-<li>Choose Advanced Options -&gt; Bootloader Version</li>
-</ul>
-</li>
-<li>Check that the NVME SSDs are showing up:
+<li>Check that the dual-NVME card is installed correctly:
 <ul>
 <li><code>lsblk</code></li>
-<li>look for entries with 'nvme'</li>
-<li></li>
+<li>look for entries with 'nvme'. Mine show up as:
+<ul>
+<li>nvme0n1</li>
+<li>nvme1n1</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>Log onto the Raspberry Pi using VNC
+<ul>
+<li>On my windows laptop I use the <a href="https://www.realvnc.com/en/connect/download/viewer/" target="_blank" class="external-link">RealVNC Viewer</a></li>
+<li>Just so that I know which environment I'm using, I change the desktop background for the two different installations. I use a red background for the MicroSD environment and a green background for the SSD environment. That way I know where I am.</li>
+</ul>
+</li>
+<li>Click on the Raspberry at the top left</li>
+<li>Click on &quot;Accessories&quot; and then &quot;Raspberry Pi Imager&quot;
+<ul>
+<li>Raspberry Pi Device: Raspberry Pi 5</li>
+<li>Operating System: Raspberry Pi OS (64-BIT)</li>
+<li>Choose Storage: (it's hard to know which is 0 and which is 1, so I just pick the top one)</li>
+<li>Edit your settings, then choose &quot;yes&quot; to burn to the SSD</li>
+</ul>
+</li>
+<li>Set the Pi to boot from SSD
+<ul>
+<li>Down-arrow three times to &quot;Boot Order&quot;</li>
+<li>Down-arrow once to &quot;NVMe/USB Boot&quot; and press the &quot;Enter&quot; key</li>
+<li>Press the &quot;ESC&quot; key to get back to the command line</li>
+<li><code>sudo reboot</code></li>
+</ul>
+</li>
+<li><strong>NOTE:</strong> You're now booting off of the SSD, so you'll have to go through <a class="internal-link" target="" data-note-icon="" href="/self-hosting/platform/raspberry-pi/#log-into-the-pi-and-update">Raspberry Pi#Log into the Pi and update</a> again, or the next time you reboot you'll be back on the Micro-SD card.</li>
 </ul>
 <h3 id="nextcloud" tabindex="-1">Nextcloud</h3>
 <ul>
@@ -335,9 +420,13 @@ On this page
 </li>
 <li><a href="#configuration">Configuration</a>
 <ol>
-<li><a href="#raspbian-onto-sd">Raspbian onto SD</a>
+<li><a href="#burn-the-raspberry-pi-os-onto-the-micro-sd-card">Burn the Raspberry Pi OS onto the Micro-SD card</a>
 </li>
-<li><a href="#raspbian-onto-ssd">Raspbian onto SSD</a>
+<li><a href="#assemble-the-parts-and-put-into-the-case">Assemble the parts and put into the case</a>
+</li>
+<li><a href="#log-into-the-pi-and-update">Log into the Pi and update</a>
+</li>
+<li><a href="#burn-the-raspberry-pi-os-onto-the-nvme-ssd">Burn the Raspberry Pi OS onto the NVME SSD</a>
 </li>
 <li><a href="#nextcloud">Nextcloud</a>
 </li>
