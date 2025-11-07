@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-07T14:48:40Z</updated>
+    <updated>2025-11-07T14:49:04Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -116,23 +116,6 @@
         </entry>
         <entry>
             <title>
-                Fossify Calendar
-                
-            </title>
-            <updated>2025-10-14T12:57:09.636Z</updated>
-            <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/calendar/fossify-calendar/</id>
-            <content type="html">
-                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/FossifyOrg/Calendar&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/FossifyOrg/Calendar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/calendar/fossify-calendar/" >
-        </entry>
-        <entry>
-            <title>
                 Calendar
                 
             </title>
@@ -182,199 +165,6 @@
 
             </content>
             <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/backups/" >
-        </entry>
-        <entry>
-            <title>
-                Self-Hosting
-                
-            </title>
-            <updated>2025-11-06T13:37:40.191Z</updated>
-            <id>https://idthetarget.hithub.io/self-hosting/self-hosting/</id>
-            <content type="html">
-                &lt;p&gt;Place-holder for moving to Nextcloud/Syncthing on Rapsberry Pi&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/self-hosting/self-hosting/" >
-        </entry>
-        <entry>
-            <title>
-                Raspberry Pi
-                
-            </title>
-            <updated>2025-11-07T00:08:37.382Z</updated>
-            <id>https://idthetarget.hithub.io/self-hosting/platform/raspberry-pi/</id>
-            <content type="html">
-                &lt;h1 id=&quot;raspberry-pi&quot; tabindex=&quot;-1&quot;&gt;Raspberry Pi&lt;/h1&gt;
-&lt;h2 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h2&gt;
-&lt;p&gt;I looked at self-hosting using a &lt;a href=&quot;https://en.wikipedia.org/wiki/Virtual_private_server&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Virtual Private Server (VPS)&lt;/a&gt;, but there&#39;s a saying in the security community: &amp;quot;If you can touch it, you own it.&amp;quot; Basically, if somebody at a VPS vendor wants to load malware on a server I&#39;m hosting on their system, there&#39;s absolutely no way for me to keep it from happening. I really like the processing power vs electrical power draw of Raspberry Pi devices, so I decided to put together a Raspberry Pi with a large amount of storage for the house and another at a remote location for backups. Below is my first attempt at my personal VPS.&lt;/p&gt;
-&lt;h2 id=&quot;hardware&quot; tabindex=&quot;-1&quot;&gt;Hardware&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B0DSPYPKRG&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Raspberry Pi 5 (16GB)&lt;/a&gt; - $129&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Raspberry-Pi-Active-Cooler/dp/B0CLXZBR5P&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pi 5 Active Cooler&lt;/a&gt; - $10&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B07H125ZRL&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;CanaKit 45W USB-C Power Supply&lt;/a&gt; - $20&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B084CJ9T2R&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;# SanDisk 128GB MAX Endurance microSDXC&lt;/a&gt; - $25&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/NVMe-Raspberry-Extension-Board-Supported/dp/B0D4SGF2QT&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pimoroni dual-nvme base&lt;/a&gt; - $40&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B09LYPXPH6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Micro USB to USB adapter&lt;/a&gt; - $9&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B0DZK9C789&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WD Black 4TB NVME SSD&lt;/a&gt; - $250 x2 = $500&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.pishop.us/product/nvme-base-case-for-raspberry-pi-5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pimoroni Base Case&lt;/a&gt; - $21&lt;br /&gt;
-Total cost (minus tax): $754.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can do this for a &lt;em&gt;&lt;strong&gt;lot&lt;/strong&gt;&lt;/em&gt; less (say, a Pi 4 with a spare SSD you may have lying around), but I prefer to buy the best I can afford at the time of a project  and then not have to worry about upgrades for 5-10 years. I guess I&#39;m lazy.&lt;/p&gt;
-&lt;p&gt;I know that I could get a NUC for that much, but most of the cost was the storage, which I would still have had to purchase with another computer. I wanted as much storage as I could afford due to how many pictures my wife takes.&lt;/p&gt;
-&lt;p&gt;Because I&#39;m using a custom base and case, I used the pointers from the &lt;a href=&quot;https://learn.pimoroni.com/article/assembling-nvme-case&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;manufacturer on assembly&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;One &lt;em&gt;&lt;strong&gt;very&lt;/strong&gt;&lt;/em&gt; cool thing about this setup. The Pimoroni dual-nvme base has a ribbon cable to connect the board to the Pi. That ribbon cable blocks access to the micro-SD card. At first I thought of that as a negative, since I always intended to boot from the NVME. It turns out to be a huge plus. What you&#39;ll see below is that I use Raspberry Pi Imager to initially configure the SD card, then put the Pi together. Then I VNC into the Pi and use the Raspbian version of the imager to image the NVME. Then I change a setting in the firmware and boot from the NVME.  The cool thing about leaving the SD card in is that I can change the firmware back to boot from the SD card and do an image backup of the environment on the primary NVME to the second one, then either rsync that image file to an offsite location or just copy it to a thumb drive. Either way, I have an image backup that&#39;s easy to restore in addition to the other backup methods I&#39;ll document as I implement them.&lt;/p&gt;
-&lt;h2 id=&quot;configuration&quot; tabindex=&quot;-1&quot;&gt;Configuration&lt;/h2&gt;
-&lt;h3 id=&quot;burn-the-raspberry-pi-os-onto-the-micro-sd-card&quot; tabindex=&quot;-1&quot;&gt;Burn the Raspberry Pi OS onto the Micro-SD card&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download &lt;a href=&quot;https://www.raspberrypi.com/software/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Raspbery Pi Imager&lt;/a&gt;. My &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/laptop/&quot;&gt;Laptop&lt;/a&gt; was still running Windows at the time, so I used the Windows version.&lt;/li&gt;
-&lt;li&gt;Run the app
-&lt;ul&gt;
-&lt;li&gt;Choose Device: Raspberry Pi 5&lt;/li&gt;
-&lt;li&gt;Choose OS: Raspberry Pi OS (64-bit)&lt;/li&gt;
-&lt;li&gt;Choose Storage: SDXC Card - 127.9 GB&lt;/li&gt;
-&lt;li&gt;Click the &amp;quot;Next&amp;quot; button&lt;/li&gt;
-&lt;li&gt;Click the &amp;quot;Edit Settings&amp;quot;&lt;/li&gt;
-&lt;li&gt;Enter everything under &amp;quot;General&amp;quot; (I&#39;m redacting my personal choices for security reasons)&lt;/li&gt;
-&lt;li&gt;Under &amp;quot;Services&amp;quot;, enable SSH. If you have the knowledge, use the public-key authentication, it&#39;s more secure.&lt;/li&gt;
-&lt;li&gt;Click the &amp;quot;Save&amp;quot; button&lt;/li&gt;
-&lt;li&gt;Click the &amp;quot;Yes&amp;quot; button&lt;/li&gt;
-&lt;li&gt;Double-check that you&#39;ve selected the SD card, then click the &amp;quot;Yes&amp;quot; button&lt;/li&gt;
-&lt;li&gt;When done, put the SD card into the Pi now. If you wait until you start the &lt;a href=&quot;https://learn.pimoroni.com/article/assembling-nvme-case&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;assembly process&lt;/a&gt;, you may forget. It&#39;s not easy taking it apart again, trust me.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;assemble-the-parts-and-put-into-the-case&quot; tabindex=&quot;-1&quot;&gt;Assemble the parts and put into the case&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Assembly process &lt;a href=&quot;https://learn.pimoroni.com/article/assembling-nvme-case&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;log-into-the-pi-and-update&quot; tabindex=&quot;-1&quot;&gt;Log into the Pi and update&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Everything in this section is updating the Micro-SD card. This is important for three reasons:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;You&#39;re going to use the SD card to install Raspberry Pi OS on the NVME SSD, and you don&#39;t want problems with that process&lt;/li&gt;
-&lt;li&gt;The SSD is your &amp;quot;Recovery&amp;quot; system. If you end up with problems with the boot process on the NVME SSD, you can always revert to the Micro-SD for troubleshooting.&lt;/li&gt;
-&lt;li&gt;In order to do an image backup of the SSD environment, we&#39;re going to be booting back into the Micro-SD card. So we want it up-to-date.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;If you enabled &#39;ssh&#39; in the Raspberry Pi Imager step above, then all you need is the IP address of your Pi. You can then use &lt;a href=&quot;https://www.chiark.greenend.org.uk/~sgtatham/putty/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PuTTY&lt;/a&gt; to log in.&lt;/li&gt;
-&lt;li&gt;I set up a DHCP reservation on my firewall/router. You can check for DHCP leases or use some other method, that process is really beyond the scope of this document&lt;/li&gt;
-&lt;li&gt;Update everything
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo apt upgrade -y&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo reboot&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo rpi-eeprom-update&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;If the version shown isn&#39;t at least May 2024, then type &lt;code&gt;sudo raspi-config&lt;/code&gt; and select &amp;quot;Advanced Options -&amp;gt; Bootloader Version&amp;quot; to update the eeprom.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Enable VNC
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo raspi-config&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Down-arrow twice to &lt;code&gt;Interface Options&lt;/code&gt; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
-&lt;li&gt;Down-arrow twice more to &amp;quot;VNC&amp;quot; and press the &amp;quot;Enter&amp;quot; key again&lt;/li&gt;
-&lt;li&gt;Left-arrow to highlight &amp;quot;Yes&amp;quot;, then press the &amp;quot;Enter&amp;quot; key again&lt;/li&gt;
-&lt;li&gt;Press the &amp;quot;Enter&amp;quot; key again to select &amp;quot;OK&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Update the Bootloader
-&lt;ul&gt;
-&lt;li&gt;While in &lt;code&gt;raspi-config&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Down-arrow to &amp;quot;Advanced Options&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
-&lt;li&gt;Down-arrow to &amp;quot;Bootloader Version&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
-&lt;li&gt;Select &amp;quot;Latest&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
-&lt;li&gt;Press the &amp;quot;ESC&amp;quot; key to go back to the command line&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;burn-the-raspberry-pi-os-onto-the-nvme-ssd&quot; tabindex=&quot;-1&quot;&gt;Burn the Raspberry Pi OS onto the NVME SSD&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;quot;Getting Started&amp;quot; from pimoroni:
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.pimoroni.com/article/getting-started-with-nvme-base-duo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Check that the dual-NVME card is installed correctly:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;lsblk&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;look for entries with &#39;nvme&#39;. Mine show up as:
-&lt;ul&gt;
-&lt;li&gt;nvme0n1&lt;/li&gt;
-&lt;li&gt;nvme1n1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Log onto the Raspberry Pi using VNC
-&lt;ul&gt;
-&lt;li&gt;On my windows laptop I use the &lt;a href=&quot;https://www.realvnc.com/en/connect/download/viewer/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;RealVNC Viewer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Just so that I know which environment I&#39;m using, I change the desktop background for the two different installations. I use a red background for the MicroSD environment and a green background for the SSD environment. That way I know where I am.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Click on the Raspberry at the top left&lt;/li&gt;
-&lt;li&gt;Click on &amp;quot;Accessories&amp;quot; and then &amp;quot;Raspberry Pi Imager&amp;quot;
-&lt;ul&gt;
-&lt;li&gt;Raspberry Pi Device: Raspberry Pi 5&lt;/li&gt;
-&lt;li&gt;Operating System: Raspberry Pi OS (64-BIT)&lt;/li&gt;
-&lt;li&gt;Choose Storage: (it&#39;s hard to know which is 0 and which is 1, so I just pick the top one)&lt;/li&gt;
-&lt;li&gt;Edit your settings, then choose &amp;quot;yes&amp;quot; to burn to the SSD&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Set the Pi to boot from SSD
-&lt;ul&gt;
-&lt;li&gt;Down-arrow three times to &amp;quot;Boot Order&amp;quot;&lt;/li&gt;
-&lt;li&gt;Down-arrow once to &amp;quot;NVMe/USB Boot&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
-&lt;li&gt;Press the &amp;quot;ESC&amp;quot; key to get back to the command line&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo reboot&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; You&#39;re now booting off of the SSD, so you&#39;ll have to go through &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/platform/raspberry-pi/#log-into-the-pi-and-update&quot;&gt;Raspberry Pi#Log into the Pi and update&lt;/a&gt; again, or the next time you reboot you&#39;ll be back on the Micro-SD card.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;nextcloud&quot; tabindex=&quot;-1&quot;&gt;Nextcloud&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://snapcraft.io/install/nextcloud/raspbian&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://snapcraft.io/install/nextcloud/raspbian&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;backups&quot; tabindex=&quot;-1&quot;&gt;Backups&lt;/h2&gt;
-&lt;p&gt;Still figuring this part out. I want to use two forms of backup to easily recover if I have a catastrophic hardware failure.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The first backup type I want is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Disk_image&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;disk image&lt;/a&gt; backup that I can restore to new hardware.  This will only happen rarely when I make significant changes to the configuration of the Pi. While I can&#39;t easily take out the boot SSD (it sits on the Dual NVME bottom board, so I&#39;d have to completely disassemble the Pi), one of the cool things I came across in this design &lt;em&gt;&lt;strong&gt;insert link to configuration section here&lt;/strong&gt;&lt;/em&gt; is that I can set the firmware to boot either off of the SD card or the NVME SSD. For production purposes I boot off of the NVME. For image backups I intend to change the firmware &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://idthetarget.hithub.io/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; to boot from the SD card and use utilities there to backup the partitions on the SSD.&lt;/li&gt;
-&lt;li&gt;The second backup type is the normal stage, using rsync to backup data and settings and such for the installed system. I&#39;ll have to figure out each subsystem for this backup type. For instance, I&#39;m using &lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud.export&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;research&quot; tabindex=&quot;-1&quot;&gt;Research&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;image backup utilities
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/RichardMidnight/pi-safe&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PiSafe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://forums.raspberrypi.com/viewtopic.php?t=332000&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forums.raspberrypi.com/viewtopic.php?t=332000&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://linux.die.net/man/8/resize2fs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;resize2fs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/Drewsif/PiShrink&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PiShrink&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;h2 id=&quot;file-backup-utilities&quot; tabindex=&quot;-1&quot;&gt;file backup utilities&lt;/h2&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/nvme-base-duo-for-raspberry-pi-5?variant=41434434895955&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://shop.pimoroni.com/products/nvme-base-duo-for-raspberry-pi-5?variant=41434434895955&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr class=&quot;footnotes-sep&quot; /&gt;
-&lt;section class=&quot;footnotes&quot;&gt;
-&lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;insert link to configuration section here &lt;a href=&quot;https://idthetarget.hithub.io/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/self-hosting/platform/raspberry-pi/" >
         </entry>
         <entry>
             <title>
@@ -597,82 +387,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
-                Moon_Pro
-                
-            </title>
-            <updated>2025-10-14T00:17:07.454Z</updated>
-            <id>https://idthetarget.hithub.io/phone/reading-ebooks/moon-pro/</id>
-            <content type="html">
-                &lt;p&gt;I like to read. I have purchased several hundred ePub books.&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/reading-ebooks/moon-pro/" >
-        </entry>
-        <entry>
-            <title>
-                Phone
-                
-            </title>
-            <updated>2025-11-06T13:37:33.756Z</updated>
-            <id>https://idthetarget.hithub.io/phone/phone/</id>
-            <content type="html">
-                &lt;p&gt;Place-holder for the project to move my phone from Google Android to GrapheneOS&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/phone/" >
-        </entry>
-        <entry>
-            <title>
-                Obsidian
-                
-            </title>
-            <updated>2025-10-14T00:08:37.849Z</updated>
-            <id>https://idthetarget.hithub.io/phone/notes/obsidian/</id>
-            <content type="html">
-                &lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;dd&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/notes/obsidian/" >
-        </entry>
-        <entry>
-            <title>
-                Joplin
-                
-            </title>
-            <updated>2025-10-14T00:08:28.900Z</updated>
-            <id>https://idthetarget.hithub.io/phone/notes/joplin/</id>
-            <content type="html">
-                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Joplin homepage
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://joplinapp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://joplinapp.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Plugin for publishing to Github pages
-&lt;ul&gt;
-&lt;li&gt;Plugin: &lt;a href=&quot;https://joplinapp.org/plugins/plugin/rxliuli.joplin-publisher/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://joplinapp.org/plugins/plugin/rxliuli.joplin-publisher/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Github integration: &lt;a href=&quot;https://joplin-utils.rxliuli.com/en-US/joplin-publisher/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://joplin-utils.rxliuli.com/en-US/joplin-publisher/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/ylc395/joplin-plugin-pages-publisher/wiki/User-Guide&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/ylc395/joplin-plugin-pages-publisher/wiki/User-Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Nextcloud syncronization
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://joplinapp.org/help/apps/sync/nextcloud/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://joplinapp.org/help/apps/sync/nextcloud/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/notes/joplin/" >
-        </entry>
-        <entry>
-            <title>
                 7. Reading eBooks
                 
             </title>
@@ -774,19 +488,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/0-design-considerations/" >
-        </entry>
-        <entry>
-            <title>
-                Laptop
-                
-            </title>
-            <updated>2025-11-06T13:37:24.704Z</updated>
-            <id>https://idthetarget.hithub.io/laptop/laptop/</id>
-            <content type="html">
-                &lt;p&gt;Place-holder for migrating my laptop from Windows to &lt;a href=&quot;https://linuxmint.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Linux Mint&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/laptop/laptop/" >
         </entry>
         <entry>
             <title>
