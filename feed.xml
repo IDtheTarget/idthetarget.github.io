@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T17:29:35Z</updated>
+    <updated>2025-11-09T17:32:42Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -660,7 +660,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 1. Installation
                 
             </title>
-            <updated>2025-11-09T17:29:03.632Z</updated>
+            <updated>2025-11-09T17:32:11.256Z</updated>
             <id>https://idthetarget.hithub.io/laptop/1-installation/</id>
             <content type="html">
                 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
@@ -688,9 +688,9 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;/ul&gt;
 &lt;h1 id=&quot;post-installation-configuration&quot; tabindex=&quot;-1&quot;&gt;Post-Installation Configuration&lt;/h1&gt;
 &lt;p&gt;Linux Mint has a really nice post-installation welcome screen, that helps you get started with important stuff.&lt;/p&gt;
-&lt;ul&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
 &lt;li&gt;I changed the Desktop colors to &amp;quot;Dark Theme&amp;quot;, with green highlights&lt;/li&gt;
-&lt;li&gt;! &lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I need to figure out System Snapshots&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt;  &lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I need to figure out System Snapshots&lt;/label&gt;&lt;/li&gt;
 &lt;li&gt;In &amp;quot;Driver Manager&amp;quot;, changed to the &amp;quot;Recommended&amp;quot; nvidia driver and rebooted&lt;/li&gt;
 &lt;li&gt;Went into the &amp;quot;Update Manager&amp;quot; and changed to local mirrors, then updated everything&lt;/li&gt;
 &lt;li&gt;! Went into the &amp;quot;Firewall Manager&amp;quot; and changed the &amp;quot;Status&amp;quot; toggle to &amp;quot;On&amp;quot;&lt;/li&gt;
