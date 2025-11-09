@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T23:29:59Z</updated>
+    <updated>2025-11-09T23:47:13Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -582,13 +582,13 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-09T23:29:27.251Z</updated>
+            <updated>2025-11-09T23:46:42.656Z</updated>
             <id>https://idthetarget.hithub.io/laptop/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
 &lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
 &lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
-&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Linux Mint Laptop&lt;/a&gt;. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Self-hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Linux Mint Laptop&lt;/a&gt;. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Self-Hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;I opened &amp;quot;Software Manager&amp;quot; and searched for &amp;quot;Syncthing&amp;quot;. Several items popped up, including &amp;quot;Syncthing&amp;quot; and &amp;quot;Syncthing Tray&amp;quot;. The problem was that, as I looked at them, the &amp;quot;Tray&amp;quot; package (which puts an icon in the tray for management and informational purposes) is using a &amp;quot;Flatpack&amp;quot; that&#39;s over 1GB of download and 3.7GB on the disk! For just the tray. Syncthing itself was only 23MB on the disk. So, I went to the command line and looked for syncthing by typing &lt;code&gt;sudo apt search syncthing&lt;/code&gt;. And sure enough, there&#39;s a package named syncthingtray, that only needs about 204MB. So I went the &#39;apt&#39; method instead of the &amp;quot;Software Manager&amp;quot; method.&lt;/li&gt;
@@ -598,15 +598,20 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;Then click on &amp;quot;Syncthing Web UI&amp;quot;&lt;/li&gt;
 &lt;li&gt;The web UI comes up and asks to set a user name and password for the GUI. &lt;s&gt;While I&#39;m the only person using the system, it&#39;s still a best practice to enable &amp;quot;[defense in depth](&lt;a href=&quot;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&lt;/a&gt;&amp;quot;, so I set it up.&lt;/s&gt;
 &lt;ul&gt;
-&lt;li&gt;~~In the box on the webpage entitled &amp;quot;GUI Authentication&amp;quot;, click the &amp;quot;Settings&amp;quot; button at the bottom right&lt;/li&gt;
-&lt;li&gt;~~Click on the &amp;quot;GUI&amp;quot; tab&lt;/li&gt;
-&lt;li&gt;~~Enter the &amp;quot;GUI Authentication User&amp;quot; and &amp;quot;GUI Authentication Password&amp;quot;&lt;/li&gt;
-&lt;li&gt;~~I checked the &amp;quot;Use HTTPS for GUI&amp;quot;, even though I&#39;m not using a CA-signed certificate. I may have to go back and turn that off later, but I like multiple layers of encryption.&lt;/li&gt;
-&lt;li&gt;~~Click &amp;quot;Save&amp;quot;.&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;In the box on the webpage entitled &amp;quot;GUI Authentication&amp;quot;, click the &amp;quot;Settings&amp;quot; button at the bottom right&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Click on the &amp;quot;GUI&amp;quot; tab&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Enter the &amp;quot;GUI Authentication User&amp;quot; and &amp;quot;GUI Authentication Password&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;I checked the &amp;quot;Use HTTPS for GUI&amp;quot;, even though I&#39;m not using a CA-signed certificate. I may have to go back and turn that off later, but I like multiple layers of encryption.&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Click &amp;quot;Save&amp;quot;.&lt;/s&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;It turns out that I couldn&#39;t get Syncthing Tray to work if I had a password set on the GUI. So I spent the next hour trying to find the way to remove the username and password without breaking Syncthing. I even did a &lt;code&gt;sudo apt purge syncthing syncthingtray&lt;/code&gt; but that didn&#39;t work, it didn&#39;t get rid of the configuration file. I &lt;em&gt;finally&lt;/em&gt; found the file in ~/.local/state/syncthing/config.xml&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;In the Syncthing web GUI, find the &amp;quot;Actions&amp;quot; drop-down at the top right and select &amp;quot;Settings&amp;quot;. You are going to need the &lt;strong&gt;API Key&lt;/strong&gt; later for Syncthing Tray&lt;/li&gt;
+&lt;li&gt;Start SyncthingTray from the Start Menu -&amp;gt; Internet -&amp;gt; Syncthing Tray icon.&lt;/li&gt;
+&lt;li&gt;I tried the guided setup, but had problems because of my password. After I cleared the Syncthing GUI username and password, I had to go back into the manual settings for Syncthing Tray.&lt;/li&gt;
+&lt;li&gt;Syncthing URL: &lt;a href=&quot;https://127.0.0.1:8384/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://127.0.0.1:8384&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;API key: what you copied from Syncthing GUI Settings about two bullet points above.&lt;/li&gt;
+&lt;li&gt;Click &amp;quot;Apply&amp;quot; and &amp;quot;OK&amp;quot;, and it looks like I&#39;m ready to add folders!&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
