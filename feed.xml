@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T13:31:43Z</updated>
+    <updated>2025-11-09T17:29:35Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -660,10 +660,41 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 1. Installation
                 
             </title>
-            <updated>2025-11-07T20:46:42.000Z</updated>
+            <updated>2025-11-09T17:29:03.632Z</updated>
             <id>https://idthetarget.hithub.io/laptop/1-installation/</id>
             <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
+                &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;The &lt;a href=&quot;https://linuxmint-installation-guide.readthedocs.io/en/latest/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;official install directions&lt;/a&gt; are very good. Below I document for myself what I did.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href=&quot;https://linuxmint.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Linux Mint&#39;s homepage&lt;/a&gt; and choose &amp;quot;Download&amp;quot;&lt;/li&gt;
+&lt;li&gt;I was on Windows at the time and used &lt;a href=&quot;https://etcher.balena.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Balena Etcher&lt;/a&gt;to burn the live USB drive&lt;/li&gt;
+&lt;li&gt;Had to go into my BIOS to allow booting from USB&lt;/li&gt;
+&lt;li&gt;Booted from the USB&lt;/li&gt;
+&lt;li&gt;Double-clicked the &amp;quot;Install Linux Mint&amp;quot; icon&lt;/li&gt;
+&lt;li&gt;Chose English for the OS, then the English (US) keyboard&lt;/li&gt;
+&lt;li&gt;Connected to my home WiFi&lt;/li&gt;
+&lt;li&gt;Installed the multimedia CODECs
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; To install the codecs, you have to choose to put in a &amp;quot;secure boot&amp;quot; password. You will need to put this password in the first time you boot. Make sure it&#39;s easy to type and remember!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Chose the internal NVME drive&lt;/li&gt;
+&lt;li&gt;Chose my time zone&lt;/li&gt;
+&lt;li&gt;Added my local user account and password&lt;/li&gt;
+&lt;li&gt;Chose to encrypt the home folder&lt;/li&gt;
+&lt;li&gt;Continue until it reboots.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; Don&#39;t pull the thumb drive until the computer says to do so&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; On reboot, it will ask to &amp;quot;Enroll MOK&amp;quot;. This is that multimedia key. Here is where you type in that first password you typed in during the install, for the multimedia drivers/secure boot.  You&#39;ll reboot again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;post-installation-configuration&quot; tabindex=&quot;-1&quot;&gt;Post-Installation Configuration&lt;/h1&gt;
+&lt;p&gt;Linux Mint has a really nice post-installation welcome screen, that helps you get started with important stuff.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I changed the Desktop colors to &amp;quot;Dark Theme&amp;quot;, with green highlights&lt;/li&gt;
+&lt;li&gt;! &lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I need to figure out System Snapshots&lt;/li&gt;
+&lt;li&gt;In &amp;quot;Driver Manager&amp;quot;, changed to the &amp;quot;Recommended&amp;quot; nvidia driver and rebooted&lt;/li&gt;
+&lt;li&gt;Went into the &amp;quot;Update Manager&amp;quot; and changed to local mirrors, then updated everything&lt;/li&gt;
+&lt;li&gt;! Went into the &amp;quot;Firewall Manager&amp;quot; and changed the &amp;quot;Status&amp;quot; toggle to &amp;quot;On&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;0. Design Considerations&lt;/a&gt;&lt;br /&gt;
 Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;/p&gt;
 
@@ -675,10 +706,11 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 0. Design Considerations
                 
             </title>
-            <updated>2025-11-07T20:46:15.000Z</updated>
+            <updated>2025-11-09T15:52:24.669Z</updated>
             <id>https://idthetarget.hithub.io/laptop/0-design-considerations/</id>
             <content type="html">
-                &lt;p&gt;Coming Soon&lt;/p&gt;
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I&#39;ve tried using Linux on laptops before, starting with Red Hat (pre-RHEL days), then Fedora, then Ubuntu. I kept going back to Windows mainly because it was easier to play my games. But lately I&#39;ve just gotten fed up with Microsoft continuing to do evil Microsoft things, like requiring Microsoft Accounts to load Windows or installing AI when I don&#39;t want AI. (Microsoft has &lt;a href=&quot;https://en.wikipedia.org/wiki/Stac_Electronics#Controvers&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;always&lt;/a&gt; done &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_Corp._v_European_Commission&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;evil things&lt;/a&gt;) It&#39;s just become too much, so as part of my program of improving my privacy, I decided to move back to Linux from Windows. After a search for distributions that would both seamlessly support my laptop hardware and be relatively easy to run my Windows games, I decided on &lt;a href=&quot;https://linuxmint.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Linux Mint&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/1-installation/&quot;&gt;1. Installation&lt;/a&gt;&lt;/p&gt;
 
             </content>
