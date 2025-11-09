@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T13:31:18Z</updated>
+    <updated>2025-11-09T13:31:43Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -182,19 +182,6 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
         </entry>
         <entry>
             <title>
-                4. Syncthing
-                
-            </title>
-            <updated>2025-11-07T14:43:16.854Z</updated>
-            <id>https://idthetarget.hithub.io/self-hosting/4-syncthing/</id>
-            <content type="html">
-                &lt;p&gt;coming soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/self-hosting/4-syncthing/" >
-        </entry>
-        <entry>
-            <title>
                 4. Nextcloud
                 
             </title>
@@ -235,33 +222,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/3-syncthing/" >
-        </entry>
-        <entry>
-            <title>
-                3. Nextcloud
-                
-            </title>
-            <updated>2025-11-07T16:09:07.509Z</updated>
-            <id>https://idthetarget.hithub.io/self-hosting/3-nextcloud/</id>
-            <content type="html">
-                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://snapcraft.io/install/nextcloud/raspbian&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://snapcraft.io/install/nextcloud/raspbian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;backup research
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/self-hosting/3-nextcloud/" >
         </entry>
         <entry>
             <title>
@@ -472,19 +432,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
-                6. Note-taking
-                
-            </title>
-            <updated>2025-11-07T14:45:08.751Z</updated>
-            <id>https://idthetarget.hithub.io/phone/6-note-taking/</id>
-            <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/6-note-taking/" >
-        </entry>
-        <entry>
-            <title>
                 6. Nextcloud
                 
             </title>
@@ -495,19 +442,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/6-nextcloud/" >
-        </entry>
-        <entry>
-            <title>
-                5. Syncthing
-                
-            </title>
-            <updated>2025-11-07T14:45:06.279Z</updated>
-            <id>https://idthetarget.hithub.io/phone/5-syncthing/</id>
-            <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/5-syncthing/" >
         </entry>
         <entry>
             <title>
@@ -534,19 +468,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/4-syncthing/" >
-        </entry>
-        <entry>
-            <title>
-                4. Nextcloud
-                
-            </title>
-            <updated>2025-11-07T14:44:53.793Z</updated>
-            <id>https://idthetarget.hithub.io/phone/4-nextcloud/</id>
-            <content type="html">
-                &lt;p&gt;Coming Soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/phone/4-nextcloud/" >
         </entry>
         <entry>
             <title>
@@ -627,24 +548,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
-                5. Note-taking
-                
-            </title>
-            <updated>2025-11-07T16:27:22.009Z</updated>
-            <id>https://idthetarget.hithub.io/laptop/5-note-taking/</id>
-            <content type="html">
-                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
-&lt;p&gt;As detailed in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;Hosting this blog&lt;/a&gt;, despite wanting to use &lt;a href=&quot;https://joplinapp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Joplin&lt;/a&gt; for note-taking, I ended up using &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt;. Don&#39;t get me wrong, I like Obsidian very much, but I wanted to go as &lt;a href=&quot;https://en.wikipedia.org/wiki/Free_and_open-source_software&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FOSS&lt;/a&gt; as I could. However, I couldn&#39;t get the blogging software working correctly with Joplin, so I went with Obsidian.&lt;/p&gt;
-&lt;h1 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h1&gt;
-&lt;p&gt;To get Obsidian working on my newly Mint-ed (lol) laptop install, it was extremely easy. I had started this blog in Windows, so as part of backing up all of my laptop documents I also backed up my Obsidian vaults. After I installed Mint on my laptop I installed Obsidian by going to Mint&#39;s &amp;quot;Software Manager&amp;quot; and searching for &amp;quot;Obsidian&amp;quot;. It popped right up. I clicked on the &amp;quot;Install&amp;quot; button and waited for everything to install. I started Obsidian and opened the vault, and everything just worked, including the Digital Garden plugin. I didn&#39;t even have to re-install the token!&lt;/p&gt;
-&lt;p&gt;The reason I have &amp;quot;Note-taking&amp;quot; after &amp;quot;Syncthing&amp;quot; is because Syncthing is how I&#39;m going to synchronize my vaults between my laptop and my phone. In reality I did it after, because I&#39;m documenting everything in Obsidian as I complete each task. But you will have to have &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt; completed before making the changes below for synchronizing your vaults.&lt;/p&gt;
-&lt;h1 id=&quot;synchronizing&quot; tabindex=&quot;-1&quot;&gt;Synchronizing&lt;/h1&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/laptop/5-note-taking/" >
-        </entry>
-        <entry>
-            <title>
                 5. Nextcloud
                 
             </title>
@@ -655,19 +558,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/5-nextcloud/" >
-        </entry>
-        <entry>
-            <title>
-                4. Syncthing
-                
-            </title>
-            <updated>2025-11-07T14:48:08.052Z</updated>
-            <id>https://idthetarget.hithub.io/laptop/4-syncthing/</id>
-            <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/laptop/4-syncthing/" >
         </entry>
         <entry>
             <title>
@@ -699,19 +589,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/3-syncthing/" >
-        </entry>
-        <entry>
-            <title>
-                3. Nextcloud
-                
-            </title>
-            <updated>2025-11-07T14:45:43.211Z</updated>
-            <id>https://idthetarget.hithub.io/laptop/3-nextcloud/</id>
-            <content type="html">
-                &lt;p&gt;Coming Soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/laptop/3-nextcloud/" >
         </entry>
         <entry>
             <title>
