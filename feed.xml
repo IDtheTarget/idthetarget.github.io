@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T23:25:32Z</updated>
+    <updated>2025-11-09T23:25:57Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -182,19 +182,6 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
         </entry>
         <entry>
             <title>
-                5. Vaultwarden
-                
-            </title>
-            <updated>2025-11-07T17:12:29.000Z</updated>
-            <id>https://idthetarget.hithub.io/self-hosting/5-vaultwarden/</id>
-            <content type="html">
-                &lt;p&gt;Coming Soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/self-hosting/5-vaultwarden/" >
-        </entry>
-        <entry>
-            <title>
                 5. Nextcloud
                 
             </title>
@@ -219,33 +206,6 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/5-nextcloud/" >
-        </entry>
-        <entry>
-            <title>
-                4. Nextcloud
-                
-            </title>
-            <updated>2025-11-08T14:34:29.000Z</updated>
-            <id>https://idthetarget.hithub.io/self-hosting/4-nextcloud/</id>
-            <content type="html">
-                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://snapcraft.io/install/nextcloud/raspbian&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://snapcraft.io/install/nextcloud/raspbian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;backup research
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;3. Syncthing&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/self-hosting/4-nextcloud/" >
         </entry>
         <entry>
             <title>
