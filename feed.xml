@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T17:32:42Z</updated>
+    <updated>2025-11-09T23:25:32Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -103,14 +103,14 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
                 Contacts
                 
             </title>
-            <updated>2025-11-08T14:33:41.000Z</updated>
+            <updated>2025-11-09T18:48:47.427Z</updated>
             <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/contacts/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/FossifyOrg/Contacts&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/FossifyOrg/Contacts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-nextcloud/&quot;&gt;Self-Hosting/4. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
+&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-nextcloud/&quot;&gt;Self-Hosting/5. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/contacts/" >
@@ -120,14 +120,14 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
                 Calendar
                 
             </title>
-            <updated>2025-11-08T14:33:41.000Z</updated>
+            <updated>2025-11-09T18:48:47.420Z</updated>
             <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/calendar/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/FossifyOrg/Calendar&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/FossifyOrg/Calendar&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-nextcloud/&quot;&gt;Self-Hosting/4. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
+&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-nextcloud/&quot;&gt;Self-Hosting/5. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/calendar/" >
@@ -169,6 +169,19 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
         </entry>
         <entry>
             <title>
+                6. Vaultwarden
+                
+            </title>
+            <updated>2025-11-07T17:12:29.000Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/6-vaultwarden/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/6-vaultwarden/" >
+        </entry>
+        <entry>
+            <title>
                 5. Vaultwarden
                 
             </title>
@@ -179,6 +192,33 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/5-vaultwarden/" >
+        </entry>
+        <entry>
+            <title>
+                5. Nextcloud
+                
+            </title>
+            <updated>2025-11-08T14:34:29.000Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/5-nextcloud/</id>
+            <content type="html">
+                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://snapcraft.io/install/nextcloud/raspbian&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://snapcraft.io/install/nextcloud/raspbian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;backup research
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;3. Syncthing&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/5-nextcloud/" >
         </entry>
         <entry>
             <title>
@@ -212,13 +252,13 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-09T13:30:44.448Z</updated>
+            <updated>2025-11-09T18:52:59.077Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
 &lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
 &lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
-&lt;p&gt;Please note that this page is only for how I set up Syncthing on the Raspberry Pi (which I did firs)&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the Raspberry Pi. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-syncthing/&quot;&gt;Laptop&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Self-hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/3-syncthing/" >
@@ -582,10 +622,32 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-07T14:48:08.000Z</updated>
+            <updated>2025-11-09T23:14:40.787Z</updated>
             <id>https://idthetarget.hithub.io/laptop/3-syncthing/</id>
             <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
+&lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Linux Mint Laptop&lt;/a&gt;. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Self-hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;I opened &amp;quot;Software Manager&amp;quot; and searched for &amp;quot;Syncthing&amp;quot;. Several items popped up, including &amp;quot;Syncthing&amp;quot; and &amp;quot;Syncthing Tray&amp;quot;. The problem was that, as I looked at them, the &amp;quot;Tray&amp;quot; package (which puts an icon in the tray for management and informational purposes) is using a &amp;quot;Flatpack&amp;quot; that&#39;s over 1GB of download and 3.7GB on the disk! For just the tray. Syncthing itself was only 23MB on the disk. So, I went to the command line and looked for syncthing by typing &lt;code&gt;sudo apt search syncthing&lt;/code&gt;. And sure enough, there&#39;s a package named syncthingtray, that only needs about 204MB. So I went the &#39;apt&#39; method instead of the &amp;quot;Software Manager&amp;quot; method.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo install syncthing syncthingtray -y&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;After everything finished installing, the Syncthing icons are under the &amp;quot;Internet&amp;quot; start menu.&lt;/li&gt;
+&lt;li&gt;Click on &amp;quot;Start Syncthing&amp;quot;&lt;/li&gt;
+&lt;li&gt;Then click on &amp;quot;Syncthing Web UI&amp;quot;&lt;/li&gt;
+&lt;li&gt;The web UI comes up and asks to set a user name and password for the GUI. ~~While I&#39;m the only person using the system, it&#39;s still a best practice to enable &amp;quot;[defense in depth](&lt;a href=&quot;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&lt;/a&gt;&amp;quot;, so I set it up.
+&lt;ul&gt;
+&lt;li&gt;~~In the box on the webpage entitled &amp;quot;GUI Authentication&amp;quot;, click the &amp;quot;Settings&amp;quot; button at the bottom right&lt;/li&gt;
+&lt;li&gt;~~Click on the &amp;quot;GUI&amp;quot; tab&lt;/li&gt;
+&lt;li&gt;~~Enter the &amp;quot;GUI Authentication User&amp;quot; and &amp;quot;GUI Authentication Password&amp;quot;&lt;/li&gt;
+&lt;li&gt;~~I checked the &amp;quot;Use HTTPS for GUI&amp;quot;, even though I&#39;m not using a CA-signed certificate. I may have to go back and turn that off later, but I like multiple layers of encryption.&lt;/li&gt;
+&lt;li&gt;~~Click &amp;quot;Save&amp;quot;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;It turns out that I couldn&#39;t get Syncthing Tray to work if I had a password set on the GUI. So I spent the next hour trying to find the way to remove the username and password without breaking Syncthing. I even did a &lt;code&gt;sudo apt purge syncthing syncthingtray&lt;/code&gt; but that didn&#39;t work, it didn&#39;t get rid of the configuration file. I &lt;em&gt;finally&lt;/em&gt; found the file in ~/.local/state/syncthing/config.xml&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/3-syncthing/" >
@@ -595,11 +657,11 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 2. VPN
                 
             </title>
-            <updated>2025-11-08T14:35:26.000Z</updated>
+            <updated>2025-11-09T17:37:17.390Z</updated>
             <id>https://idthetarget.hithub.io/laptop/2-vpn/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
-&lt;p&gt;I need a way to securely access my home cloud. I saw online a lot of people using &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Cloudflare Tunnels&lt;/a&gt; , but it looked to me like your information is residing on their servers temporarily. Not something I was interested in. Then I saw others talking about &lt;a href=&quot;https://tailscale.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tailscale&lt;/a&gt; Another quick google search and it looked like Wireguard was probably easier for me to implement on my pfSense firewall and various clients.&lt;/p&gt;
+&lt;p&gt;I needed a way to securely access my home cloud. I saw online a lot of people using &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Cloudflare Tunnels&lt;/a&gt; , but it looked to me like your information is residing on their servers temporarily. Not something I was interested in. Then I saw others talking about &lt;a href=&quot;https://tailscale.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tailscale&lt;/a&gt; Another quick google search and it looked like Wireguard was probably easier for me to implement on my pfSense firewall and various clients.&lt;/p&gt;
 &lt;p&gt;I use the Wireguard client on my laptop and the wg-tunnel app on my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/2-vpn/&quot;&gt;phone&lt;/a&gt; to connect to my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/0-design-considerations/&quot;&gt;Home Cloud&lt;/a&gt; services. I don&#39;t have a static public IP, but I &lt;em&gt;am&lt;/em&gt; using Cloudflare DDNS for my domain so that I can link to the hostname.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Note that most of the steps I used to install Wireguard for Mint came from this video: &lt;a href=&quot;https://www.youtube.com/watch?v=knIV9TzcRjo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.youtube.com/watch?v=knIV9TzcRjo&lt;/a&gt;&lt;/li&gt;
@@ -644,7 +706,7 @@ AllowedIPs = &amp;lt;redacted&amp;gt;
 &lt;li&gt;&lt;code&gt;sudo setfacl -m u:$USER:rx /etc/wireguard&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now go back into the &amp;quot;Applets&amp;quot; control panel, find the &amp;quot;Wireguard&amp;quot; applet in the &amp;quot;Manage&amp;quot; tab and click the plus-sign button below it. You&#39;ll now have a gray icon at the bottom of your task bar that kind of looks like a figure 8. You can start and stop the VPN with this applet, but you have to type in your password each time.&lt;/p&gt;
-&lt;h2 id=&quot;don-t-forget&quot; tabindex=&quot;-1&quot;&gt;Don&#39;t forget!&lt;/h2&gt;
+&lt;h1 id=&quot;don-t-forget&quot; tabindex=&quot;-1&quot;&gt;Don&#39;t forget!&lt;/h1&gt;
 &lt;p&gt;You have created sensitive keys in your home directory, and that&#39;s a bad place to keep them. I moved them to a sub-folder of the wireguard directory for safekeeping:&lt;br /&gt;
 &lt;code&gt;sudo mkdir /etc/wireguard/keys&lt;/code&gt;&lt;br /&gt;
 &lt;code&gt;sudo mv privatekey /etc/wireguard/keys/&lt;/code&gt;&lt;br /&gt;
@@ -660,7 +722,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 1. Installation
                 
             </title>
-            <updated>2025-11-09T17:32:11.256Z</updated>
+            <updated>2025-11-09T18:26:57.905Z</updated>
             <id>https://idthetarget.hithub.io/laptop/1-installation/</id>
             <content type="html">
                 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
@@ -690,10 +752,12 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;p&gt;Linux Mint has a really nice post-installation welcome screen, that helps you get started with important stuff.&lt;/p&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
 &lt;li&gt;I changed the Desktop colors to &amp;quot;Dark Theme&amp;quot;, with green highlights&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt;  &lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I need to figure out System Snapshots&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; &lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I need to figure out System Snapshots&lt;/label&gt;&lt;/li&gt;
 &lt;li&gt;In &amp;quot;Driver Manager&amp;quot;, changed to the &amp;quot;Recommended&amp;quot; nvidia driver and rebooted&lt;/li&gt;
 &lt;li&gt;Went into the &amp;quot;Update Manager&amp;quot; and changed to local mirrors, then updated everything&lt;/li&gt;
-&lt;li&gt;! Went into the &amp;quot;Firewall Manager&amp;quot; and changed the &amp;quot;Status&amp;quot; toggle to &amp;quot;On&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I went into the &amp;quot;Firewall Manager&amp;quot; and changed the &amp;quot;Status&amp;quot; toggle to &amp;quot;On&amp;quot;. &lt;em&gt;&lt;strong&gt;Why is this not on by default???&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Went into Firefox and added the &amp;quot;uBlock Origin&amp;quot; ad-blocker extension.&lt;/li&gt;
+&lt;li&gt;In order to access the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;Raspberry Pi&lt;/a&gt; via VNC, I needed to install a VNC viewer. I opened the &amp;quot;Software Manager&amp;quot; and searched for &amp;quot;VNC&amp;quot;. The one that I ended up installing was &amp;quot;Tigervnc-viewer&amp;quot;, as it had the highest rating. I was then able to open the app and log into my Raspberry Pi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;0. Design Considerations&lt;/a&gt;&lt;br /&gt;
 Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;/p&gt;
