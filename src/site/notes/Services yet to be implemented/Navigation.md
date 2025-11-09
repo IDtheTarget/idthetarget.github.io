@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/services-yet-to-be-implemented/navigation/","updated":"2025-10-19T08:19:14.693-05:00"}
+{"dg-publish":true,"permalink":"/services-yet-to-be-implemented/navigation/","updated":"2025-10-19T08:19:14.000-05:00"}
 ---
 
 I use Google Maps **all** the time to not just navigate, but to find businesses and their information (are they open, etc.)  I hear good things about [Organic Maps](https://organicmaps.app/), which relies on [Open Street Maps](https://www.openstreetmap.org/), but a quick couple of queries shows several missing addresses to which I travel often.

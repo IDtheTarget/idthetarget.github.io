@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/services-yet-to-be-implemented/contacts/","updated":"2025-11-07T08:46:56.014-06:00"}
+{"dg-publish":true,"permalink":"/services-yet-to-be-implemented/contacts/","updated":"2025-11-08T08:33:41.000-06:00"}
 ---
 
 # References
 - https://github.com/FossifyOrg/Contacts
 
-I've installed the app and it looks nice, but I haven't had a chance to integrate it with my [[Self-Hosting/3. Nextcloud\|Self-Hosting/3. Nextcloud]] server yet. More to follow.
+I've installed the app and it looks nice, but I haven't had a chance to integrate it with my [[Self-Hosting/4. Nextcloud\|Self-Hosting/4. Nextcloud]] server yet. More to follow.

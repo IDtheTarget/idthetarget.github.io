@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/blog/hosting-this-blog/","updated":"2025-11-07T08:41:34.953-06:00"}
+{"dg-publish":true,"permalink":"/blog/hosting-this-blog/","updated":"2025-11-07T08:41:34.000-06:00"}
 ---
 
 # Hosting this blog

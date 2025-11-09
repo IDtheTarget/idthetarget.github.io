@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/services-yet-to-be-implemented/location-sharing/","updated":"2025-10-19T08:24:31.351-05:00"}
+{"dg-publish":true,"permalink":"/services-yet-to-be-implemented/location-sharing/","updated":"2025-10-19T08:24:31.000-05:00"}
 ---
 
 My wife and I share our locations with each other for various reasons, and I'd like to find a solution that lets us do so privately. I've heard good things about self-hosting [OwnTracks](https://owntracks.org/), but I haven't looked into it yet.
