@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T23:25:57Z</updated>
+    <updated>2025-11-09T23:29:59Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -582,7 +582,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-09T23:14:40.787Z</updated>
+            <updated>2025-11-09T23:29:27.251Z</updated>
             <id>https://idthetarget.hithub.io/laptop/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
@@ -596,7 +596,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;After everything finished installing, the Syncthing icons are under the &amp;quot;Internet&amp;quot; start menu.&lt;/li&gt;
 &lt;li&gt;Click on &amp;quot;Start Syncthing&amp;quot;&lt;/li&gt;
 &lt;li&gt;Then click on &amp;quot;Syncthing Web UI&amp;quot;&lt;/li&gt;
-&lt;li&gt;The web UI comes up and asks to set a user name and password for the GUI. ~~While I&#39;m the only person using the system, it&#39;s still a best practice to enable &amp;quot;[defense in depth](&lt;a href=&quot;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&lt;/a&gt;&amp;quot;, so I set it up.
+&lt;li&gt;The web UI comes up and asks to set a user name and password for the GUI. &lt;s&gt;While I&#39;m the only person using the system, it&#39;s still a best practice to enable &amp;quot;[defense in depth](&lt;a href=&quot;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&lt;/a&gt;&amp;quot;, so I set it up.&lt;/s&gt;
 &lt;ul&gt;
 &lt;li&gt;~~In the box on the webpage entitled &amp;quot;GUI Authentication&amp;quot;, click the &amp;quot;Settings&amp;quot; button at the bottom right&lt;/li&gt;
 &lt;li&gt;~~Click on the &amp;quot;GUI&amp;quot; tab&lt;/li&gt;
