@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T23:47:13Z</updated>
+    <updated>2025-11-09T23:59:04Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -564,11 +564,11 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 4. Note-taking
                 
             </title>
-            <updated>2025-11-08T14:34:29.000Z</updated>
+            <updated>2025-11-09T23:50:42.697Z</updated>
             <id>https://idthetarget.hithub.io/laptop/4-note-taking/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
-&lt;p&gt;As detailed in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;Hosting this blog&lt;/a&gt;, despite wanting to use &lt;a href=&quot;https://joplinapp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Joplin&lt;/a&gt; for note-taking, I ended up using &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt;. Don&#39;t get me wrong, I like Obsidian very much, but I wanted to go as &lt;a href=&quot;https://en.wikipedia.org/wiki/Free_and_open-source_software&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FOSS&lt;/a&gt; as I could. However, I couldn&#39;t get the blogging software working correctly with Joplin, so I went with Obsidian.&lt;/p&gt;
+&lt;p&gt;As detailed in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;Hosting this blog&lt;/a&gt;, despite wanting to use &lt;a href=&quot;https://joplinapp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Joplin&lt;/a&gt; for note-taking, I ended up using &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt;. Don&#39;t get me wrong, I like Obsidian very much, but I wanted to go as &lt;a href=&quot;https://en.wikipedia.org/wiki/Free_and_open-source_software&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FOSS&lt;/a&gt; as I could. However, I couldn&#39;t get the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;blogging software&lt;/a&gt; working correctly with Joplin, so I went with Obsidian.&lt;/p&gt;
 &lt;h1 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h1&gt;
 &lt;p&gt;To get Obsidian working on my newly Mint-ed (lol) laptop install, it was extremely easy. I had started this blog in Windows, so as part of backing up all of my laptop documents I also backed up my Obsidian vaults. After I installed Mint on my laptop I installed Obsidian by going to Mint&#39;s &amp;quot;Software Manager&amp;quot; and searching for &amp;quot;Obsidian&amp;quot;. It popped right up. I clicked on the &amp;quot;Install&amp;quot; button and waited for everything to install. I started Obsidian and opened the vault, and everything just worked, including the Digital Garden plugin. I didn&#39;t even have to re-install the token!&lt;/p&gt;
 &lt;p&gt;The reason I have &amp;quot;Note-taking&amp;quot; after &amp;quot;Syncthing&amp;quot; is because Syncthing is how I&#39;m going to synchronize my vaults between my laptop and my phone. In reality I did it after, because I&#39;m documenting everything in Obsidian as I complete each task. But you will have to have &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-syncthing/&quot;&gt;3. Syncthing&lt;/a&gt; completed before making the changes below for synchronizing your vaults.&lt;/p&gt;
@@ -582,7 +582,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-09T23:46:42.656Z</updated>
+            <updated>2025-11-09T23:50:02.407Z</updated>
             <id>https://idthetarget.hithub.io/laptop/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
@@ -613,6 +613,8 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;API key: what you copied from Syncthing GUI Settings about two bullet points above.&lt;/li&gt;
 &lt;li&gt;Click &amp;quot;Apply&amp;quot; and &amp;quot;OK&amp;quot;, and it looks like I&#39;m ready to add folders!&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;4. Note-taking&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/3-syncthing/" >
@@ -622,7 +624,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 2. VPN
                 
             </title>
-            <updated>2025-11-09T17:37:17.390Z</updated>
+            <updated>2025-11-09T23:49:12.314Z</updated>
             <id>https://idthetarget.hithub.io/laptop/2-vpn/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
@@ -676,7 +678,7 @@ AllowedIPs = &amp;lt;redacted&amp;gt;
 &lt;code&gt;sudo mkdir /etc/wireguard/keys&lt;/code&gt;&lt;br /&gt;
 &lt;code&gt;sudo mv privatekey /etc/wireguard/keys/&lt;/code&gt;&lt;br /&gt;
 &lt;code&gt;sudo mv publickey /etc/wireguard/keys/&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/1-installation/&quot;&gt;1. Installation&lt;/a&gt;&lt;br /&gt;
 Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-syncthing/&quot;&gt;3. Syncthing&lt;/a&gt;&lt;/p&gt;
 
             </content>
