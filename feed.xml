@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-09T23:59:04Z</updated>
+    <updated>2025-11-10T20:05:57Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -582,7 +582,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-09T23:50:02.407Z</updated>
+            <updated>2025-11-10T20:05:20.069Z</updated>
             <id>https://idthetarget.hithub.io/laptop/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
@@ -612,6 +612,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;Syncthing URL: &lt;a href=&quot;https://127.0.0.1:8384/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://127.0.0.1:8384&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;API key: what you copied from Syncthing GUI Settings about two bullet points above.&lt;/li&gt;
 &lt;li&gt;Click &amp;quot;Apply&amp;quot; and &amp;quot;OK&amp;quot;, and it looks like I&#39;m ready to add folders!&lt;/li&gt;
+&lt;li&gt;Next step is to install Syncthing on my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;br /&gt;
 Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;4. Note-taking&lt;/a&gt;&lt;/p&gt;
@@ -689,7 +690,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 1. Installation
                 
             </title>
-            <updated>2025-11-09T18:26:57.905Z</updated>
+            <updated>2025-11-10T19:59:18.960Z</updated>
             <id>https://idthetarget.hithub.io/laptop/1-installation/</id>
             <content type="html">
                 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
@@ -725,6 +726,37 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; I went into the &amp;quot;Firewall Manager&amp;quot; and changed the &amp;quot;Status&amp;quot; toggle to &amp;quot;On&amp;quot;. &lt;em&gt;&lt;strong&gt;Why is this not on by default???&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Went into Firefox and added the &amp;quot;uBlock Origin&amp;quot; ad-blocker extension.&lt;/li&gt;
 &lt;li&gt;In order to access the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;Raspberry Pi&lt;/a&gt; via VNC, I needed to install a VNC viewer. I opened the &amp;quot;Software Manager&amp;quot; and searched for &amp;quot;VNC&amp;quot;. The one that I ended up installing was &amp;quot;Tigervnc-viewer&amp;quot;, as it had the highest rating. I was then able to open the app and log into my Raspberry Pi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;snapshots-and-backing-up&quot; tabindex=&quot;-1&quot;&gt;Snapshots and Backing up&lt;/h1&gt;
+&lt;p&gt;coming soon&lt;/p&gt;
+&lt;h1 id=&quot;hardening-the-os&quot; tabindex=&quot;-1&quot;&gt;Hardening the OS&lt;/h1&gt;
+&lt;p&gt;Details coming soon.&lt;br /&gt;
+My risk analysis suggests my primary threat vectors are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Malicious website (either the website itself or &lt;a href=&quot;https://en.wikipedia.org/wiki/Malvertising&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;malvertising&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;I&#39;ve seen this one hit people who were careful. Risk management strategies include DNS protection (to minimize redirection attacks), browser sand-boxing (I need to read up on the Apparmor protections for Firefox) and extension protections (uBlock Origin filters).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Supply_chain_attack&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Supply Chain attack&lt;/a&gt; , either of a Steam game or via a poisoned update to a trusted repository
+&lt;ul&gt;
+&lt;li&gt;Need to look into stronger sand-boxing strategies for Steam games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Malicious attachment to an email.
+&lt;ul&gt;
+&lt;li&gt;I&#39;m pretty careful on opening email attachments, but I&#39;d like something a bit more formal. At least it looks like Mint ships LibreOfice with active Apparmor profiles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;research&quot; tabindex=&quot;-1&quot;&gt;Research&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Found this, seems promising: &lt;a href=&quot;https://forums.linuxmint.com/viewtopic.php?t=454383&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forums.linuxmint.com/viewtopic.php?t=454383&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Direct link to the PDF: &lt;a href=&quot;https://nallino.net/stockage/security/Linux_Mint_Security.pdf&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://nallino.net/stockage/security/Linux_Mint_Security.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;0. Design Considerations&lt;/a&gt;&lt;br /&gt;
 Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;/p&gt;
