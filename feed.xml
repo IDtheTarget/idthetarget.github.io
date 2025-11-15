@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-10T20:05:57Z</updated>
+    <updated>2025-11-15T19:04:00Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -185,7 +185,7 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
                 5. Nextcloud
                 
             </title>
-            <updated>2025-11-08T14:34:29.000Z</updated>
+            <updated>2025-11-15T18:58:09.862Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/5-nextcloud/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
@@ -201,24 +201,76 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;3. Syncthing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-note-taking/&quot;&gt;4. Note-taking&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/6-vaultwarden/&quot;&gt;6. Vaultwarden&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/5-nextcloud/" >
         </entry>
         <entry>
             <title>
+                4. Note-taking
+                
+            </title>
+            <updated>2025-11-15T18:58:38.141Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/4-note-taking/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I don&#39;t take notes on the Raspberry Pi, but I do sync my Obsidian vaults from my laptop and phone to it for backup purposes.&lt;/p&gt;
+&lt;h1 id=&quot;synchronizing&quot; tabindex=&quot;-1&quot;&gt;Synchronizing&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; You have to have finished &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Setting up Syncthing&lt;/a&gt; on the Raspberry Pi to continue this section. Additionally, I set up &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-syncthing/&quot;&gt;Syncthing&lt;/a&gt; on the laptop first, as it was easier. During this process I&#39;ll set up the Pi as an &lt;a href=&quot;https://docs.syncthing.net/users/introducer.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing Introducer&lt;/a&gt; to make it easier to share the Obsidian vaults between all three devices.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#39;m having trouble with VNC clipboard usage between the Pi&#39;s wayvnc server and the laptop&#39;s TigerVNC client, so I went oldschool.&lt;/li&gt;
+&lt;li&gt;Open an ssh session to the Pi&lt;/li&gt;
+&lt;li&gt;type &lt;code&gt;cat ~/.local/state/syncthing/config.xml | grep &#39;device id&#39;&lt;/code&gt; and look for the entry with what you named your pi.&lt;/li&gt;
+&lt;li&gt;Copy the device id (highlight the text with the mouse, then right-click the highlight and choose &amp;quot;copy&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Open the Syncthing web client on the laptop.&lt;/li&gt;
+&lt;li&gt;At the bottom right, click &amp;quot;Add Remote Device&amp;quot;&lt;/li&gt;
+&lt;li&gt;In the &amp;quot;Device ID&amp;quot; section, paste the Pi&#39;s device id&lt;/li&gt;
+&lt;li&gt;In the &amp;quot;Device Name&amp;quot; section, type the name you use for your Pi&lt;/li&gt;
+&lt;li&gt;Click the &amp;quot;Save&amp;quot; button&lt;/li&gt;
+&lt;li&gt;Go to &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/#synchronizing&quot;&gt;4. Note-taking#Synchronizing&lt;/a&gt; and follow those steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-note-taking/&quot;&gt;4. Note-taking&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-nextcloud/&quot;&gt;5. Nextcloud&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/4-note-taking/" >
+        </entry>
+        <entry>
+            <title>
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-09T18:52:59.077Z</updated>
+            <updated>2025-11-15T18:59:06.653Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
 &lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
 &lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
-&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the Raspberry Pi. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-syncthing/&quot;&gt;Laptop&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Self-hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the Raspberry Pi. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-syncthing/&quot;&gt;Laptop&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-note-taking/&quot;&gt;Self-hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;resources&quot; tabindex=&quot;-1&quot;&gt;Resources&lt;/h1&gt;
+&lt;p&gt;I used &lt;a href=&quot;https://pimylifeup.com/raspberry-pi-syncthing/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://pimylifeup.com/raspberry-pi-syncthing/&lt;/a&gt; for much of this section. However, instead of modifying the syncthing config file to allow remote web browsers to change the config, I log into the Pi by &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/#enable-vnc&quot;&gt;Enabling VNC&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE to self:&lt;/strong&gt;&lt;/em&gt; The below is on the Raspberry Pi, not the laptop&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt update
+sudo apt upgrade
+sudo apt install apt-transport-https
+curl -s https://syncthing.net/release-key.txt | gpg --dearmor | sudo tee /usr/share/keyrings/syncthing-archive-keyring.gpg &amp;gt;/dev/null
+echo &amp;quot;deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable&amp;quot; | sudo tee /etc/apt/sources.list.d/syncthing.list
+sudo apt update
+sudo apt install syncthing
+sudo systemctl enable syncthing@$USER
+sudo systemctl start syncthing@$USER
+sudo systemctl status syncthing@$USER
+sudo apt install syncthingtray
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the raspberry start icon and then Syncthing Tray. Accept the defaults and it should start. Note that the config wizard hangs, you&#39;ll have to exit the dialog box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You&#39;re now ready to set up &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-note-taking/#synchronizing&quot;&gt;synchronizing Obsidian&lt;/a&gt; with the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/#synchronizing&quot;&gt;Laptop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-note-taking/&quot;&gt;4. Note-taking&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/3-syncthing/" >
@@ -228,7 +280,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 2. Raspberry Pi Initial Configuration
                 
             </title>
-            <updated>2025-11-08T14:34:29.000Z</updated>
+            <updated>2025-11-13T14:18:10.061Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/</id>
             <content type="html">
                 &lt;h1 id=&quot;synopsis&quot; tabindex=&quot;-1&quot;&gt;Synopsis&lt;/h1&gt;
@@ -266,42 +318,32 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;ul&gt;
 &lt;li&gt;If you enabled &#39;ssh&#39; in the Raspberry Pi Imager step above, then all you need is the IP address of your Pi. You can then use &lt;a href=&quot;https://www.chiark.greenend.org.uk/~sgtatham/putty/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PuTTY&lt;/a&gt; to log in.&lt;/li&gt;
 &lt;li&gt;I set up a DHCP reservation on my firewall/router. You can check for DHCP leases or use some other method, that process is really beyond the scope of this document&lt;/li&gt;
-&lt;li&gt;Update everything
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo apt upgrade -y&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo reboot&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo rpi-eeprom-update&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;If the version shown isn&#39;t at least May 2024, then type &lt;code&gt;sudo raspi-config&lt;/code&gt; and select &amp;quot;Advanced Options -&amp;gt; Bootloader Version&amp;quot; to update the eeprom.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Enable VNC
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo raspi-config&lt;/code&gt;
+&lt;h2 id=&quot;update-everything&quot; tabindex=&quot;-1&quot;&gt;Update everything&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt update
+sudo apt upgrade -y
+sudo reboot
+sudo rpi-eeprom-update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note]+ eeprom&lt;br /&gt;
+If the version shown isn&#39;t at least May 2024, then type &amp;quot;sudo raspi-config&amp;quot; and select &amp;quot;Advanced Options -&amp;gt; Bootloader Version&amp;quot; to update the eeprom.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;enable-vnc&quot; tabindex=&quot;-1&quot;&gt;Enable VNC&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sudo raspi-config&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Down-arrow twice to &lt;code&gt;Interface Options&lt;/code&gt; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
 &lt;li&gt;Down-arrow twice more to &amp;quot;VNC&amp;quot; and press the &amp;quot;Enter&amp;quot; key again&lt;/li&gt;
 &lt;li&gt;Left-arrow to highlight &amp;quot;Yes&amp;quot;, then press the &amp;quot;Enter&amp;quot; key again&lt;/li&gt;
 &lt;li&gt;Press the &amp;quot;Enter&amp;quot; key again to select &amp;quot;OK&amp;quot;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Update the Bootloader
+&lt;h2 id=&quot;update-the-bootloader&quot; tabindex=&quot;-1&quot;&gt;Update the Bootloader&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;While in &lt;code&gt;raspi-config&lt;/code&gt;
-&lt;ul&gt;
+&lt;li&gt;While in &lt;code&gt;raspi-config&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Down-arrow to &amp;quot;Advanced Options&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
 &lt;li&gt;Down-arrow to &amp;quot;Bootloader Version&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
 &lt;li&gt;Select &amp;quot;Latest&amp;quot; and press the &amp;quot;Enter&amp;quot; key&lt;/li&gt;
 &lt;li&gt;Press the &amp;quot;ESC&amp;quot; key to go back to the command line&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;burn-the-raspberry-pi-os-onto-the-nvme-ssd&quot; tabindex=&quot;-1&quot;&gt;Burn the Raspberry Pi OS onto the NVME SSD&lt;/h1&gt;
 &lt;ul&gt;
@@ -448,10 +490,43 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 5. Note-taking
                 
             </title>
-            <updated>2025-11-07T14:45:08.000Z</updated>
+            <updated>2025-11-15T19:02:18.761Z</updated>
             <id>https://idthetarget.hithub.io/phone/5-note-taking/</id>
             <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;Why I&#39;m using Obsidian&lt;/p&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;Document how I installed Obsidian on my phone&lt;/p&gt;
+&lt;h1 id=&quot;synchronization&quot; tabindex=&quot;-1&quot;&gt;Synchronization&lt;/h1&gt;
+&lt;p&gt;Because my laptop is my primary note-taking platform (I touch-type on the laptop much faster than I can thumb-type on my phone), I &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/#synchronizing&quot;&gt;already sync&#39;d my notes from the laptop to the Pi&lt;/a&gt;. Now I need to get them from the Pi to the phone. So, we actually start on the Pi.&lt;/p&gt;
+&lt;h2 id=&quot;on-the-pi&quot; tabindex=&quot;-1&quot;&gt;On the Pi&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Log into the VNC client for the Pi that we set up earlier.&lt;/li&gt;
+&lt;li&gt;Open the Syncthing client&lt;/li&gt;
+&lt;li&gt;Click on the &amp;quot;Obsidian&amp;quot; folder share we set up earlier&lt;/li&gt;
+&lt;li&gt;Click on the &amp;quot;Edit&amp;quot; button below it.&lt;/li&gt;
+&lt;li&gt;Click on the &amp;quot;Sharing&amp;quot; tab&lt;/li&gt;
+&lt;li&gt;Under the &amp;quot;Unshared Devices&amp;quot;, find the phone you just added in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Click the checkbox next to it.&lt;/li&gt;
+&lt;li&gt;Click the &amp;quot;Save&amp;quot; button.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;on-the-phone&quot; tabindex=&quot;-1&quot;&gt;On the phone&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You should now see a notification on the phone: &amp;quot;Device &#39;Pi&#39; wants to share folder &#39;Obsidian&#39;&amp;quot;&lt;/li&gt;
+&lt;li&gt;Click the &amp;quot;Accept&amp;quot; button in the notification&lt;/li&gt;
+&lt;li&gt;You can now choose the Directory where you want to put the shared Obsidian folder. Make sure it&#39;s a place where Obsidian can get to it.
+&lt;ul&gt;
+&lt;li&gt;Note that Syncthing won&#39;t create the folder, only sync the contents. For instance, I&#39;m syncing the folder &#39;Obsidian&#39; from my laptop to my Pi. When I shared it to the phone, I had to create &#39;/Documents/Obsidian&#39; on the phone and then tell Syncthing to sync the &#39;Obsidian&#39; folder there. Syncthing then put the &lt;em&gt;&lt;strong&gt;contents&lt;/strong&gt;&lt;/em&gt; of the &#39;Obsidian&#39; folder (i.e. each of my vaults) into that folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click on the cog icon to the right of the word &amp;quot;Directory&amp;quot;&lt;/li&gt;
+&lt;li&gt;I choose &lt;code&gt;/storage/emulated/0/Documents&lt;/code&gt;, as that seemed the best place.&lt;/li&gt;
+&lt;li&gt;Click on the check icon at the top.&lt;/li&gt;
+&lt;li&gt;I change the &amp;quot;File Versioning&amp;quot; at the bottom from &amp;quot;TrashCan&amp;quot; to Simple, and I change Versions to 20. Just in case.&lt;/li&gt;
+&lt;li&gt;Click the check mark to save.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/6-nextcloud/&quot;&gt;6. Nextcloud&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/5-note-taking/" >
@@ -461,10 +536,63 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 4. Syncthing
                 
             </title>
-            <updated>2025-11-07T14:45:06.000Z</updated>
+            <updated>2025-11-15T19:02:48.200Z</updated>
             <id>https://idthetarget.hithub.io/phone/4-syncthing/</id>
             <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;This page depends upon &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;, because I&#39;m not synchronizing my private data over the public Internet, even with TLS. I prefer defense-in-depth, so I&#39;m putting all of my sync through a Wireguard tunnel.&lt;/p&gt;
+&lt;p&gt;I&#39;m using &lt;a href=&quot;https://github.com/ImranR98/Obtainium&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obtainium&lt;/a&gt; (installed through the GrapheneOS App store) to install other apps when I can. One of them is &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] As I&#39;m writing this (2025-11-15), There&#39;s been a bit of weirdness in the github repo, so I&#39;m not sure what&#39;s going on. I&#39;m going to continue describing what I&#39;m doing with this version of the android client. If the repo goes down permanently I&#39;ll change this page.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;initial-set-up&quot; tabindex=&quot;-1&quot;&gt;Initial Set up&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the Syncthing app using Obtainium&lt;/li&gt;
+&lt;li&gt;Start the app&lt;/li&gt;
+&lt;li&gt;You&#39;ll see the Introduction page, press the &amp;quot;CONTINUE&amp;quot; button at the bottom right&lt;/li&gt;
+&lt;li&gt;Next is the &amp;quot;Storage Permission&amp;quot; page. Touch the &amp;quot;GRANT PERMISSION&amp;quot; button in the middle.
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;I&#39;m using &lt;a href=&quot;https://grapheneos.org/usage#storage-scopes&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Storage Scopes&lt;/a&gt; wherever possible. On this page I&#39;m going to select a default, then I&#39;ll add folders for each app I&#39;m syncing later.&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Select &amp;quot;Setup Storage Scopes&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Toggle on &amp;quot;Enable Storage Scopes&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Touch the &amp;quot;Add Folder&amp;quot; icon&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Touch &amp;quot;Create new folder&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Type in &amp;quot;Sync&amp;quot; and touch &amp;quot;OK&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Touch &amp;quot;Use this folder&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Touch &amp;quot;Allow&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Touch the left arrow button at the top-left of the screen&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;I tried to use Storage Scopes, but ran into issues with allowing the sync of my Obsidian folders. I ended up having to allow all permissions. I&#39;m sure it&#39;s an issue of my knowledge, not either app, so I just need to figure it out.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Next is the &amp;quot;Location Permission&amp;quot; screen. I&#39;m not allowing that for now, so touch the &amp;quot;CONTINUE&amp;quot; button at the bottom right.&lt;/li&gt;
+&lt;li&gt;I&#39;m not sure what notifications it needs to send me, but I&#39;m okay with that. Touch the &amp;quot;GRANT PERMISSION&amp;quot; button, then the &amp;quot;Allow&amp;quot; button.&lt;/li&gt;
+&lt;li&gt;I&#39;m kinda paranoid, so I&#39;m not allowing the &amp;quot;Anonymous Usage Reporting. I touch the &amp;quot;NO&amp;quot; button at the bottom of the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;connect-to-the-pi&quot; tabindex=&quot;-1&quot;&gt;Connect to the Pi&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;I already had my laptop connected to my Pi via &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/#enable-vnc&quot;&gt;VNC&lt;/a&gt;, so I fired up my TigerVNC Viewer and connected to the Pi. Then in the VNC windows, I opened up Syncthing on the Pi and clicked on the &amp;quot;Actions&amp;quot; drop-down at the top right corner and selected &amp;quot;Show ID&amp;quot;. You&#39;ll have a QR Code pop up.
+&lt;ul&gt;
+&lt;li&gt;You&#39;ll need to open the VNC window anyway, to verify and allow the phone to connect to the Pi later on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Then, on the phone, I opened Syncthing.&lt;/li&gt;
+&lt;li&gt;At the top of the page, click on the &amp;quot;DEVICES&amp;quot; tab&lt;/li&gt;
+&lt;li&gt;At the top right, you&#39;ll now see an icon that looks like a computer with a plus on the screen. touch that icon.&lt;/li&gt;
+&lt;li&gt;In the &amp;quot;Add Device&amp;quot; page that shows up, on the right you&#39;ll see a mini QR-code icon. Touch that icon.&lt;/li&gt;
+&lt;li&gt;You&#39;ll get a permissions request. I touched &amp;quot;Only this time&amp;quot;.&lt;/li&gt;
+&lt;li&gt;You may have to touch the QR-code icon again.&lt;/li&gt;
+&lt;li&gt;Point the camera at the VNC viewer page with the QR code for the Pi. The Device ID will populate.&lt;/li&gt;
+&lt;li&gt;I named  the device.&lt;/li&gt;
+&lt;li&gt;I went ahead and toggled on &amp;quot;Introducer&amp;quot;. This will make it easier for me to configure the phone to accept other shared folders from the Pi when I share them from the laptop to the Pi. For instance, when I later set up either Bitwarden or KeePass.&lt;/li&gt;
+&lt;li&gt;I don&#39;t do &amp;quot;Auto Accept&amp;quot;, because I will probably want to specify where I put the shared folders.&lt;/li&gt;
+&lt;li&gt;Click on the check mark at the top right of the page.&lt;/li&gt;
+&lt;li&gt;On the Pi VNC windows, in the Syncthing client, you&#39;ll now see an alert asking if you want to allow the phone to connect. Click the green &amp;quot;Add Device&amp;quot; button.&lt;/li&gt;
+&lt;li&gt;Change the name of the device if you wish, then click the &amp;quot;Save&amp;quot; button.&lt;/li&gt;
+&lt;li&gt;On the phone, the Pi device status will now change to &amp;quot;Up to Date&amp;quot;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now ready to sync my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/5-note-taking/&quot;&gt;Obsidian Notes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/3-work-profile/&quot;&gt;3. Work Profile&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/5-note-taking/&quot;&gt;5. Note-taking&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/4-syncthing/" >
@@ -523,6 +651,33 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
+                8. Emby client
+                
+            </title>
+            <updated>2025-11-15T19:03:10.413Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/8-emby-client/</id>
+            <content type="html">
+                &lt;ul&gt;
+&lt;li&gt;Download &lt;a href=&quot;https://github.com/MediaBrowser/emby-theater-electron/releases/download/3.0.21/emby-theater-deb_3.0.21_amd64.deb&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Emby client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;sudo apt-get update&lt;br /&gt;
+sudo apt-get install cec-utils libasound2 libatomic1 libc6 libegl1 libgcc-s1 libpulse0 libstdc++6&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- I got an error about installing libasound2, but I already had sound installed so it worked anyway
+- ```bash
+sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Emby Theater now shows up under &#39;Sound and Video&#39;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/8-emby-client/" >
+        </entry>
+        <entry>
+            <title>
                 7. Gaming
                 
             </title>
@@ -539,10 +694,11 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 6. Password Manager
                 
             </title>
-            <updated>2025-11-07T17:11:42.000Z</updated>
+            <updated>2025-11-15T19:03:31.117Z</updated>
             <id>https://idthetarget.hithub.io/laptop/6-password-manager/</id>
             <content type="html">
-                
+                &lt;p&gt;Coming soon&lt;/p&gt;
+
             </content>
             <link href="https://idthetarget.hithub.io/laptop/6-password-manager/" >
         </entry>
@@ -582,19 +738,30 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 3. Syncthing
                 
             </title>
-            <updated>2025-11-10T20:05:20.069Z</updated>
+            <updated>2025-11-15T16:20:01.591Z</updated>
             <id>https://idthetarget.hithub.io/laptop/3-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
 &lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
 &lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
-&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Linux Mint Laptop&lt;/a&gt;. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://idthetarget.hithub.io/404&quot; target=&quot;&quot;&gt;Self-Hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Linux Mint Laptop&lt;/a&gt;. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-note-taking/&quot;&gt;Self-Hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;I opened &amp;quot;Software Manager&amp;quot; and searched for &amp;quot;Syncthing&amp;quot;. Several items popped up, including &amp;quot;Syncthing&amp;quot; and &amp;quot;Syncthing Tray&amp;quot;. The problem was that, as I looked at them, the &amp;quot;Tray&amp;quot; package (which puts an icon in the tray for management and informational purposes) is using a &amp;quot;Flatpack&amp;quot; that&#39;s over 1GB of download and 3.7GB on the disk! For just the tray. Syncthing itself was only 23MB on the disk. So, I went to the command line and looked for syncthing by typing &lt;code&gt;sudo apt search syncthing&lt;/code&gt;. And sure enough, there&#39;s a package named syncthingtray, that only needs about 204MB. So I went the &#39;apt&#39; method instead of the &amp;quot;Software Manager&amp;quot; method.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo install syncthing syncthingtray -y&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install syncthing syncthingtray -y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
 &lt;li&gt;After everything finished installing, the Syncthing icons are under the &amp;quot;Internet&amp;quot; start menu.&lt;/li&gt;
-&lt;li&gt;Click on &amp;quot;Start Syncthing&amp;quot;&lt;/li&gt;
+&lt;li&gt;Click on &amp;quot;Start Syncthing&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;To ensure that Syncthing will start at boot, type:&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;systemctl --user enable syncthing.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Then click on &amp;quot;Syncthing Web UI&amp;quot;&lt;/li&gt;
 &lt;li&gt;The web UI comes up and asks to set a user name and password for the GUI. &lt;s&gt;While I&#39;m the only person using the system, it&#39;s still a best practice to enable &amp;quot;[defense in depth](&lt;a href=&quot;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&lt;/a&gt;&amp;quot;, so I set it up.&lt;/s&gt;
 &lt;ul&gt;
