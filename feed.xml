@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-15T19:04:00Z</updated>
+    <updated>2025-11-15T19:04:26Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -675,19 +675,6 @@ sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/8-emby-client/" >
-        </entry>
-        <entry>
-            <title>
-                7. Gaming
-                
-            </title>
-            <updated>2025-11-07T14:30:40.000Z</updated>
-            <id>https://idthetarget.hithub.io/laptop/7-gaming/</id>
-            <content type="html">
-                &lt;p&gt;Coming soon&lt;/p&gt;
-
-            </content>
-            <link href="https://idthetarget.hithub.io/laptop/7-gaming/" >
         </entry>
         <entry>
             <title>
