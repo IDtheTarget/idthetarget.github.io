@@ -3,7 +3,7 @@
     <title>DeGoogle</title>
     <link href="https://idthetarget.hithub.io/feed.xml" rel="self" >
     <link href="https://idthetarget.hithub.io" >
-    <updated>2025-11-15T19:04:26Z</updated>
+    <updated>2025-11-21T14:29:04Z</updated>
     <id>https://idthetarget.hithub.io</id>
         <entry>
             <title>
@@ -103,14 +103,14 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
                 Contacts
                 
             </title>
-            <updated>2025-11-09T18:48:47.427Z</updated>
+            <updated>2025-11-15T22:39:08.000Z</updated>
             <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/contacts/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/FossifyOrg/Contacts&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/FossifyOrg/Contacts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-nextcloud/&quot;&gt;Self-Hosting/5. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
+&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/6-nextcloud/&quot;&gt;Self-Hosting/6. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/contacts/" >
@@ -120,14 +120,14 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
                 Calendar
                 
             </title>
-            <updated>2025-11-09T18:48:47.420Z</updated>
+            <updated>2025-11-15T22:39:08.000Z</updated>
             <id>https://idthetarget.hithub.io/services-yet-to-be-implemented/calendar/</id>
             <content type="html">
                 &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/FossifyOrg/Calendar&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/FossifyOrg/Calendar&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-nextcloud/&quot;&gt;Self-Hosting/5. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
+&lt;p&gt;I&#39;ve installed the app and it looks nice, but I haven&#39;t had a chance to integrate it with my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/6-nextcloud/&quot;&gt;Self-Hosting/6. Nextcloud&lt;/a&gt; server yet. More to follow.&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/services-yet-to-be-implemented/calendar/" >
@@ -169,6 +169,19 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
         </entry>
         <entry>
             <title>
+                7. Vaultwarden
+                
+            </title>
+            <updated>2025-11-07T17:12:29.000Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/7-vaultwarden/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/7-vaultwarden/" >
+        </entry>
+        <entry>
+            <title>
                 6. Vaultwarden
                 
             </title>
@@ -179,6 +192,63 @@ I&#39;m calling the overall program &amp;quot;DeGoogle&amp;quot; because that&#3
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/6-vaultwarden/" >
+        </entry>
+        <entry>
+            <title>
+                6. Nextcloud
+                
+            </title>
+            <updated>2025-11-15T22:39:11.000Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/6-nextcloud/</id>
+            <content type="html">
+                &lt;h1 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://snapcraft.io/install/nextcloud/raspbian&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://snapcraft.io/install/nextcloud/raspbian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;backup research
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/backup-strategy-on-nextcloud-snap/196305/5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/How-to-backup-your-instance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/nextcloud-snap/nextcloud-snap/wiki/Export-and-Import&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://help.nextcloud.com/t/nextcloud-snap-how-to-use-nextcloud-export-when-data-is-on-external-drive/146614/2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-note-taking/&quot;&gt;5. Note-taking&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/7-vaultwarden/&quot;&gt;7. Vaultwarden&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/6-nextcloud/" >
+        </entry>
+        <entry>
+            <title>
+                5. Note-taking
+                
+            </title>
+            <updated>2025-11-16T18:57:01.850Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/5-note-taking/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I don&#39;t take notes on the Raspberry Pi, but I do sync my Obsidian vaults from my laptop and phone to it for backup purposes.&lt;/p&gt;
+&lt;h1 id=&quot;synchronizing&quot; tabindex=&quot;-1&quot;&gt;Synchronizing&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; You have to have finished &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-syncthing/&quot;&gt;Setting up Syncthing&lt;/a&gt; on the Raspberry Pi to continue this section. Additionally, I set up &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-syncthing/&quot;&gt;Syncthing&lt;/a&gt; on the laptop first, as it was easier. During this process I&#39;ll set up the Pi as an &lt;a href=&quot;https://docs.syncthing.net/users/introducer.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing Introducer&lt;/a&gt; to make it easier to share the Obsidian vaults between all three devices.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#39;m having trouble with VNC clipboard usage between the Pi&#39;s wayvnc server and the laptop&#39;s TigerVNC client, so I went oldschool.&lt;/li&gt;
+&lt;li&gt;Open an ssh session to the Pi&lt;/li&gt;
+&lt;li&gt;type &lt;code&gt;cat ~/.local/state/syncthing/config.xml | grep &#39;device id&#39;&lt;/code&gt; and look for the entry with what you named your pi.&lt;/li&gt;
+&lt;li&gt;Copy the device id (highlight the text with the mouse, then right-click the highlight and choose &amp;quot;copy&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Open the Syncthing web client on the laptop.&lt;/li&gt;
+&lt;li&gt;At the bottom right, click &amp;quot;Add Remote Device&amp;quot;&lt;/li&gt;
+&lt;li&gt;In the &amp;quot;Device ID&amp;quot; section, paste the Pi&#39;s device id&lt;/li&gt;
+&lt;li&gt;In the &amp;quot;Device Name&amp;quot; section, type the name you use for your Pi&lt;/li&gt;
+&lt;li&gt;Click the &amp;quot;Save&amp;quot; button&lt;/li&gt;
+&lt;li&gt;Go to &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-note-taking/#synchronizing&quot;&gt;5. Note-taking&lt;/a&gt; and follow those steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-note-taking/&quot;&gt;5. Note-taking&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/6-nextcloud/&quot;&gt;6. Nextcloud&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/5-note-taking/" >
         </entry>
         <entry>
             <title>
@@ -206,6 +276,44 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/5-nextcloud/" >
+        </entry>
+        <entry>
+            <title>
+                4. Syncthing
+                
+            </title>
+            <updated>2025-11-16T18:57:01.849Z</updated>
+            <id>https://idthetarget.hithub.io/self-hosting/4-syncthing/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
+&lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the Raspberry Pi. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-syncthing/&quot;&gt;Laptop&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-note-taking/&quot;&gt;Self-hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;resources&quot; tabindex=&quot;-1&quot;&gt;Resources&lt;/h1&gt;
+&lt;p&gt;I used &lt;a href=&quot;https://pimylifeup.com/raspberry-pi-syncthing/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://pimylifeup.com/raspberry-pi-syncthing/&lt;/a&gt; for much of this section. However, instead of modifying the syncthing config file to allow remote web browsers to change the config, I log into the Pi by &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/#enable-vnc&quot;&gt;Enabling VNC&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE to self:&lt;/strong&gt;&lt;/em&gt; The below is on the Raspberry Pi, not the laptop&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt update
+sudo apt upgrade
+sudo apt install apt-transport-https
+curl -s https://syncthing.net/release-key.txt | gpg --dearmor | sudo tee /usr/share/keyrings/syncthing-archive-keyring.gpg &amp;gt;/dev/null
+echo &amp;quot;deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable&amp;quot; | sudo tee /etc/apt/sources.list.d/syncthing.list
+sudo apt update
+sudo apt install syncthing
+sudo systemctl enable syncthing@$USER
+sudo systemctl start syncthing@$USER
+sudo systemctl status syncthing@$USER
+sudo apt install syncthingtray
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the raspberry start icon and then Syncthing Tray. Accept the defaults and it should start. Note that the config wizard hangs, you&#39;ll have to exit the dialog box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You&#39;re now ready to set up &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-note-taking/#synchronizing&quot;&gt;synchronizing Obsidian&lt;/a&gt; with the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-note-taking/#synchronizing&quot;&gt;Laptop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/&quot;&gt;2. Raspberry Pi Initial Configuration&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-note-taking/&quot;&gt;5. Note-taking&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/self-hosting/4-syncthing/" >
         </entry>
         <entry>
             <title>
@@ -280,7 +388,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 2. Raspberry Pi Initial Configuration
                 
             </title>
-            <updated>2025-11-13T14:18:10.061Z</updated>
+            <updated>2025-11-15T22:39:16.000Z</updated>
             <id>https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/</id>
             <content type="html">
                 &lt;h1 id=&quot;synopsis&quot; tabindex=&quot;-1&quot;&gt;Synopsis&lt;/h1&gt;
@@ -388,7 +496,7 @@ If the version shown isn&#39;t at least May 2024, then type &amp;quot;sudo raspi
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/1-raspberry-pi-hardware/&quot;&gt;1. Raspberry Pi Hardware&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/3-syncthing/&quot;&gt;Self-Hosting/3. Syncthing&lt;/a&gt;&lt;/p&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-syncthing/&quot;&gt;Self-Hosting/4. Syncthing&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/self-hosting/2-raspberry-pi-initial-configuration/" >
@@ -448,6 +556,19 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
+                8. eBook Library
+                
+            </title>
+            <updated>2025-11-07T14:45:11.000Z</updated>
+            <id>https://idthetarget.hithub.io/phone/8-e-book-library/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/phone/8-e-book-library/" >
+        </entry>
+        <entry>
+            <title>
                 8. Reading eBooks
                 
             </title>
@@ -490,7 +611,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 5. Note-taking
                 
             </title>
-            <updated>2025-11-15T19:02:18.761Z</updated>
+            <updated>2025-11-16T18:56:44.870Z</updated>
             <id>https://idthetarget.hithub.io/phone/5-note-taking/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
@@ -498,7 +619,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
 &lt;p&gt;Document how I installed Obsidian on my phone&lt;/p&gt;
 &lt;h1 id=&quot;synchronization&quot; tabindex=&quot;-1&quot;&gt;Synchronization&lt;/h1&gt;
-&lt;p&gt;Because my laptop is my primary note-taking platform (I touch-type on the laptop much faster than I can thumb-type on my phone), I &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-note-taking/#synchronizing&quot;&gt;already sync&#39;d my notes from the laptop to the Pi&lt;/a&gt;. Now I need to get them from the Pi to the phone. So, we actually start on the Pi.&lt;/p&gt;
+&lt;p&gt;Because my laptop is my primary note-taking platform (I touch-type on the laptop much faster than I can thumb-type on my phone), I &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-note-taking/#synchronizing&quot;&gt;already sync&#39;d my notes from the laptop to the Pi&lt;/a&gt;. Now I need to get them from the Pi to the phone. So, we actually start on the Pi.&lt;/p&gt;
 &lt;h2 id=&quot;on-the-pi&quot; tabindex=&quot;-1&quot;&gt;On the Pi&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Log into the VNC client for the Pi that we set up earlier.&lt;/li&gt;
@@ -506,7 +627,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;Click on the &amp;quot;Obsidian&amp;quot; folder share we set up earlier&lt;/li&gt;
 &lt;li&gt;Click on the &amp;quot;Edit&amp;quot; button below it.&lt;/li&gt;
 &lt;li&gt;Click on the &amp;quot;Sharing&amp;quot; tab&lt;/li&gt;
-&lt;li&gt;Under the &amp;quot;Unshared Devices&amp;quot;, find the phone you just added in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Under the &amp;quot;Unshared Devices&amp;quot;, find the phone you just added in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone/4. Syncthing&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Click the checkbox next to it.&lt;/li&gt;
 &lt;li&gt;Click the &amp;quot;Save&amp;quot; button.&lt;/li&gt;
 &lt;/ul&gt;
@@ -525,8 +646,8 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;I change the &amp;quot;File Versioning&amp;quot; at the bottom from &amp;quot;TrashCan&amp;quot; to Simple, and I change Versions to 20. Just in case.&lt;/li&gt;
 &lt;li&gt;Click the check mark to save.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/6-nextcloud/&quot;&gt;6. Nextcloud&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone/4. Syncthing&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/6-nextcloud/&quot;&gt;Phone/6. Nextcloud&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/5-note-taking/" >
@@ -536,7 +657,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 4. Syncthing
                 
             </title>
-            <updated>2025-11-15T19:02:48.200Z</updated>
+            <updated>2025-11-15T22:39:11.000Z</updated>
             <id>https://idthetarget.hithub.io/phone/4-syncthing/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
@@ -592,7 +713,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;/ul&gt;
 &lt;p&gt;Now ready to sync my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/5-note-taking/&quot;&gt;Obsidian Notes&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/3-work-profile/&quot;&gt;3. Work Profile&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/5-note-taking/&quot;&gt;5. Note-taking&lt;/a&gt;&lt;/p&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/5-note-taking/&quot;&gt;Phone/5. Note-taking&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/phone/4-syncthing/" >
@@ -678,6 +799,19 @@ sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
         </entry>
         <entry>
             <title>
+                7. Password Manager
+                
+            </title>
+            <updated>2025-11-15T19:03:31.000Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/7-password-manager/</id>
+            <content type="html">
+                &lt;p&gt;Coming soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/7-password-manager/" >
+        </entry>
+        <entry>
+            <title>
                 6. Password Manager
                 
             </title>
@@ -691,6 +825,37 @@ sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
         </entry>
         <entry>
             <title>
+                6. Nextcloud
+                
+            </title>
+            <updated>2025-11-07T14:45:43.000Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/6-nextcloud/</id>
+            <content type="html">
+                &lt;p&gt;Coming Soon&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/6-nextcloud/" >
+        </entry>
+        <entry>
+            <title>
+                5. Note-taking
+                
+            </title>
+            <updated>2025-11-16T18:57:01.851Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/5-note-taking/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;As detailed in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;Hosting this blog&lt;/a&gt;, despite wanting to use &lt;a href=&quot;https://joplinapp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Joplin&lt;/a&gt; for note-taking, I ended up using &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt;. Don&#39;t get me wrong, I like Obsidian very much, but I wanted to go as &lt;a href=&quot;https://en.wikipedia.org/wiki/Free_and_open-source_software&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FOSS&lt;/a&gt; as I could. However, I couldn&#39;t get the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/blog/hosting-this-blog/&quot;&gt;blogging software&lt;/a&gt; working correctly with Joplin, so I went with Obsidian.&lt;/p&gt;
+&lt;h1 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h1&gt;
+&lt;p&gt;To get Obsidian working on my newly Mint-ed (lol) laptop install, it was extremely easy. I had started this blog in Windows, so as part of backing up all of my laptop documents I also backed up my Obsidian vaults. After I installed Mint on my laptop I installed Obsidian by going to Mint&#39;s &amp;quot;Software Manager&amp;quot; and searching for &amp;quot;Obsidian&amp;quot;. It popped right up. I clicked on the &amp;quot;Install&amp;quot; button and waited for everything to install. I started Obsidian and opened the vault, and everything just worked, including the Digital Garden plugin. I didn&#39;t even have to re-install the token!&lt;/p&gt;
+&lt;p&gt;The reason I have &amp;quot;Note-taking&amp;quot; after &amp;quot;Syncthing&amp;quot; is because Syncthing is how I&#39;m going to synchronize my vaults between my laptop and my phone. In reality I did it after, because I&#39;m documenting everything in Obsidian as I complete each task. But you will have to have &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt; completed before making the changes below for synchronizing your vaults.&lt;/p&gt;
+&lt;h1 id=&quot;synchronizing&quot; tabindex=&quot;-1&quot;&gt;Synchronizing&lt;/h1&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/5-note-taking/" >
+        </entry>
+        <entry>
+            <title>
                 5. Nextcloud
                 
             </title>
@@ -701,6 +866,60 @@ sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/5-nextcloud/" >
+        </entry>
+        <entry>
+            <title>
+                4. Syncthing
+                
+            </title>
+            <updated>2025-11-21T13:44:07.022Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/4-syncthing/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I have several systems that I want to synchronize between my phone, my laptop and a tablet.  Many of those systems have their own way of synchronization, i.e. Obsidian&#39;s &lt;a href=&quot;https://obsidian.md/sync&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Sync&lt;/a&gt;. Systems like that work fine, but there are two disadvantages: First, I don&#39;t want to have to maintain multiple systems if I don&#39;t have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.&lt;/p&gt;
+&lt;p&gt;After looking a a few alternatives, &lt;a href=&quot;https://syncthing.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Syncthing&lt;/a&gt; (and &lt;a href=&quot;https://github.com/Catfriend1/syncthing-android&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;syncthing-fork&lt;/a&gt; for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the &lt;a href=&quot;https://docs.syncthing.net/intro/getting-started.html#getting-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Getting Started page&lt;/a&gt; helped.&lt;/p&gt;
+&lt;p&gt;Please note that this page is only for the initial set-up of Syncthing on the my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;Linux Mint Laptop&lt;/a&gt;. See also the initial set-ups for my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;. I cover the steps to share individual folders in their respective sections, i.e. &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/5-note-taking/&quot;&gt;Self-Hosting/4. Note-taking&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-note-taking/&quot;&gt;Laptop/4. Note-taking&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;I opened &amp;quot;Software Manager&amp;quot; and searched for &amp;quot;Syncthing&amp;quot;. Several items popped up, including &amp;quot;Syncthing&amp;quot; and &amp;quot;Syncthing Tray&amp;quot;. The problem was that, as I looked at them, the &amp;quot;Tray&amp;quot; package (which puts an icon in the tray for management and informational purposes) is using a &amp;quot;Flatpack&amp;quot; that&#39;s over 1GB of download and 3.7GB on the disk! For just the tray. Syncthing itself was only 23MB on the disk. So, I went to the command line and looked for syncthing by typing &lt;code&gt;sudo apt search syncthing&lt;/code&gt;. And sure enough, there&#39;s a package named syncthingtray, that only needs about 204MB. So I went the &#39;apt&#39; method instead of the &amp;quot;Software Manager&amp;quot; method.&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install syncthing syncthingtray -y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;After everything finished installing, the Syncthing icons are under the &amp;quot;Internet&amp;quot; start menu.&lt;/li&gt;
+&lt;li&gt;Click on &amp;quot;Start Syncthing&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;To ensure that Syncthing will start at boot, type:&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;systemctl --user enable syncthing.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Then click on &amp;quot;Syncthing Web UI&amp;quot;&lt;/li&gt;
+&lt;li&gt;The web UI comes up and asks to set a user name and password for the GUI. &lt;s&gt;While I&#39;m the only person using the system, it&#39;s still a best practice to enable &amp;quot;[defense in depth](&lt;a href=&quot;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Defense_in_depth_(computing)&lt;/a&gt;&amp;quot;, so I set it up.&lt;/s&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;In the box on the webpage entitled &amp;quot;GUI Authentication&amp;quot;, click the &amp;quot;Settings&amp;quot; button at the bottom right&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Click on the &amp;quot;GUI&amp;quot; tab&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Enter the &amp;quot;GUI Authentication User&amp;quot; and &amp;quot;GUI Authentication Password&amp;quot;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;I checked the &amp;quot;Use HTTPS for GUI&amp;quot;, even though I&#39;m not using a CA-signed certificate. I may have to go back and turn that off later, but I like multiple layers of encryption.&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;Click &amp;quot;Save&amp;quot;.&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;It turns out that I couldn&#39;t get Syncthing Tray to work if I had a password set on the GUI. So I spent the next hour trying to find the way to remove the username and password without breaking Syncthing. I even did a &lt;code&gt;sudo apt purge syncthing syncthingtray&lt;/code&gt; but that didn&#39;t work, it didn&#39;t get rid of the configuration file. I &lt;em&gt;finally&lt;/em&gt; found the file in ~/.local/state/syncthing/config.xml&lt;/li&gt;
+&lt;li&gt;In the Syncthing web GUI, find the &amp;quot;Actions&amp;quot; drop-down at the top right and select &amp;quot;Settings&amp;quot;. You are going to need the &lt;strong&gt;API Key&lt;/strong&gt; later for Syncthing Tray&lt;/li&gt;
+&lt;li&gt;Start SyncthingTray from the Start Menu -&amp;gt; Internet -&amp;gt; Syncthing Tray icon.&lt;/li&gt;
+&lt;li&gt;I tried the guided setup, but had problems because of my password. After I cleared the Syncthing GUI username and password, I had to go back into the manual settings for Syncthing Tray.&lt;/li&gt;
+&lt;li&gt;Syncthing URL: &lt;a href=&quot;https://127.0.0.1:8384/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://127.0.0.1:8384&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;API key: what you copied from Syncthing GUI Settings about two bullet points above.&lt;/li&gt;
+&lt;li&gt;Click &amp;quot;Apply&amp;quot; and &amp;quot;OK&amp;quot;, and it looks like I&#39;m ready to add folders!&lt;/li&gt;
+&lt;li&gt;Next step is to install Syncthing on my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/4-syncthing/&quot;&gt;Raspberry Pi&lt;/a&gt; and my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/4-syncthing/&quot;&gt;Phone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-vpn/&quot;&gt;3. VPN&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/5-note-taking/&quot;&gt;5. Note-taking&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/4-syncthing/" >
         </entry>
         <entry>
             <title>
@@ -719,6 +938,71 @@ sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/4-note-taking/" >
+        </entry>
+        <entry>
+            <title>
+                3. VPN
+                
+            </title>
+            <updated>2025-11-16T18:57:01.845Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/3-vpn/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;I needed a way to securely access my home cloud. I saw online a lot of people using &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Cloudflare Tunnels&lt;/a&gt; , but it looked to me like your information is residing on their servers temporarily. Not something I was interested in. Then I saw others talking about &lt;a href=&quot;https://tailscale.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tailscale&lt;/a&gt; Another quick google search and it looked like Wireguard was probably easier for me to implement on my pfSense firewall and various clients.&lt;/p&gt;
+&lt;p&gt;I use the Wireguard client on my laptop and the wg-tunnel app on my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/phone/2-vpn/&quot;&gt;phone&lt;/a&gt; to connect to my &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/self-hosting/0-design-considerations/&quot;&gt;Home Cloud&lt;/a&gt; services. I don&#39;t have a static public IP, but I &lt;em&gt;am&lt;/em&gt; using Cloudflare DDNS for my domain so that I can link to the hostname.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note that most of the steps I used to install Wireguard for Mint came from this video: &lt;a href=&quot;https://www.youtube.com/watch?v=knIV9TzcRjo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.youtube.com/watch?v=knIV9TzcRjo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you prefer to read instead of watching, he has a &lt;a href=&quot;https://zonatsolutions.com/how-to-setup-wireguard-vpn-on-linux-mint/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;step-by-step guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ruan.dev/blog/2020/01/11/setup-a-wireguard-vpn-server-on-linux&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;This site&lt;/a&gt; was also very helpful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&quot;pf-sense-firewall&quot; tabindex=&quot;-1&quot;&gt;pfSense firewall&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First create a tunnel on your pfSense firewall if you haven&#39;t already done so (assuming that pfSense is your firewall/wireguard gateway)&lt;/li&gt;
+&lt;li&gt;Add the Mint laptop as a new peer.
+&lt;ul&gt;
+&lt;li&gt;Note: it won&#39;t let you save the peer without the public key. What I did here was copy the pfSense public key into the Mint public key as a temporary place-holder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;linux-mint-laptop&quot; tabindex=&quot;-1&quot;&gt;Linux Mint laptop&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open a terminal window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt install wireguard wireguard-tools&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;umask 077 &amp;amp;&amp;amp; wg genkey &amp;gt; privatekey&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;umask 077 &amp;amp;&amp;amp; wg pubkey &amp;lt; privatekey &amp;gt; publickey&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sudo nano /etc/wireguard/wg0.conf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;[Interface]
+PrivateKey = &amp;lt;redacted&amp;gt;
+Address = &amp;lt;redacted&amp;gt;
+
+[Peer]
+PublicKey = &amp;lt;redacted&amp;gt;
+PresharedKey = &amp;lt;redacted&amp;gt;
+Endpoint = &amp;lt;redacted&amp;gt;
+AllowedIPs = &amp;lt;redacted&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;pf-sense-firewall-1&quot; tabindex=&quot;-1&quot;&gt;pfSense Firewall&lt;/h2&gt;
+&lt;p&gt;Now you have to go back into the pfSense firewall and edit the peer you created for the laptop. Specifically you need to replace the placeholder public key for the laptop peer with the one you generated on the laptop. Save, and you&#39;re ready to start the Wireguard VPN on the laptop.&lt;/p&gt;
+&lt;h2 id=&quot;linux-mint-laptop-1&quot; tabindex=&quot;-1&quot;&gt;Linux Mint laptop&lt;/h2&gt;
+&lt;p&gt;Then I wanted a GUI &amp;quot;applet&amp;quot; that would allow me to control the tunnel and to see its state. I went to &amp;quot;Preferences&amp;quot; then &amp;quot;Applets&amp;quot;, then clicked on the &amp;quot;Download&amp;quot; tab at the top. I then typed &amp;quot;Wireguard&amp;quot; in the search bar and clicked the download button to the right of the applet.&lt;/p&gt;
+&lt;p&gt;Before I could enable the applet, I had to type the following in a command prompt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo setfacl -m u:$USER:rx /etc/wireguard&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now go back into the &amp;quot;Applets&amp;quot; control panel, find the &amp;quot;Wireguard&amp;quot; applet in the &amp;quot;Manage&amp;quot; tab and click the plus-sign button below it. You&#39;ll now have a gray icon at the bottom of your task bar that kind of looks like a figure 8. You can start and stop the VPN with this applet, but you have to type in your password each time.&lt;/p&gt;
+&lt;h1 id=&quot;don-t-forget&quot; tabindex=&quot;-1&quot;&gt;Don&#39;t forget!&lt;/h1&gt;
+&lt;p&gt;You have created sensitive keys in your home directory, and that&#39;s a bad place to keep them. I moved them to a sub-folder of the wireguard directory for safekeeping:&lt;br /&gt;
+&lt;code&gt;sudo mkdir /etc/wireguard/keys&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;sudo mv privatekey /etc/wireguard/keys/&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;sudo mv publickey /etc/wireguard/keys/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/1-installation/&quot;&gt;1. Installation&lt;/a&gt;&lt;br /&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/4-syncthing/&quot;&gt;4. Syncthing&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/3-vpn/" >
         </entry>
         <entry>
             <title>
@@ -841,10 +1125,74 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
         </entry>
         <entry>
             <title>
+                2. Backups
+                
+            </title>
+            <updated>2025-11-19T22:35:40.246Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/2-backups/</id>
+            <content type="html">
+                &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;
+&lt;p&gt;In my vision, I have three types of backups: (1) Image, (2) System Snapshot and (3) User Data.&lt;/p&gt;
+&lt;h2 id=&quot;image-backups&quot; tabindex=&quot;-1&quot;&gt;Image Backups&lt;/h2&gt;
+&lt;p&gt;Tool: &lt;a href=&quot;https://rescuezilla.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Rescuzilla&lt;/a&gt;. An &amp;quot;Image&amp;quot; backup is for when I have a catastrophic physical or logical failure of my boot device. For instance, if the boot SSD on my laptop gets irretrievably corrupted or I get a virus, I should be able to pull the SSD out of the laptop, put a new one in and restore the image. It won&#39;t have all of my latest data, but I won&#39;t have to spend several days re-installing my operating system or all of the tools and software I&#39;ve configured.&lt;/p&gt;
+&lt;h2 id=&quot;system-snapshot&quot; tabindex=&quot;-1&quot;&gt;System Snapshot&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info]+ Partitions&lt;br /&gt;
+So, it turns out that Timeshift wants to have a partition all to its own. I was intending to use my laptop&#39;s 2TB second SSD to house all of my backups (which I&#39;m still doing), but I&#39;d intended on it having one partition that held all of my backups. Turns out that won&#39;t work. I had to use the &amp;quot;Disks&amp;quot; tool to break the SSD up into two partitions, one for timeshift and one for backintime.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tool: &lt;a href=&quot;https://github.com/linuxmint/timeshift&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Timeshift&lt;/a&gt;. A &amp;quot;System Snapshot&amp;quot; is intended to help me recover from messing up my operating system while trying out something. For instance, I&#39;ve somehow messed up my Steam install trying to get a non-Steam wine game working. I intend on taking a System Snapshot before each new &amp;quot;project&amp;quot; (such as installing the aforementioned game), so that if I make a mistake I can rapidly recover. The implied task in this workflow is an exhaustive testing of currently-working systems after I think I&#39;ve completed the &amp;quot;project&amp;quot; to ensure I haven&#39;t broken something. I&#39;m setting up Timeshift to automatically back up to the second SSD installed on my laptop, then regularly copying it to my external USB hard drive&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the Start Menu-&amp;gt;Administration-&amp;gt;Timeshift and click on the icon&lt;/li&gt;
+&lt;li&gt;I&#39;m not thrilled with the stability or Copy-on-Write (CoW) impact of BTRFS on NVME drives, so I formatted both of my SSD&#39;s with ext4. This means I&#39;m going to be selecting RSYNC as the backup type. Then click the &amp;quot;Next&amp;quot; button&lt;/li&gt;
+&lt;li&gt;Select the second NVME drive and click &amp;quot;Next&amp;quot;&lt;/li&gt;
+&lt;li&gt;I&#39;m choosing the &amp;quot;Daily&amp;quot; default for now, I may change it later. Click &amp;quot;Next&amp;quot;&lt;/li&gt;
+&lt;li&gt;I&#39;m going to be using &amp;quot;Backintime&amp;quot; for user files, so leave the /root and /home directories excluded. Click &amp;quot;Next&amp;quot;&lt;/li&gt;
+&lt;li&gt;Click &amp;quot;Finish&amp;quot;&lt;/li&gt;
+&lt;li&gt;You can now click the &amp;quot;Create&amp;quot; button to manually start a snapshot.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;user-data&quot; tabindex=&quot;-1&quot;&gt;User Data&lt;/h2&gt;
+&lt;p&gt;Tool: &lt;a href=&quot;https://github.com/bit-team/backintime&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Backintime&lt;/a&gt;. Does for user files (/home) what Timeshift does for system files. A good explanation is &lt;a href=&quot;https://forums.linuxmint.com/viewtopic.php?p=2381995#p2381995&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;. I will be setting up Backintime to automatically back up to the second SSD installed on my laptop, then regularly copying it to my external USB hard drive. I&#39;ll set an alarm on my phone to remind me.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to Mint&#39;s &amp;quot;Software Manager&amp;quot; and search for &amp;quot;backintime-qt&amp;quot;, then install it.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/2-backups/" >
+        </entry>
+        <entry>
+            <title>
+                10. Emby client
+                
+            </title>
+            <updated>2025-11-15T22:18:11.000Z</updated>
+            <id>https://idthetarget.hithub.io/laptop/10-emby-client/</id>
+            <content type="html">
+                &lt;ul&gt;
+&lt;li&gt;Download &lt;a href=&quot;https://github.com/MediaBrowser/emby-theater-electron/releases/download/3.0.21/emby-theater-deb_3.0.21_amd64.deb&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Emby client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;sudo apt-get update&lt;br /&gt;
+sudo apt-get install cec-utils libasound2 libatomic1 libc6 libegl1 libgcc-s1 libpulse0 libstdc++6&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- I got an error about installing libasound2, but I already had sound installed so it worked anyway
+- ```bash
+sudo dpkg -i ~/Downloads/emby-theater-deb_3.0.21_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Emby Theater now shows up under &#39;Sound and Video&#39;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://idthetarget.hithub.io/laptop/10-emby-client/" >
+        </entry>
+        <entry>
+            <title>
                 1. Installation
                 
             </title>
-            <updated>2025-11-10T19:59:18.960Z</updated>
+            <updated>2025-11-17T18:58:50.970Z</updated>
             <id>https://idthetarget.hithub.io/laptop/1-installation/</id>
             <content type="html">
                 &lt;h1 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h1&gt;
@@ -860,6 +1208,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
 &lt;li&gt;Installed the multimedia CODECs
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; To install the codecs, you have to choose to put in a &amp;quot;secure boot&amp;quot; password. You will need to put this password in the first time you boot. Make sure it&#39;s easy to type and remember!&lt;/li&gt;
+&lt;li&gt;If you log in and can&#39;t use the HDMI, it&#39;s probably because the key didn&#39;t get enrolled. Open a terminal and type &lt;code&gt;sudo update-secureboot-policy --enroll-key&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Chose the internal NVME drive&lt;/li&gt;
@@ -913,7 +1262,7 @@ My risk analysis suggests my primary threat vectors are:&lt;/p&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Previous: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/0-design-considerations/&quot;&gt;0. Design Considerations&lt;/a&gt;&lt;br /&gt;
-Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/2-vpn/&quot;&gt;2. VPN&lt;/a&gt;&lt;/p&gt;
+Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://idthetarget.hithub.io/laptop/3-vpn/&quot;&gt;3. VPN&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://idthetarget.hithub.io/laptop/1-installation/" >
@@ -923,7 +1272,7 @@ Next: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&
                 0. Design Considerations
                 
             </title>
-            <updated>2025-11-09T15:52:24.669Z</updated>
+            <updated>2025-11-09T15:52:24.000Z</updated>
             <id>https://idthetarget.hithub.io/laptop/0-design-considerations/</id>
             <content type="html">
                 &lt;h1 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion&lt;/h1&gt;

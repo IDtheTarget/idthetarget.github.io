@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>2. VPN</title>
+<title>5. Note-taking</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -163,7 +163,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -232,7 +232,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/5-note-taking/">5. Note-taking </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/5-note-taking/">5. Note-taking </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -313,13 +313,47 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:44:47.000-06:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-16T12:57:01.850-06:00"></span></div></div></div>
 </header>
-<p>Coming Soon</p>
+<h1 id="discussion" tabindex="-1">Discussion</h1>
+<p>I don't take notes on the Raspberry Pi, but I do sync my Obsidian vaults from my laptop and phone to it for backup purposes.</p>
+<h1 id="synchronizing" tabindex="-1">Synchronizing</h1>
+<p><em><strong>NOTE:</strong></em> You have to have finished <a class="internal-link" target="" data-note-icon="" href="/self-hosting/4-syncthing/">Setting up Syncthing</a> on the Raspberry Pi to continue this section. Additionally, I set up <a class="internal-link" target="" data-note-icon="" href="/laptop/4-syncthing/">Syncthing</a> on the laptop first, as it was easier. During this process I'll set up the Pi as an <a href="https://docs.syncthing.net/users/introducer.html" target="_blank" class="external-link">Syncthing Introducer</a> to make it easier to share the Obsidian vaults between all three devices.</p>
+<ul>
+<li>I'm having trouble with VNC clipboard usage between the Pi's wayvnc server and the laptop's TigerVNC client, so I went oldschool.</li>
+<li>Open an ssh session to the Pi</li>
+<li>type <code>cat ~/.local/state/syncthing/config.xml | grep 'device id'</code> and look for the entry with what you named your pi.</li>
+<li>Copy the device id (highlight the text with the mouse, then right-click the highlight and choose &quot;copy&quot;)</li>
+<li>Open the Syncthing web client on the laptop.</li>
+<li>At the bottom right, click &quot;Add Remote Device&quot;</li>
+<li>In the &quot;Device ID&quot; section, paste the Pi's device id</li>
+<li>In the &quot;Device Name&quot; section, type the name you use for your Pi</li>
+<li>Click the &quot;Save&quot; button</li>
+<li>Go to <a class="internal-link" target="" data-note-icon="" href="/laptop/5-note-taking/#synchronizing">5. Note-taking</a> and follow those steps.</li>
+</ul>
+<p>Previous: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/5-note-taking/">5. Note-taking</a><br>
+Next: <a class="internal-link" target="" data-note-icon="" href="/laptop/6-nextcloud/">6. Nextcloud</a></p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#discussion">Discussion</a>
+</li>
+<li><a href="#synchronizing">Synchronizing</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>

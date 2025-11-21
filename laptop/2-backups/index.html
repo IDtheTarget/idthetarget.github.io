@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>2. VPN</title>
+<title>2. Backups</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -94,7 +94,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/laptop/2-backups/">2. Backups </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/laptop/2-backups/">2. Backups </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -163,7 +163,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -313,13 +313,61 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:44:47.000-06:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-19T16:35:40.246-06:00"></span></div></div></div>
 </header>
-<p>Coming Soon</p>
+<h1 id="discussion" tabindex="-1">Discussion</h1>
+<p>In my vision, I have three types of backups: (1) Image, (2) System Snapshot and (3) User Data.</p>
+<h2 id="image-backups" tabindex="-1">Image Backups</h2>
+<p>Tool: <a href="https://rescuezilla.com" target="_blank" class="external-link">Rescuzilla</a>. An &quot;Image&quot; backup is for when I have a catastrophic physical or logical failure of my boot device. For instance, if the boot SSD on my laptop gets irretrievably corrupted or I get a virus, I should be able to pull the SSD out of the laptop, put a new one in and restore the image. It won't have all of my latest data, but I won't have to spend several days re-installing my operating system or all of the tools and software I've configured.</p>
+<h2 id="system-snapshot" tabindex="-1">System Snapshot</h2>
+<div class="callout is-collapsible" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Partitions<br></div><div class="callout-fold"><i icon-name="chevron-down"></i></div></div>
+<div class="callout-content">
+<p>
+So, it turns out that Timeshift wants to have a partition all to its own. I was intending to use my laptop's 2TB second SSD to house all of my backups (which I'm still doing), but I'd intended on it having one partition that held all of my backups. Turns out that won't work. I had to use the &quot;Disks&quot; tool to break the SSD up into two partitions, one for timeshift and one for backintime.</p>
+</div></div>
+<p>Tool: <a href="https://github.com/linuxmint/timeshift" target="_blank" class="external-link">Timeshift</a>. A &quot;System Snapshot&quot; is intended to help me recover from messing up my operating system while trying out something. For instance, I've somehow messed up my Steam install trying to get a non-Steam wine game working. I intend on taking a System Snapshot before each new &quot;project&quot; (such as installing the aforementioned game), so that if I make a mistake I can rapidly recover. The implied task in this workflow is an exhaustive testing of currently-working systems after I think I've completed the &quot;project&quot; to ensure I haven't broken something. I'm setting up Timeshift to automatically back up to the second SSD installed on my laptop, then regularly copying it to my external USB hard drive</p>
+<ul>
+<li>Go to the Start Menu-&gt;Administration-&gt;Timeshift and click on the icon</li>
+<li>I'm not thrilled with the stability or Copy-on-Write (CoW) impact of BTRFS on NVME drives, so I formatted both of my SSD's with ext4. This means I'm going to be selecting RSYNC as the backup type. Then click the &quot;Next&quot; button</li>
+<li>Select the second NVME drive and click &quot;Next&quot;</li>
+<li>I'm choosing the &quot;Daily&quot; default for now, I may change it later. Click &quot;Next&quot;</li>
+<li>I'm going to be using &quot;Backintime&quot; for user files, so leave the /root and /home directories excluded. Click &quot;Next&quot;</li>
+<li>Click &quot;Finish&quot;</li>
+<li>You can now click the &quot;Create&quot; button to manually start a snapshot.</li>
+</ul>
+<h2 id="user-data" tabindex="-1">User Data</h2>
+<p>Tool: <a href="https://github.com/bit-team/backintime" target="_blank" class="external-link">Backintime</a>. Does for user files (/home) what Timeshift does for system files. A good explanation is <a href="https://forums.linuxmint.com/viewtopic.php?p=2381995#p2381995" target="_blank" class="external-link">here</a>. I will be setting up Backintime to automatically back up to the second SSD installed on my laptop, then regularly copying it to my external USB hard drive. I'll set an alarm on my phone to remind me.</p>
+<ul>
+<li>Go to Mint's &quot;Software Manager&quot; and search for &quot;backintime-qt&quot;, then install it.</li>
+<li></li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#discussion">Discussion</a>
+<ol>
+<li><a href="#image-backups">Image Backups</a>
+</li>
+<li><a href="#system-snapshot">System Snapshot</a>
+</li>
+<li><a href="#user-data">User Data</a>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>

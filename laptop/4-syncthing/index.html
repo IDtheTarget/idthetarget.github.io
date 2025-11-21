@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>2. VPN</title>
+<title>4. Syncthing</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -114,7 +114,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/laptop/4-syncthing/">4. Syncthing </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/laptop/4-syncthing/">4. Syncthing </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -163,7 +163,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -313,13 +313,71 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:44:47.000-06:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-21T07:44:07.022-06:00"></span></div></div></div>
 </header>
-<p>Coming Soon</p>
+<h1 id="discussion" tabindex="-1">Discussion</h1>
+<p>I have several systems that I want to synchronize between my phone, my laptop and a tablet. Many of those systems have their own way of synchronization, i.e. Obsidian's <a href="https://obsidian.md/sync" target="_blank" class="external-link">Obsidian Sync</a>. Systems like that work fine, but there are two disadvantages: First, I don't want to have to maintain multiple systems if I don't have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.</p>
+<p>After looking a a few alternatives, <a href="https://syncthing.net/" target="_blank" class="external-link">Syncthing</a> (and <a href="https://github.com/Catfriend1/syncthing-android" target="_blank" class="external-link">syncthing-fork</a> for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the <a href="https://docs.syncthing.net/intro/getting-started.html#getting-started" target="_blank" class="external-link">Getting Started page</a> helped.</p>
+<p>Please note that this page is only for the initial set-up of Syncthing on the my <a class="internal-link" target="" data-note-icon="" href="/laptop/0-design-considerations/">Linux Mint Laptop</a>. See also the initial set-ups for my <a class="internal-link" target="" data-note-icon="" href="/self-hosting/4-syncthing/">Raspberry Pi</a> and <a class="internal-link" target="" data-note-icon="" href="/phone/4-syncthing/">Phone</a>. I cover the steps to share individual folders in their respective sections, i.e. <a class="internal-link" target="" data-note-icon="" href="/self-hosting/5-note-taking/">Self-Hosting/4. Note-taking</a> and <a class="internal-link" target="" data-note-icon="" href="/laptop/5-note-taking/">Laptop/4. Note-taking</a>.</p>
+<h1 id="installation" tabindex="-1">Installation</h1>
+<ul>
+<li>I opened &quot;Software Manager&quot; and searched for &quot;Syncthing&quot;. Several items popped up, including &quot;Syncthing&quot; and &quot;Syncthing Tray&quot;. The problem was that, as I looked at them, the &quot;Tray&quot; package (which puts an icon in the tray for management and informational purposes) is using a &quot;Flatpack&quot; that's over 1GB of download and 3.7GB on the disk! For just the tray. Syncthing itself was only 23MB on the disk. So, I went to the command line and looked for syncthing by typing <code>sudo apt search syncthing</code>. And sure enough, there's a package named syncthingtray, that only needs about 204MB. So I went the 'apt' method instead of the &quot;Software Manager&quot; method.</li>
+<li>
+<pre><code class="language-bash">sudo apt install syncthing syncthingtray -y
+</code></pre>
+</li>
+<li>After everything finished installing, the Syncthing icons are under the &quot;Internet&quot; start menu.</li>
+<li>Click on &quot;Start Syncthing&quot;
+<ul>
+<li>To ensure that Syncthing will start at boot, type:</li>
+<li>
+<pre><code class="language-bash">systemctl --user enable syncthing.service
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Then click on &quot;Syncthing Web UI&quot;</li>
+<li>The web UI comes up and asks to set a user name and password for the GUI. <s>While I'm the only person using the system, it's still a best practice to enable &quot;[defense in depth](<a href="https://en.wikipedia.org/wiki/Defense_in_depth_(computing)" target="_blank" class="external-link">https://en.wikipedia.org/wiki/Defense_in_depth_(computing)</a>&quot;, so I set it up.</s>
+<ul>
+<li><s>In the box on the webpage entitled &quot;GUI Authentication&quot;, click the &quot;Settings&quot; button at the bottom right</s></li>
+<li><s>Click on the &quot;GUI&quot; tab</s></li>
+<li><s>Enter the &quot;GUI Authentication User&quot; and &quot;GUI Authentication Password&quot;</s></li>
+<li><s>I checked the &quot;Use HTTPS for GUI&quot;, even though I'm not using a CA-signed certificate. I may have to go back and turn that off later, but I like multiple layers of encryption.</s></li>
+<li><s>Click &quot;Save&quot;.</s></li>
+</ul>
+</li>
+<li>It turns out that I couldn't get Syncthing Tray to work if I had a password set on the GUI. So I spent the next hour trying to find the way to remove the username and password without breaking Syncthing. I even did a <code>sudo apt purge syncthing syncthingtray</code> but that didn't work, it didn't get rid of the configuration file. I <em>finally</em> found the file in ~/.local/state/syncthing/config.xml</li>
+<li>In the Syncthing web GUI, find the &quot;Actions&quot; drop-down at the top right and select &quot;Settings&quot;. You are going to need the <strong>API Key</strong> later for Syncthing Tray</li>
+<li>Start SyncthingTray from the Start Menu -&gt; Internet -&gt; Syncthing Tray icon.</li>
+<li>I tried the guided setup, but had problems because of my password. After I cleared the Syncthing GUI username and password, I had to go back into the manual settings for Syncthing Tray.</li>
+<li>Syncthing URL: <a href="https://127.0.0.1:8384" target="_blank" class="external-link">https://127.0.0.1:8384</a></li>
+<li>API key: what you copied from Syncthing GUI Settings about two bullet points above.</li>
+<li>Click &quot;Apply&quot; and &quot;OK&quot;, and it looks like I'm ready to add folders!</li>
+<li>Next step is to install Syncthing on my <a class="internal-link" target="" data-note-icon="" href="/self-hosting/4-syncthing/">Raspberry Pi</a> and my <a class="internal-link" target="" data-note-icon="" href="/phone/4-syncthing/">Phone</a></li>
+</ul>
+<p>Previous: <a class="internal-link" target="" data-note-icon="" href="/laptop/3-vpn/">3. VPN</a><br>
+Next: <a class="internal-link" target="" data-note-icon="" href="/laptop/5-note-taking/">5. Note-taking</a></p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#discussion">Discussion</a>
+</li>
+<li><a href="#installation">Installation</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>

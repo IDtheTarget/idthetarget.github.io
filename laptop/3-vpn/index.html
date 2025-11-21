@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>2. VPN</title>
+<title>3. VPN</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -106,7 +106,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/laptop/3-vpn/">3. VPN </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/laptop/3-vpn/">3. VPN </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -163,7 +163,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -313,13 +313,94 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:44:47.000-06:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-16T12:57:01.845-06:00"></span></div></div></div>
 </header>
-<p>Coming Soon</p>
+<h1 id="discussion" tabindex="-1">Discussion</h1>
+<p>I needed a way to securely access my home cloud. I saw online a lot of people using <a href="https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/" target="_blank" class="external-link">Cloudflare Tunnels</a> , but it looked to me like your information is residing on their servers temporarily. Not something I was interested in. Then I saw others talking about <a href="https://tailscale.com/" target="_blank" class="external-link">Tailscale</a> Another quick google search and it looked like Wireguard was probably easier for me to implement on my pfSense firewall and various clients.</p>
+<p>I use the Wireguard client on my laptop and the wg-tunnel app on my <a class="internal-link" target="" data-note-icon="" href="/phone/2-vpn/">phone</a> to connect to my <a class="internal-link" target="" data-note-icon="" href="/self-hosting/0-design-considerations/">Home Cloud</a> services. I don't have a static public IP, but I <em>am</em> using Cloudflare DDNS for my domain so that I can link to the hostname.</p>
+<ul>
+<li>Note that most of the steps I used to install Wireguard for Mint came from this video: <a href="https://www.youtube.com/watch?v=knIV9TzcRjo" target="_blank" class="external-link">https://www.youtube.com/watch?v=knIV9TzcRjo</a></li>
+<li>If you prefer to read instead of watching, he has a <a href="https://zonatsolutions.com/how-to-setup-wireguard-vpn-on-linux-mint/" target="_blank" class="external-link">step-by-step guide</a></li>
+<li><a href="https://ruan.dev/blog/2020/01/11/setup-a-wireguard-vpn-server-on-linux" target="_blank" class="external-link">This site</a> was also very helpful.</li>
+</ul>
+<h1 id="installation" tabindex="-1">Installation</h1>
+<h2 id="pf-sense-firewall" tabindex="-1">pfSense firewall</h2>
+<ul>
+<li>First create a tunnel on your pfSense firewall if you haven't already done so (assuming that pfSense is your firewall/wireguard gateway)</li>
+<li>Add the Mint laptop as a new peer.
+<ul>
+<li>Note: it won't let you save the peer without the public key. What I did here was copy the pfSense public key into the Mint public key as a temporary place-holder.</li>
+</ul>
+</li>
+</ul>
+<h2 id="linux-mint-laptop" tabindex="-1">Linux Mint laptop</h2>
+<ul>
+<li>Open a terminal window</li>
+<li><code>sudo apt update</code></li>
+<li><code>sudo apt install wireguard wireguard-tools</code></li>
+<li><code>umask 077 &amp;&amp; wg genkey &gt; privatekey</code></li>
+<li><code>umask 077 &amp;&amp; wg pubkey &lt; privatekey &gt; publickey</code></li>
+<li>sudo nano /etc/wireguard/wg0.conf</li>
+</ul>
+<pre><code>[Interface]
+PrivateKey = &lt;redacted&gt;
+Address = &lt;redacted&gt;
+
+[Peer]
+PublicKey = &lt;redacted&gt;
+PresharedKey = &lt;redacted&gt;
+Endpoint = &lt;redacted&gt;
+AllowedIPs = &lt;redacted&gt;
+</code></pre>
+<h2 id="pf-sense-firewall-1" tabindex="-1">pfSense Firewall</h2>
+<p>Now you have to go back into the pfSense firewall and edit the peer you created for the laptop. Specifically you need to replace the placeholder public key for the laptop peer with the one you generated on the laptop. Save, and you're ready to start the Wireguard VPN on the laptop.</p>
+<h2 id="linux-mint-laptop-1" tabindex="-1">Linux Mint laptop</h2>
+<p>Then I wanted a GUI &quot;applet&quot; that would allow me to control the tunnel and to see its state. I went to &quot;Preferences&quot; then &quot;Applets&quot;, then clicked on the &quot;Download&quot; tab at the top. I then typed &quot;Wireguard&quot; in the search bar and clicked the download button to the right of the applet.</p>
+<p>Before I could enable the applet, I had to type the following in a command prompt:</p>
+<ul>
+<li><code>sudo setfacl -m u:$USER:rx /etc/wireguard</code></li>
+</ul>
+<p>Now go back into the &quot;Applets&quot; control panel, find the &quot;Wireguard&quot; applet in the &quot;Manage&quot; tab and click the plus-sign button below it. You'll now have a gray icon at the bottom of your task bar that kind of looks like a figure 8. You can start and stop the VPN with this applet, but you have to type in your password each time.</p>
+<h1 id="don-t-forget" tabindex="-1">Don't forget!</h1>
+<p>You have created sensitive keys in your home directory, and that's a bad place to keep them. I moved them to a sub-folder of the wireguard directory for safekeeping:<br>
+<code>sudo mkdir /etc/wireguard/keys</code><br>
+<code>sudo mv privatekey /etc/wireguard/keys/</code><br>
+<code>sudo mv publickey /etc/wireguard/keys/</code></p>
+<p>Previous: <a class="internal-link" target="" data-note-icon="" href="/laptop/1-installation/">1. Installation</a><br>
+Next: <a class="internal-link" target="" data-note-icon="" href="/laptop/4-syncthing/">4. Syncthing</a></p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#discussion">Discussion</a>
+</li>
+<li><a href="#installation">Installation</a>
+<ol>
+<li><a href="#pf-sense-firewall">pfSense firewall</a>
+</li>
+<li><a href="#linux-mint-laptop">Linux Mint laptop</a>
+</li>
+<li><a href="#pf-sense-firewall-1">pfSense Firewall</a>
+</li>
+<li><a href="#linux-mint-laptop-1">Linux Mint laptop</a>
+</li>
+</ol>
+</li>
+<li><a href="#don-t-forget">Don't forget!</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>2. VPN</title>
+<title>4. Syncthing</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -163,7 +163,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/phone/2-vpn/">2. VPN </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -224,7 +224,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/4-syncthing/">4. Syncthing </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/self-hosting/4-syncthing/">4. Syncthing </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -313,13 +313,57 @@ CTRL + K
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-07T08:44:47.000-06:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-16T12:57:01.849-06:00"></span></div></div></div>
 </header>
-<p>Coming Soon</p>
+<h1 id="discussion" tabindex="-1">Discussion</h1>
+<p>I have several systems that I want to synchronize between my phone, my laptop and a tablet. Many of those systems have their own way of synchronization, i.e. Obsidian's <a href="https://obsidian.md/sync" target="_blank" class="external-link">Obsidian Sync</a>. Systems like that work fine, but there are two disadvantages: First, I don't want to have to maintain multiple systems if I don't have to. Second, I want to be in control of how I back them up. I realized that if I can sync them to the Raspberry Pi, I can then back them up from there.</p>
+<p>After looking a a few alternatives, <a href="https://syncthing.net/" target="_blank" class="external-link">Syncthing</a> (and <a href="https://github.com/Catfriend1/syncthing-android" target="_blank" class="external-link">syncthing-fork</a> for android) seemed to be the clear winner. It was a bit of a stretch to get my head around how to make it work on all my devices, but the <a href="https://docs.syncthing.net/intro/getting-started.html#getting-started" target="_blank" class="external-link">Getting Started page</a> helped.</p>
+<p>Please note that this page is only for the initial set-up of Syncthing on the Raspberry Pi. See also the initial set-ups for my <a class="internal-link" target="" data-note-icon="" href="/laptop/4-syncthing/">Laptop</a> and <a class="internal-link" target="" data-note-icon="" href="/phone/4-syncthing/">Phone</a>. I cover the steps to share individual folders in their respective sections, i.e. <a class="internal-link" target="" data-note-icon="" href="/self-hosting/5-note-taking/">Self-hosting/4. Note-taking</a> and <a class="internal-link" target="" data-note-icon="" href="/laptop/5-note-taking/">Laptop/4. Note-taking</a>.</p>
+<h1 id="resources" tabindex="-1">Resources</h1>
+<p>I used <a href="https://pimylifeup.com/raspberry-pi-syncthing/" target="_blank" class="external-link">https://pimylifeup.com/raspberry-pi-syncthing/</a> for much of this section. However, instead of modifying the syncthing config file to allow remote web browsers to change the config, I log into the Pi by <a class="internal-link" target="" data-note-icon="" href="/self-hosting/2-raspberry-pi-initial-configuration/#enable-vnc">Enabling VNC</a></p>
+<h1 id="installation" tabindex="-1">Installation</h1>
+<p><em><strong>NOTE to self:</strong></em> The below is on the Raspberry Pi, not the laptop</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt upgrade
+sudo apt install apt-transport-https
+curl -s https://syncthing.net/release-key.txt | gpg --dearmor | sudo tee /usr/share/keyrings/syncthing-archive-keyring.gpg &gt;/dev/null
+echo &quot;deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable&quot; | sudo tee /etc/apt/sources.list.d/syncthing.list
+sudo apt update
+sudo apt install syncthing
+sudo systemctl enable syncthing@$USER
+sudo systemctl start syncthing@$USER
+sudo systemctl status syncthing@$USER
+sudo apt install syncthingtray
+</code></pre>
+<ul>
+<li>Go to the raspberry start icon and then Syncthing Tray. Accept the defaults and it should start. Note that the config wizard hangs, you'll have to exit the dialog box.</li>
+</ul>
+<p>You're now ready to set up <a class="internal-link" target="" data-note-icon="" href="/self-hosting/5-note-taking/#synchronizing">synchronizing Obsidian</a> with the <a class="internal-link" target="" data-note-icon="" href="/laptop/5-note-taking/#synchronizing">Laptop</a></p>
+<p>Previous: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/2-raspberry-pi-initial-configuration/">2. Raspberry Pi Initial Configuration</a><br>
+Next: <a class="internal-link" target="" data-note-icon="" href="/self-hosting/5-note-taking/">5. Note-taking</a></p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#discussion">Discussion</a>
+</li>
+<li><a href="#resources">Resources</a>
+</li>
+<li><a href="#installation">Installation</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 </div>
 </div>
 </aside>
